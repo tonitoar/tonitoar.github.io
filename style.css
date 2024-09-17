@@ -1,0 +1,18 @@
+html, body{
+    margin:0;
+    padding:0;
+    background-color:black;
+}
+
+/* ! 3D BACKGROUND */
+
+#canvas{
+    margin:0 auto;
+    display:block;
+}
+
+svg{
+  display:none;
+}
+
+/* ! 3D BACKGROUND */
