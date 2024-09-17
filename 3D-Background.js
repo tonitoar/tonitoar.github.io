@@ -192,7 +192,7 @@ class Circle {
      * @return void
      */
     render(context) {
-        context.fillStyle = "#3C0753";
+        context.fillStyle = "#720455";
         context.beginPath();
         context.arc(this.position.x, this.position.y, this.size, 0, TWO_PI);
         context.fill();

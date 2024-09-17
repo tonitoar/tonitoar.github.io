@@ -4,8 +4,6 @@ html, body{
     background-color:black;
 }
 
-/* ! 3D BACKGROUND */
-
 #canvas{
     margin:0 auto;
     display:block;
@@ -14,5 +12,3 @@ html, body{
 svg{
   display:none;
 }
-
-/* ! 3D BACKGROUND */
