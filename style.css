@@ -1,7 +1,19 @@
+
+
+/* ? CUSTOM VARIABLES */
+
+:root {
+--dark-background: black; 
+
+}
+
+/* ? CUSTOM VARIABLES */
+
 html, body{
     margin:0;
     padding:0;
-    background-color:black;
+    background-color: var(--dark-background);
+
 }
 
 #canvas{
