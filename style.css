@@ -69,14 +69,15 @@ h1 {
 }
 
 .word-anime {
-  color: var(--spanWord-color); 
+  color: var(--spanWord-color);
+  
 }
 
 .CV {
   width: 194px;
   height: 62px;
-  background-color: var(--dark-purple2);
-  border: solid 5px var(--dark-purple1);
+  background-color: var(--red-purple2);
+  border: solid 5px var(--red-purple1);
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   cursor: pointer; 
