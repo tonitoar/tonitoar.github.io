@@ -1,15 +1,25 @@
-
-
-/* ? CUSTOM VARIABLES */
-
-:root {
---dark-background: black; 
-
+* {
+ /* border: 1px solid red;  */
+ margin:0;
+ padding:0;
 }
 
 /* ? CUSTOM VARIABLES */
 
-html, body{
+:root {
+--dark-background: black;  
+--spanWord-color: #FF00A8;
+--light-text: white; 
+--dark-purple1: #3C0753; 
+--dark-purple2: #560A77; 
+--red-purple1:  #720455; 
+--red-purple2: #910A67; 
+--context-background: #030637; 
+}
+
+/* ? CUSTOM VARIABLES */
+
+html{
     margin:0;
     padding:0;
     background-color: var(--dark-background);
@@ -19,8 +29,70 @@ html, body{
 #canvas{
     margin:0 auto;
     display:block;
+    position: fixed;
+    z-index: -1;
 }
 
 svg{
   display:none;
 }
+
+/* body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+header {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#inicio {
+  width: 80%;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4.5vw;
+  font-weight: bolder;
+  color: var(--light-text);
+  text-align: center;
+}
+
+.word-anime {
+  color: var(--spanWord-color); 
+}
+
+.CV {
+  width: 194px;
+  height: 62px;
+  background-color: var(--dark-purple2);
+  border: solid 5px var(--dark-purple1);
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; 
+}
+
+.CV:hover {
+  transform: scale(1.1);
+}
+
+.CV a {
+  color: var(--light-text);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  padding: 17px 29px;
+  border-radius: 50px; 
+}
+

@@ -3,7 +3,7 @@
  */
 const TWO_PI = Math.PI * 2;
 
-const darkBubble = "#560a77"; 
+const purpelBubble = "#560a77"; 
 
 /**
  * Application Class
@@ -194,7 +194,7 @@ class Circle {
      * @return void
      */
     render(context) {
-        context.fillStyle = darkBubble;
+        context.fillStyle = purpelBubble;
         context.beginPath();
         context.arc(this.position.x, this.position.y, this.size, 0, TWO_PI);
         context.fill();
