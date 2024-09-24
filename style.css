@@ -22,16 +22,16 @@
 html{
     margin:0;
     padding:0;
-    background-color: var(--dark-background);
+    /* background-color: var(--dark-background); */
 
 }
 
-#canvas{
+/* #canvas{
     margin:0 auto;
     display:block;
     position: fixed;
     z-index: -1;
-}
+} */
 
 svg{
   display:none;
