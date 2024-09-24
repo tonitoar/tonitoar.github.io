@@ -39,8 +39,8 @@ svg{
 
 /* body {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 } */
 
 header {
@@ -95,5 +95,42 @@ h1 {
   text-align: center;
   padding: 17px 29px;
   border-radius: 50px; 
+}
+
+nav {
+  background-color: var(--context-background);
+  width: 80%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  border-radius: 25px;
+  /* position: fixed;
+  z-index: 1; */
+}
+
+nav ul {
+  width: 70%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  
+}
+
+/* nav li {
+  padding: 5px;
+} */
+
+nav a {
+  color: var(--light-text);
+  text-decoration: none;
+  font-size: 1.3rem;
+  background-color: var(--red-purple2);
+  border: solid 3px var(--red-purple1);
+  padding: 5px 30px;
+  border-radius: 25px;
 }
 
