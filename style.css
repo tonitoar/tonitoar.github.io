@@ -1,5 +1,5 @@
 * {
- border: 1px solid red; 
+ /* border: 1px solid red;  */
  margin:0;
  padding:0;
 }
@@ -100,7 +100,7 @@ h1 {
 
 nav {
   background-color: var(--context-background);
-  width: 80%;
+  width: 70%;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -138,38 +138,44 @@ nav a {
 main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #About {
-  margin-top: 100px;
-  width: 90%;
+  margin: 100px 0px;
+  width: 85%;
   height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* TODO background opacity + Z-INDEX */
+  /* ! SEMPRE AQUESTES PROPIETATS */
   position: relative;
+  /* ! SEMPRE AQUESTES PROPIETATS */
 }
 
-/* TODO background opacity */
+/* TODO background opacity + Z-INDEX */
 
 #About::before {
   content: "";
-  content: '';
+  /* ! SEMPRE AQUESTES PROPIETATS */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  /* ! SEMPRE AQUESTES PROPIETATS */
   background-color: var(--context-background);
   border-radius: 10px;
-  opacity: 0.95; 
+  opacity: 0.9; 
   z-index: 1; 
 }
 
 #About article {
-  width: 80%;
+  width: 90%;
   height: auto;
-  margin: 20px;
+  margin: 50px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,14 +187,14 @@ main {
 h2 {
   color: var(--h2-color); 
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: bolder;
   position: relative;
   display: inline-block;
   margin-bottom: 20px;
 }
 
 /* TODO text underline */
-h2::after {
+#About h2::after {
   content: "";
   position: absolute;
   left: 27px; 
@@ -196,12 +202,12 @@ h2::after {
   width: 165px;
   height: 12px; 
   background-color: var(--red-purple2); 
-  opacity: 0.35;
+  opacity: 0.4;
 }
 
 .intro {
-  width: 95%;
-  height: 300px;
+  width: 98%;
+  height: 400px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -211,13 +217,13 @@ h2::after {
 
 .border-container {
   position: relative; 
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   border: 4px solid var(--dark-purple2); 
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(-15deg); 
+  transform: rotate(-10deg); 
   border-radius: 15%; 
   overflow: hidden; 
 }
@@ -225,12 +231,12 @@ h2::after {
 
 .photo {
   display: block;
-  transform: rotate(15deg);
-  width: 130%;
-  height: 100%;
+  transform: rotate(12deg);
+  width: 128%;
+  height: auto;
   position: relative;
-  right: 50px;
-  top: 10px
+  top: 15px;
+  right: 15px;
 }
 
 .info {
@@ -253,13 +259,179 @@ h2::after {
 
 
 .social-media {
-  width: 30%;
+  width: 20%;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.social-media a {
+  width: auto;
+  height: 2vw;
+}
+
 .social-media img {
-  width: 40px;
+  width: 2vw;
   height: auto;
+}
+
+/* TODO changing IMAGE by :hover > content: url() */
+.github:hover {
+  content: url(/images/GitHubIcon.png);
+  width: 2.5vw;
+  height: auto;
+  position: relative;
+  bottom: 3px;
+  left: 4px; 
+}
+
+.linkedin:hover {
+  content: url(/images/LinkedinIcon.png); 
+  width: 2vw;
+  height: auto;
+}
+
+#Skills {
+  margin: 100px 0px;
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#Skills::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--context-background);
+  border-radius: 10px;
+  opacity: 0.9; 
+  z-index: 1; 
+}
+
+#Skills article {
+  width: 90%;
+  height: auto;
+  margin: 50px 30px;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; 
+}
+
+#Skills h2::after {
+  content: "";
+  position: absolute;
+  left: 21px; 
+  top: 23px;
+  width: 115px;
+  height: 12px; 
+  background-color: var(--red-purple2); 
+  opacity: 0.4;
+}
+
+.cards {
+  width: 90%; 
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 100px; 
+  padding: 30px;
+  margin: 25px 0px;
+}
+
+.javascript, .html, 
+.css, .react, .node,
+.express, .mongodb, .git {
+  background-color: var(--dark-purple1);
+  border-radius: 20px;
+  width: auto;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px 15px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.javascript::before, .html::before, 
+.css::before, .react::before, .node::before,
+.express::before, .mongodb::before, .git::before{
+  content:""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  z-index: 3; 
+  pointer-events: none; 
+}
+
+.javascript:hover::before, .html:hover::before, 
+.css:hover::before, .react:hover::before, .node:hover::before,
+.express:hover::before, .mongodb:hover::before, .git:hover::before {
+  opacity: 0; 
+}
+
+.card-opacity {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+  z-index: 2;
+  padding: 30px 20px 10px;
+}
+
+.card-opacity::before {
+ content: "";
+ position: absolute;
+ bottom: 0; 
+ left: 0;
+ width: 95%;
+ height: 91%;
+ background-color: lightgrey;
+ border: 4px solid gray; 
+ border-radius: 20px;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+.cards img {
+  width: 95px;
+  height: auto;
+}
+
+.react img {
+  height: 95px;
+  width: 100px; 
+}
+
+.cards p,
+.cards h3 {
+  color: var(--light-text);
+  text-align: center;
+}
+
+.cards p {
+  font-size: 1.25rem;
+}
+
+.cards h3 {
+  font-size: 1.3rem;
 }
