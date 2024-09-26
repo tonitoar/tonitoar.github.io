@@ -341,8 +341,10 @@ h2 {
   width: 90%; 
   height: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 100px; 
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 50px 100px; 
   padding: 30px;
   margin: 25px 0px;
 }
@@ -513,3 +515,21 @@ cursor: pointer;
   border-radius: 15px;
   
   }
+
+.project-img {
+  width: 70%;
+  height: auto;
+  margin: 25px 0px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px, 0.25fr));
+  gap: 0px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.project-img img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
