@@ -376,7 +376,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92));
+  background: linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.97));
   z-index: 3; 
   pointer-events: none; 
 }
@@ -496,40 +496,44 @@ h2 {
   align-items: center;
 }
 
+/*! border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
+
 .project-nav li {
 color: var(--light-text); 
 font-size: 1.2rem;
 width: 180px;
 height: 35px; 
-/* border: 1px solid white; */
+border: 1px solid transparent;
 text-align: center;
 display: flex;
 justify-content: center;
 align-items: center;
 cursor: pointer;
+transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
 }
 
-.project-nav li:hover {
+/*! class .active ve donat per Javascript. NO HTML! */
+.project-nav li:hover,
+.project-nav li.active {
   background-color: var(--red-purple1);
-  border: 1px solid white;
+  border-color: white;
   border-radius: 15px;
-  
   }
 
 .project-img {
   width: 70%;
   height: auto;
   margin: 25px 0px;
-  padding: 30px;
+  padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px, 0.25fr));
-  gap: 0px; 
+  gap: 20px; 
   justify-content: center;
   align-items: center;
 }
 
 .project-img img {
-  width: 250px;
-  height: 250px;
+  width: 270px;
+  height: 270px;
   object-fit: cover;
 }
