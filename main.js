@@ -273,28 +273,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const navItems = document.querySelectorAll(".project-nav ul li");
-  const images = document.querySelectorAll(".project-img .project-item");
+  const images = document.querySelectorAll(".project-container .project-item");
 
   const displayImages = (filter) => {
     images.forEach((img) => {
-      const category = img.getAttribute("data-category");
+      const category = img.querySelector("img").getAttribute("data-category"); // Get data-category from the img tag inside .project-item
       if (filter === "all" || filter === category) {
-        img.style.display = "block";
+        img.style.display = "block"; // Show the project item
       } else {
-        img.style.display = "none";
+        img.style.display = "none"; // Hide the project item
       }
     });
   };
 
+  // Initially display all images
   displayImages("all");
 
+  // Add click event listeners to filter items
   navItems.forEach((item) => {
     item.addEventListener("click", () => {
+      // Remove 'active' class from all nav items
+      navItems.forEach((nav) => nav.classList.remove("active"));
+
+      // Add 'active' class to the clicked nav item
+      item.classList.add("active");
+
+      // Get the filter from the clicked item and display the filtered images
       const filter = item.getAttribute("data-filter");
       displayImages(filter);
     });
   });
 });
+
 
 //! PROJECT NAV-BAR SELECTOR "FILTER"
 
@@ -305,12 +315,86 @@ document.addEventListener("DOMContentLoaded", () => {
 
   navBar.forEach((button) => {
     button.addEventListener("click", function () {
-      // Remove 'active' class from all buttons
+      //* Remove 'active' class from all buttons
       navBar.forEach((btn) => btn.classList.remove("active"));
-      // Add 'active' class to the clicked button
+      //* Add 'active' class to the clicked button
       this.classList.add("active");
     });
   });
 });
 
 //! PROJECT NAV-BAR SELECTOR "ACTIVE"
+
+//! IMAGES PROJECT :HOVER TO SHOW DESCRIPTION
+
+//* Array of object for the info of each project image
+
+document.addEventListener("DOMContentLoaded", () => {
+  const contentData = [
+    {
+      title: "Bufet Argilés Bertran",
+      description: "Law firm web page",
+      techTools: "HTML / CSS",
+    },
+    {
+      title: "Portfolio 1.0",
+      description: "Personal Web Developer Portfolio",
+      techTools: "JS / HTML / CSS",
+    },
+    {
+      title: "Phantom Runner",
+      description: "2D Game",
+      techTools: "JS / HTML / CSS",
+    },
+  ];
+
+  const projectUrls = [
+    "https://www.bufetargiles.com",
+    "https://github.com/tonitoar/tonitoar.github.io",
+    "https://github.com/tonitoar/Phantom-Runner",
+  ];
+
+  const projectItems = document.querySelectorAll(".project-item");
+
+  projectItems.forEach((item, index) => {
+    // Crear la descripción que aparece al hacer hover
+    const hoverDescription = document.createElement("div");
+    hoverDescription.classList.add("hover-description");
+
+    const title = document.createElement("h3");
+    title.innerText = contentData[index].title;
+
+    const description = document.createElement("p");
+    description.innerText = contentData[index].description;
+
+    const techTools = document.createElement("h4");
+    techTools.innerText = contentData[index].techTools;
+
+    const button = document.createElement("button");
+    button.innerHTML = "LEARN MORE";
+
+    // Set the onclick event to open the URL in a new tab (target="_blank")
+    button.onclick = () => {
+      window.open(projectUrls[index], "_blank"); // Opens in a new tab
+  };
+
+    hoverDescription.appendChild(title);
+    hoverDescription.appendChild(description);
+    hoverDescription.appendChild(techTools);
+    hoverDescription.appendChild(button);
+
+    item.appendChild(hoverDescription); // Añadir la descripción al contenedor de cada imagen
+
+    // Mostrar la descripción al hacer hover
+    item.addEventListener("mouseover", () => {
+      hoverDescription.style.display = "flex";
+    });
+
+    // Ocultar la descripción al quitar el hover
+    item.addEventListener("mouseout", () => {
+      hoverDescription.style.display = "none";
+    });
+  });
+});
+
+//! IMAGES PROJECT :HOVER TO SHOW DESCRIPTION
