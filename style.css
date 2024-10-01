@@ -121,10 +121,6 @@ nav ul {
   
 }
 
-/* nav li {
-  padding: 5px;
-} */
-
 nav a {
   color: var(--light-text);
   text-decoration: none;
@@ -193,7 +189,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* TODO text underline */
+/* TODO crear text underline */
 #About h2::after {
   content: "";
   position: absolute;
@@ -246,8 +242,6 @@ h2 {
   align-items: center;
   width: 40%;
   height: 200px;
-  /* position: relative;
-  left: 80px; */
 }
 
 .info p {
@@ -276,7 +270,7 @@ h2 {
   height: auto;
 }
 
-/* TODO changing IMAGE by :hover > content: url() */
+/* TODO changing IMAGE by :hover => content: url() */
 .github:hover {
   content: url(/images/GitHubIcon.png);
   width: 2.5vw;
@@ -376,7 +370,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.97), rgba(0, 0, 0, 0.97));
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
   z-index: 3; 
   pointer-events: none; 
 }
@@ -496,8 +490,7 @@ h2 {
   align-items: center;
 }
 
-/*! border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
-
+/*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
 .project-nav li {
 color: var(--light-text); 
 font-size: 1.2rem;
@@ -512,7 +505,7 @@ cursor: pointer;
 transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
 }
 
-/*! class .active ve donat per Javascript. NO HTML! */
+/*TODO  class .active ve donat per Javascript. NO HTML! */
 .project-nav li:hover,
 .project-nav li.active {
   background-color: var(--red-purple1);
@@ -532,7 +525,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   align-items: center;
 }
 
-/* ! IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
+/*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
 .project-item {
   width: 270px;
   height: 270px;
@@ -545,7 +538,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   object-fit: cover;
 }
 
-
+/* TODO div class="hover-description" creat per JS */
 .hover-description {
   position: absolute;
   top: 0;
