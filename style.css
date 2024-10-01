@@ -323,7 +323,7 @@ h2 {
 #Skills h2::after {
   content: "";
   position: absolute;
-  left: 21px; 
+  left: 22px; 
   top: 23px;
   width: 115px;
   height: 12px; 
@@ -469,7 +469,7 @@ h2 {
 #Projects h2::after {
   content: "";
   position: absolute;
-  left: 21px; 
+  left: 23px; 
   top: 23px;
   width: 165px;
   height: 12px; 
@@ -583,3 +583,200 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
  color: white;
 }
 
+#Contact {
+  margin: 100px 0px;
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#Contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--context-background);
+  border-radius: 10px;
+  opacity: 0.9; 
+  z-index: 1; 
+}
+
+#Contact article {
+  width: 90%;
+  height: auto;
+  margin: 50px 30px;
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2; 
+}
+
+#Contact h2::after {
+  content: "";
+  position: absolute;
+  left: 25px; 
+  top: 23px;
+  width: 152px;
+  height: 12px; 
+  background-color: var(--red-purple2); 
+  opacity: 0.4;
+}
+
+.contact-form {
+  width: 45%;
+  height: auto;
+  padding: 20px 10px;
+  margin: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-purple1);
+  border: 3px solid var(--dark-purple2);
+  border-radius: 20px;
+}
+
+form {
+  width: 90%;
+  height: auto;
+  padding: 30px;
+  margin: 10px 20px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+form::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-purple2);
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.group-horizontal {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 3px 0px 3px 5px;
+}
+
+.group-horizontal::before {
+  content: "";
+  position: absolute;
+  top: -2px; 
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+ border: 2px solid gray;
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.group-vertical {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  position: relative;
+  padding: 3px 0px 3px 5px;
+}
+
+.group-vertical::before {
+  content: "";
+  position: absolute;
+  top: -2px; 
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  background-color: lightgrey;
+ border: 2px solid gray;
+  border-radius: 5px;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+form label {
+  color: white;
+  font-size: 1.05rem;
+  margin-left: 5px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+label[for="message"] {
+  margin-top: 10px;
+}
+
+form input {
+  width: 250px;
+  height: 15px;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+
+form select {
+  height: 30px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+form textarea {
+  width: 87.7%; 
+  resize: none; 
+  height: 450px;
+  margin: 20px 0px 0px 10px;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+button[type="submit"] {
+  width: 135px;
+  height: 45px;
+  font-size: 0.95rem;
+  font-weight: 550;
+  margin: 15px auto;
+  background-color: var(--red-purple2);
+  color: var(--light-text);
+  border: 3px solid var(--red-purple1); 
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /*! instead of "all" => "transform" because qe have 2 differents animations */
+}
+
+button[type="submit"]:hover {
+  animation: shake 0.95s infinite; /*! Shake animation on hover */
+}
+
+/*! Keyframes for the shake animation (X,Y) and scale*/
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0, 0) scale(1.06); 
+  }
+  25% {
+    transform: translate(-5px, -3px) scale(1.06); 
+  }
+  50% {
+    transform: translate(5px, 3px) scale(1.06); 
+  }
+  75% {
+    transform: translate(-5px, 3px) scale(1.06); 
+  }
+}
