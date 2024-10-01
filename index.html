@@ -8,7 +8,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    <script src="main.js" de></script>
+    <!-- ! "defer" => carga 1er HTML i despres executa JS -->
+    <script src="main.js" defer></script>
     <title>Portfolio 1.0</title>
 
 </head>
@@ -146,16 +147,32 @@
                 </div>
             </article>
         </section>
-        <!-- <section id="Contact">
+        <section id="Contact">
             <article>
                 <h2>CONTACT</h2>
-                <form action="">
-                    <input type="text" value="Name"></input>
-                    <input type="text" value="Email"></input>
-                    <input type="text" value="Message"></input>
+                <div class="contact-form">
+                    <form id="email-content">
+                        <label for="from_email">Your Name:</label>
+                        <input type="text" id="from_name" name="from_name" required><br><br>
+
+                        <label for="from_email">Your Email:</label>
+                        <input type="text" id="from_email" name="from_email" required><br><br>
+
+                        <label for="subject_type">Subject:</label>
+                        <select name="subject" id="subject_type" required>
+                        <option value="Business">Business</option>
+                        <option value="Recruiter">Recruiter</option>
+                        </select><br><br>
+
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" required></textarea><br><br>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
                 </form>
             </article>
-        </section> -->
+        </section>
     </main>
     <!-- <footer>
         <div class="footer">

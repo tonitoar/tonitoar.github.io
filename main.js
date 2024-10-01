@@ -237,7 +237,6 @@ window.onload = function () {
 
 //! WORD ANIMATED
 
-document.addEventListener("DOMContentLoaded", function () {
   // Wrap every letter in a span
   var textWrapper = document.querySelector(".word-anime");
   if (textWrapper) {
@@ -265,13 +264,11 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: 1000,
       });
   }
-});
 
 //! WORD ANIMATED
 
 //! PROJECT NAV-BAR SELECTOR "FILTER"
 
-document.addEventListener("DOMContentLoaded", () => {
   const navItems = document.querySelectorAll(".project-nav ul li");
   const images = document.querySelectorAll(".project-container .project-item");
 
@@ -303,14 +300,13 @@ document.addEventListener("DOMContentLoaded", () => {
       displayImages(filter);
     });
   });
-});
+
 
 
 //! PROJECT NAV-BAR SELECTOR "FILTER"
 
 //! PROJECT NAV-BAR SELECTOR "ACTIVE"
 
-document.addEventListener("DOMContentLoaded", () => {
   const navBar = document.querySelectorAll(".project-nav li");
 
   navBar.forEach((button) => {
@@ -321,7 +317,6 @@ document.addEventListener("DOMContentLoaded", () => {
       this.classList.add("active");
     });
   });
-});
 
 //! PROJECT NAV-BAR SELECTOR "ACTIVE"
 
@@ -329,7 +324,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //* Array of object for the info of each project image
 
-document.addEventListener("DOMContentLoaded", () => {
   const contentData = [
     {
       title: "Bufet Argilés Bertran",
@@ -395,6 +389,6 @@ document.addEventListener("DOMContentLoaded", () => {
       hoverDescription.style.display = "none";
     });
   });
-});
+
 
 //! IMAGES PROJECT :HOVER TO SHOW DESCRIPTION
