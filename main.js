@@ -1,4 +1,3 @@
-import anime from 'animejs/lib/anime.es.js'; // Import Anime.js if you plan to use it
 import emailjs from '@emailjs/browser';
 
 //! 3D-BACKGROUND
