@@ -397,7 +397,6 @@ window.onload = function () {
 
 //! CONNECT FORM TO GMAIL
 
-import { emailjsData } from "./env.js";
 
 const userID = '6JDX8MOmScLQ9F5XC';
 const serviceID = 'service_portfolio';
