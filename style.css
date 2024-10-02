@@ -762,7 +762,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  animation: shake 0.95s infinite; /*! Shake animation on hover */
+  animation: shake 0.75s infinite; /*! Shake animation on hover */
 }
 
 /*! Keyframes for the shake animation (X,Y) and scale*/
