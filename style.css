@@ -768,15 +768,15 @@ button[type="submit"]:hover {
 /*! Keyframes for the shake animation (X,Y) and scale*/
 @keyframes shake {
   0%, 100% {
-    transform: translate(0, 0) scale(1.06); 
+    transform: translate(0, 0) scale(1.07); 
   }
   25% {
-    transform: translate(-5px, -3px) scale(1.06); 
+    transform: translate(-5px, -3px) scale(1.07); 
   }
   50% {
-    transform: translate(5px, 3px) scale(1.06); 
+    transform: translate(5px, 3px) scale(1.07); 
   }
   75% {
-    transform: translate(-5px, 3px) scale(1.06); 
+    transform: translate(-5px, 3px) scale(1.07); 
   }
 }

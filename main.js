@@ -392,3 +392,30 @@ window.onload = function () {
 
 
 //! IMAGES PROJECT :HOVER TO SHOW DESCRIPTION
+
+
+
+//! CONNECT FORM TO GMAIL
+
+import { emailjsData } from "./env.js";
+
+const userID = emailjsData.EMAILJS_USER_ID;
+const serviceID = emailjsData.EMAILJS_SERVICE_ID;
+const templateID = emailjsData.EMAILJS_TEMPLATE_ID;
+
+emailjs.init(userID); 
+
+const form = document.getElementById("email-content"); 
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault(); //* Prevent default form submission
+
+  emailjs.sendForm(serviceID, templateID, this)
+  .then(function(response) {
+    console.log("Success!", response.status, response.text);
+    alert("Message sent successfully!");
+  }, function(error) {
+    console.log("Failed...", error);
+    alert("Failed to send message");
+  });
+}); 
