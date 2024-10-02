@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <!-- ! "defer" => carga 1er HTML i despres executa JS -->
+    <title>Portfolio 1.0</title>
+
+  <script type="module" crossorigin src="/tonitoar.github.io/assets/index-BxyTy062.js"></script>
+  <link rel="stylesheet" crossorigin href="/tonitoar.github.io/assets/index-sGT0Dblu.css">
+</head>
+
+<body>
+    <!-- * 3D BACKGROUND -->
+    <canvas id="canvas">Your browser doesn't support canvas</canvas>
+    <!-- * 3D BACKGROUND -->
+
+    <header>
+        <section id="inicio">
+            <h1>WELCOME TO MY <span class="word-anime">WEB DEV</span> PORTFOLIO </h1>
+            <button class="CV"><a href="/docs/CV/CV Toni Torredemer.pdf"
+                    download="Toni_Torredemer_Argiles_CV.pdf">Download CV</a></button>
+        </section>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="About">
+            <article>
+                <h2>ABOUT ME</h2>
+                <div class="intro">
+                    <div class="border-container">
+                        <img src="/tonitoar.github.io/assets/IMG-20230620-WA0008-DiVWbHq3.jpg" alt="personalPhoto" class="photo">
+                    </div>
+                    <div class="info">
+                        <p>fasdfsdfasdfasdfsdfadsfasdfasdfas</p>
+                        <div class="social-media">
+                            <a href="https://www.linkedin.com/in/toni-torredemer-argilés-61b444151/"
+                                target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC50lEQVR4nO1aTWgTURB+/pXMpDVWL209eBI96EkR9O5J0VP0qASdSQIehP6AByNYBNEm7yVByNWjIr0JghWxCGIPehIR8aBYUKT0RzSiNvI2L3W1ZvusWfKC+0EOGWbz5tv53Z0IESFChFVBYvqwBJpQyB8Vcq2dH4m0oG0pIh36OxJAo+02XjUjBXzR2hPmLlQV8mAeqV+0GXmk/iLSkLGpZuUZCXzPsB8UjkEiD9e9QhMWyrSglcuY7ROOoYzZPu8mA8+vqNyIReEolK19/wWRQoz2S+DbEuidAp5WyOMynt4VhsGhEfH6CvK35TWePyvM7BEdQwToqakYo4XEiU1lke3WNd0k392wDA+DyJyWVwThku7mMxsNuTnROaHF943Rlyq9lPBIAF8w+o/CMrzlRHQeKKRPf5iDqiWgvaKTqpbs4u0S6LpCei2R3nZk1XIFqgU58jBgKp200akI2lCI0XGJfEsiv9FhKYFnvYoIfLXYTTtDJ7LSeG2jo4CeB+vQV4WUz4nc+tCJBMmtbgLQM4V0qhzLbsuJZNflLakeFTt9QCKXFfIXozeeE7m1zhHR3V8iLyrk880M1CgC75PA7413RtwjApRUMT7W+H5DJNc1O1/G+WC9X/Gs7ldOEdHQY41CKkmgD2asmZZAV3RoLSfOd0wYZpwioscaBfzEl9TffzZUnhoTZ8GvX0Q+aZrtTaeISKRzhsCLUpx266rk5QPyK0Nm2K9f6EnvMPKXjhHhKS0vQPrIL9cCHzXXPPbLK3qWM3niFhGgGS2/lsj0+uX6e91gmvHLa0KsMR5ZdIpI0OH/cl4gIiIi8kgtCq0gRDkiohypRTkShDCfEIPOs71GtaAhTjY7TCI9sNVZze+2lIgrUNZEgOe1ogsrt98xBrzV+hWt2eTqPd2QcAwKacR69aYXjSY+q/qBpwSpAdFmlCA1YEh4b1ms19RL64JOXk83oFlrFzaWox35h4EIESKIBn4AuYBLupVKyBkAAAAASUVORK5CYII=" alt="Linkedin"
+                                    class="linkedin"></a>
+                            <a href="https://github.com/tonitoar" target="_blank"><img
+                                    src="data:image/png;base64,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" alt="GitHub" class="github"></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="Skills">
+            <article>
+                <h2>SKILLS</h2>
+                <div class="cards">
+                    <div class="javascript">
+                        <div class="card-opacity">
+                            <img src="/tonitoar.github.io/assets/js_5968292-Bu6ZFjaT.png" alt="javascript">
+                            <p>60%</p>
+                        </div>
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+                    <div class="html">
+                        <div class="card-opacity">
+                            <img src="/tonitoar.github.io/assets/html-5_5968267-B08JmjYx.png" alt="html">
+                            <p>70%</p>
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="css">
+                        <div class="card-opacity">
+                            <img src="/tonitoar.github.io/assets/css-3_5968242-Bf40O0Fw.png" alt="css">
+                            <p>70%</p>
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="react">
+                        <div class="card-opacity">
+                            <img src="/tonitoar.github.io/assets/react-javascript-js-framework-facebook.256x227%20(1)-D3kHt8DA.png" alt="react">
+                            <p>50%</p>
+                        </div>
+                        <h3>REACT</h3>
+                    </div>
+                    <div class="node">
+                        <div class="card-opacity">
+                            <img src="/tonitoar.github.io/assets/Node.js-Dn9FxKf-.png" alt="node">
+                            <p>50%</p>
+                        </div>
+                        <h3>NODE.JS</h3>
+                    </div>
+                    <div class="express">
+                        <div class="card-opacity">
+                            <img src="/tonitoar.github.io/assets/icons8-express-js-240-D45nIRW1.png" alt="express.js">
+                            <p>50%</p>
+                        </div>
+                        <h3>EXPRESS.JS</h3>
+                    </div>
+                    <div class="mongodb">
+                        <div class="card-opacity">
+                            <img src="/tonitoar.github.io/assets/MongoDB-CzrTCLas.png" alt="mongodb">
+                            <p>50%</p>
+                        </div>
+                        <h3>MONGODB</h3>
+                    </div>
+                    <div class="git">
+                        <div class="card-opacity">
+                            <img src="data:image/png;base64,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" alt="git">
+                            <p>50%</p>
+                        </div>
+                        <h3>GIT</h3>
+                    </div>
+            </article>
+        </section>
+        <section id="Projects">
+            <article>
+                <h2>PROJECTS</h2>
+                <div class="project-nav">
+                    <ul>
+                        <!-- ! data-filter serveix per filtrar amb relacio al valor de data-category -->
+                        <!-- ! class="active" per tenir activat per default -->
+                        <li data-filter="all" class="active">All</li>
+                        <li data-filter="real-life">Real-Life Project</li>
+                        <li data-filter="practice">Practice Project</li>
+                    </ul>
+                </div>
+                <div class="project-container">
+                    <!--! cada imatge amb el seu div personal per poder fer el hover-description individual sobre a cadascun -->
+                    <div class="project-item">
+                        <!-- ! data-category serveix per filtrar amb relacio al valor de data-filter -->
+                        <img src="/tonitoar.github.io/assets/Bufet_Argiles_Bertran-CHaWKcod.png" alt="Bufet Argilés Bertran"
+                            data-category="real-life" class="project-img">
+                    </div>
+                    <div class="project-item">
+                        <img src="/tonitoar.github.io/assets/Portfolio1.0-DVXSRekv.png" alt="Portfolio 1.0" data-category="practice"
+                            class="project-img">
+                    </div>
+                    <div class="project-item">
+                        <img src="/tonitoar.github.io/assets/Phantom_Runner-BSBERb33.png" alt="Phantom Runner" data-category="practice"
+                            class="project-img">
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="Contact">
+            <article>
+                <h2>CONTACT</h2>
+                <div class="contact-form">
+                    <form id="email-content">
+                        <div class="group-horizontal">
+                            <label for="from_email"> Name:</label>
+                            <input type="text" id="from_name" name="from_name" required><br><br>
+                        </div>
+
+                        <div class="group-horizontal">
+                            <label for="from_email"> Email:</label>
+                            <input type="email" id="from_email" name="from_email" required><br><br>
+                        </div>
+
+                        <div class="group-horizontal">
+                            <label for="subject_type">Subject:</label>
+                            <select name="subject" id="subject_type" required>
+                                <option value="Recruiter">Recruiter</option>
+                                <option value="Business">Business</option>
+                            </select><br><br>
+                        </div>
+                        <div class="group-vertical">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" required></textarea><br><br>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                </form>
+            </article>
+        </section>
+    </main>
+    <!-- <footer>
+        <div class="footer">
+            <p>@EdgeT0rr3</p>
+        </div>
+    </footer> -->
+
+
+</body>
+
+</html>
+
+<!-- * Created by EdgeT0rr3 -->

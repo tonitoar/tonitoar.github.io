@@ -1,5 +1,14 @@
 {
   "dependencies": {
-    "@emailjs/browser": "^4.4.1"
-  }
+    "@emailjs/browser": "^4.4.1",
+    "vite": "^5.4.8"
+  },
+
+  "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "serve": "vite preview"
 }
+
+}
+
