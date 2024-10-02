@@ -404,7 +404,7 @@ const templateID = 'template_portfolio';
 
 emailjs.init(userID); 
 
-const form = document.getElementById("email-content"); 
+const form = document.getElementById("email-content");
 
 form.addEventListener("submit", function(event) {
   event.preventDefault(); //* Prevent default form submission

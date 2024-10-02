@@ -762,21 +762,22 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  animation: shake 0.75s infinite; /*! Shake animation on hover */
+  animation: shake 0.75s steps(5) 2; /*! Shake animation on hover */
 }
+
 
 /*! Keyframes for the shake animation (X,Y) and scale*/
 @keyframes shake {
   0%, 100% {
-    transform: translate(0, 0) scale(1.07); 
+    transform: translate(0, 0) scale(1.15); 
   }
   25% {
-    transform: translate(-5px, -3px) scale(1.07); 
+    transform: translate(-5px, -3px) scale(1.15); 
   }
   50% {
-    transform: translate(5px, 3px) scale(1.07); 
+    transform: translate(5px, 3px) scale(1.15); 
   }
   75% {
-    transform: translate(-5px, 3px) scale(1.07); 
+    transform: translate(-5px, 3px) scale(1.15); 
   }
 }
