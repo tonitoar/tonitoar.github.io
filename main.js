@@ -396,36 +396,26 @@ window.onload = function () {
 
 
 
-//! USAR VITE PARA PODER USAR DATOS DE.ENV (FRONTEND ONLY)
-//TODO CONTACT FORM CONNECTED TO PERSONAL GMAIL
-
-// const userID = import.meta.env.VITE_EMAILJS_USER_ID; 
-// const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID; 
-// const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID; 
-
-// console.log("User ID:", userID);
-// console.log("Service ID:", serviceID);
-// console.log("Template ID:", templateID);
-
-import { emailjsConfig } from './env-config.js';
+//! CONNECT FORM TO GMAIL
 
 
-emailjs.init(emailjsConfig.userID); 
+const userID = '6JDX8MOmScLQ9F5XC';
+const serviceID = 'service_portfolio';
+const templateID = 'template_portfolio';
 
-const form = document.getElementById("email-content"); 
+emailjs.init(userID); 
+
+const form = document.getElementById("email-content");
 
 form.addEventListener("submit", function(event) {
-  event.preventDefault(); //*Prevent default form submission
+  event.preventDefault(); //* Prevent default form submission
 
-  emailjs.sendForm(emailjsConfig.serviceID, emailjsConfig.templateID, this)
+  emailjs.sendForm(serviceID, templateID, this)
   .then(function(response) {
-    console.log("Success!", response.status, response.text); 
-    alert("Message sent successfully!"); 
+    console.log("Success!", response.status, response.text);
+    alert("Message sent successfully!");
   }, function(error) {
     console.log("Failed...", error);
-    alert("Failed to send message"); 
+    alert("Failed to send message");
   });
 }); 
-
-//TODO CONTACT FORM CONNECTED TO PERSONAL GMAIL
-//! USAR VITE PARA PODER USAR DATOS DE.ENV (FRONTEND ONLY)
