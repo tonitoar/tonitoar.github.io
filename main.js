@@ -399,9 +399,9 @@ window.onload = function () {
 
 import { emailjsData } from "./env.js";
 
-const userID = emailjsData.EMAILJS_USER_ID;
-const serviceID = emailjsData.EMAILJS_SERVICE_ID;
-const templateID = emailjsData.EMAILJS_TEMPLATE_ID;
+const userID = '6JDX8MOmScLQ9F5XC';
+const serviceID = 'service_portfolio';
+const templateID = 'template_portfolio';
 
 emailjs.init(userID); 
 
