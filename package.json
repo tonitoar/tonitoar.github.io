@@ -1,14 +1,12 @@
 {
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "animejs": "^3.2.2",
     "vite": "^5.4.8"
   },
-
   "scripts": {
-  "dev": "vite",
-  "build": "vite build",
-  "serve": "vite preview"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  }
 }
-
-}
-
