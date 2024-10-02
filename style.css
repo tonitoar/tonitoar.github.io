@@ -273,7 +273,7 @@ h2 {
 /* TODO changing IMAGE by :hover => content: url() */
 .github:hover {
   content: url(/images/GitHubIcon.png);
-  width: 2.5vw;
+  width: 2.4vw;
   height: auto;
   position: relative;
   bottom: 3px;
@@ -780,4 +780,114 @@ button[type="submit"]:hover {
   75% {
     transform: translate(-5px, 3px) scale(1.15); 
   }
+}
+
+footer {
+  background-color: black;
+  color: var(--light-text);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid white;
+}
+
+.footer-content {
+ width: 65%; 
+ height: auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: baseline;
+ padding: 30px;
+}
+
+
+.footer-left {
+  /* width: 15%; */
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.footer-center {
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.footer-right {
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: 100px; 
+}
+
+blockquote {
+  font-style: italic;
+  text-align: center;
+  border-left: 4px solid #fff;
+  padding: 10px; 
+}
+
+.footer-left p, 
+.footer-center p {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.social-media-footer {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-footer a {
+  width: auto;
+  height: 2vw;
+}
+
+.social-media-footer img {
+  /* width: 30px;  */
+  width: 2vw;
+  height: auto;
+}
+
+.github2:hover {
+  content: url(/images/GitHubIcon.png);
+  width: 2.4vw;
+  height: auto;
+  position: relative;
+  bottom: 3px;
+  left: 4px;
+}
+
+
+.footer-center ul {
+  margin: 15px 0px 0px 0px;
+  list-style: none;
+  height: 150px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+
+.footer-center ul li a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.footer-center ul li a:hover {
+    text-decoration: underline; 
+    text-underline-offset: 3px;
 }
