@@ -403,6 +403,11 @@ const userID = import.meta.env.VITE_EMAILJS_USER_ID;
 const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID; 
 const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID; 
 
+console.log("User ID:", userID);
+console.log("Service ID:", serviceID);
+console.log("Template ID:", templateID);
+
+
 emailjs.init(userID); 
 
 const form = document.getElementById("email-content"); 
