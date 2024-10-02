@@ -1,4 +1,3 @@
-import emailjs from '@emailjs/browser';
 
 //! 3D-BACKGROUND
 
