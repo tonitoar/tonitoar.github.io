@@ -7,7 +7,7 @@
 const TWO_PI = Math.PI * 2;
 
 // const purpelBubble = "#560a77";
-const purpelBubble = "#85182A";
+const purpelBubble = "#5F0000";
 
 /**
  * Application Class
@@ -269,20 +269,6 @@ window.onload = function () {
 
 //! WORD ANIMATED
 
-//! MENU NAV-BAR SELECTOR "ACTIVE"
-
-const menuNavBar = document.querySelectorAll("nav a");
-
-menuNavBar.forEach((button) => {
-  button.addEventListener("click", function () {
-    //* Remove 'active' class from all buttons
-    menuNavBar.forEach((btn) => btn.classList.remove("active1"));
-    //* Add 'active' class to the clicked button
-    this.classList.add("active1");
-  });
-});
-
-//! MENU NAV-BAR SELECTOR "ACTIVE"
 
 //! PROJECT NAV-BAR SELECTOR "FILTER"
 
@@ -329,9 +315,9 @@ menuNavBar.forEach((button) => {
   projectNavBAr.forEach((button) => {
     button.addEventListener("click", function () {
       //* Remove 'active' class from all buttons
-      projectNavBAr.forEach((btn) => btn.classList.remove("active2"));
+      projectNavBAr.forEach((btn) => btn.classList.remove("active"));
       //* Add 'active' class to the clicked button
-      this.classList.add("active2");
+      this.classList.add("active");
     });
   });
 
