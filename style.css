@@ -38,19 +38,12 @@ svg{
   display:none;
 }
 
-/* body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
-
 header {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 #inicio {
@@ -99,7 +92,7 @@ h1 {
 }
 
 nav {
-  background-color: var(--context-background);
+  background-color: var(--dark-background);
   width: 70%;
   height: 70px;
   display: flex;
@@ -107,8 +100,10 @@ nav {
   align-items: center;
   margin: 0 auto; 
   border-radius: 25px;
-  /* position: fixed;
-  z-index: 1; */
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 10px; /* When scrolled to this point, the nav will stick */
+  z-index: 100; /* Ensure it stays on top */
 }
 
 nav ul {
@@ -139,6 +134,7 @@ main {
 }
 
 #About {
+  scroll-margin-top: 140px;
   margin: 100px 0px;
   width: 85vw;
   height: auto;
@@ -287,6 +283,7 @@ h2 {
 }
 
 #Skills {
+  scroll-margin-top: 140px;
   margin: 100px 0px;
   width: 85vw;
   height: auto;
@@ -433,6 +430,7 @@ h2 {
 }
 
 #Projects {
+  scroll-margin-top: 140px;
   margin: 100px 0px;
   width: 85vw;
   height: auto;
@@ -584,6 +582,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 }
 
 #Contact {
+  scroll-margin-top: 140px;
   margin: 100px 0px;
   width: 85vw;
   height: auto;
@@ -783,7 +782,7 @@ button[type="submit"]:hover {
 }
 
 footer {
-  background-color: black;
+  background-color: var(--dark-background);
   color: var(--light-text);
   width: 100%;
   height: auto;
