@@ -6,7 +6,8 @@
  */
 const TWO_PI = Math.PI * 2;
 
-const purpelBubble = "#560a77";
+// const purpelBubble = "#560a77";
+const purpelBubble = "#85182A";
 
 /**
  * Application Class
@@ -268,6 +269,21 @@ window.onload = function () {
 
 //! WORD ANIMATED
 
+//! MENU NAV-BAR SELECTOR "ACTIVE"
+
+const menuNavBar = document.querySelectorAll("nav a");
+
+menuNavBar.forEach((button) => {
+  button.addEventListener("click", function () {
+    //* Remove 'active' class from all buttons
+    menuNavBar.forEach((btn) => btn.classList.remove("active1"));
+    //* Add 'active' class to the clicked button
+    this.classList.add("active1");
+  });
+});
+
+//! MENU NAV-BAR SELECTOR "ACTIVE"
+
 //! PROJECT NAV-BAR SELECTOR "FILTER"
 
   const navItems = document.querySelectorAll(".project-nav ul li");
@@ -308,14 +324,14 @@ window.onload = function () {
 
 //! PROJECT NAV-BAR SELECTOR "ACTIVE"
 
-  const navBar = document.querySelectorAll(".project-nav li");
+  const projectNavBAr = document.querySelectorAll(".project-nav li");
 
-  navBar.forEach((button) => {
+  projectNavBAr.forEach((button) => {
     button.addEventListener("click", function () {
       //* Remove 'active' class from all buttons
-      navBar.forEach((btn) => btn.classList.remove("active"));
+      projectNavBAr.forEach((btn) => btn.classList.remove("active2"));
       //* Add 'active' class to the clicked button
-      this.classList.add("active");
+      this.classList.add("active2");
     });
   });
 

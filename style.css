@@ -1,5 +1,5 @@
 * {
- /* border: 1px solid red;  */
+ /* border: 1px solid blue;  */
  margin:0;
  padding:0;
 }
@@ -8,14 +8,15 @@
 
 :root {
 --dark-background: black;  
---spanWord-color: #FF00A8;
+--spanWord-color: #ff0000;
 --light-text: white; 
---dark-purple1: #3C0753; 
---dark-purple2: #560A77; 
---red-purple1:  #720455; 
---red-purple2: #910A67; 
---h2-color: #BE1188;
---context-background: #030637; 
+--dark-purple1: #950101; 
+--dark-purple2: #7c0000; 
+--red-purple1:  #e30202; 
+--red-purple2: #b70101; 
+--h2-color: #e20000;
+--context-background: #4C0000 ; 
+--nav-bar-color: #250000; 
 }
 
 /* ? CUSTOM VARIABLES */
@@ -92,28 +93,34 @@ h1 {
 }
 
 nav {
-  background-color: var(--dark-background);
-  width: 70%;
+  
+  background-color: var(--nav-bar-color);
+  width: 75%;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto; 
+  margin: 85px auto 0px auto; 
   border-radius: 25px;
   position: -webkit-sticky; /* For Safari */
   position: sticky;
-  top: 10px; /* When scrolled to this point, the nav will stick */
+  top: 5px; /* When scrolled to this point, the nav will stick */
   z-index: 100; /* Ensure it stays on top */
 }
 
 nav ul {
-  width: 70%;
+  width: 75%;
   height: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
   align-items: center;
-  
+}
+
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav a {
@@ -121,10 +128,16 @@ nav a {
   text-decoration: none;
   font-size: 1.3rem;
   background-color: var(--red-purple2);
-  border: solid 3px var(--red-purple1);
-  padding: 5px 30px;
+  border: 3px solid var(--red-purple1);
+  padding: 7px 32px;
   border-radius: 25px;
 }
+
+nav a:hover,
+nav a.active1 {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  }
 
 main {
   display: flex;
@@ -135,8 +148,8 @@ main {
 
 #About {
   scroll-margin-top: 140px;
-  margin: 100px 0px;
-  width: 85vw;
+  margin: 85px 0px 100px 0px;
+  width: 90vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -160,7 +173,7 @@ main {
   /* ! SEMPRE AQUESTES PROPIETATS */
   background-color: var(--context-background);
   border-radius: 10px;
-  opacity: 0.9; 
+  opacity: 0.97;
   z-index: 1; 
 }
 
@@ -193,7 +206,7 @@ h2 {
   top: 23px;
   width: 165px;
   height: 12px; 
-  background-color: var(--red-purple2); 
+  background-color: var(--red-purple1); 
   opacity: 0.4;
 }
 
@@ -211,7 +224,7 @@ h2 {
   position: relative; 
   width: 270px;
   height: 270px;
-  border: 4px solid var(--dark-purple2); 
+  border: 4px solid var(--dark-purple1); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,7 +298,7 @@ h2 {
 #Skills {
   scroll-margin-top: 140px;
   margin: 100px 0px;
-  width: 85vw;
+  width: 90vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -302,7 +315,7 @@ h2 {
   height: 100%;
   background-color: var(--context-background);
   border-radius: 10px;
-  opacity: 0.9; 
+  opacity: 0.97;
   z-index: 1; 
 }
 
@@ -324,7 +337,7 @@ h2 {
   top: 23px;
   width: 115px;
   height: 12px; 
-  background-color: var(--red-purple2); 
+  background-color: var(--red-purple1); 
   opacity: 0.4;
 }
 
@@ -343,7 +356,7 @@ h2 {
 .javascript, .html, 
 .css, .react, .node,
 .express, .mongodb, .git {
-  background-color: var(--dark-purple1);
+  background-color: var(--dark-purple1); 
   border-radius: 20px;
   width: auto;
   height: 225px;
@@ -396,11 +409,12 @@ h2 {
  position: absolute;
  bottom: 0; 
  left: 0;
- width: 95%;
+ width: 96%;
  height: 91%;
  background-color: lightgrey;
  border: 4px solid gray; 
- border-radius: 20px;
+ /* border-radius: 20px; */
+ border-radius: 20px 20px 8.5px 8.5px;
  z-index: -1;
  opacity: 0.3;
 }
@@ -421,6 +435,11 @@ h2 {
   text-align: center;
 }
 
+.cards h3 {
+  position: relative;
+  bottom: 3px;
+}
+
 .cards p {
   font-size: 1.25rem;
 }
@@ -432,7 +451,7 @@ h2 {
 #Projects {
   scroll-margin-top: 140px;
   margin: 100px 0px;
-  width: 85vw;
+  width: 90vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -449,7 +468,7 @@ h2 {
   height: 100%;
   background-color: var(--context-background);
   border-radius: 10px;
-  opacity: 0.9; 
+  opacity: 0.97;
   z-index: 1; 
 }
 
@@ -471,7 +490,7 @@ h2 {
   top: 23px;
   width: 165px;
   height: 12px; 
-  background-color: var(--red-purple2); 
+  background-color: var(--red-purple1); 
   opacity: 0.4;
 }
 
@@ -494,7 +513,7 @@ color: var(--light-text);
 font-size: 1.2rem;
 width: 180px;
 height: 35px; 
-border: 1px solid transparent;
+border: 3px solid transparent;
 text-align: center;
 display: flex;
 justify-content: center;
@@ -505,20 +524,19 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 
 /*TODO  class .active ve donat per Javascript. NO HTML! */
 .project-nav li:hover,
-.project-nav li.active {
-  background-color: var(--red-purple1);
-  border-color: white;
+.project-nav li.active2 {
+  background-color: var(--red-purple2);
+  border-color: var(--red-purple1);
   border-radius: 15px;
   }
 
   .project-container {
-  width: 70%;
+  width: 69.68%;
   height: auto;
   margin: 25px 0px;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px, 0.25fr));
-  gap: 0px 21px; 
   justify-content: center;
   align-items: center;
 }
@@ -573,18 +591,18 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   font-size: 0.9rem;
   margin-top: 10px; 
   cursor: pointer;
-  border: solid 2.5px var(--dark-purple1);
+  border: 2.5px solid var(--red-purple2);
 }
 
 .hover-description button:hover {
- background-color: var(--dark-purple1);
+ background-color: var(--red-purple2);
  color: white;
 }
 
 #Contact {
   scroll-margin-top: 140px;
   margin: 100px 0px;
-  width: 85vw;
+  width: 90vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -601,7 +619,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   height: 100%;
   background-color: var(--context-background);
   border-radius: 10px;
-  opacity: 0.9; 
+  opacity: 0.97;
   z-index: 1; 
 }
 
@@ -623,7 +641,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   top: 23px;
   width: 152px;
   height: 12px; 
-  background-color: var(--red-purple2); 
+  background-color: var(--red-purple1); 
   opacity: 0.4;
 }
 
@@ -736,7 +754,7 @@ form select {
 }
 
 form textarea {
-  width: 25.5vw; 
+  width: 27.5vw; 
   resize: none; 
   height: 450px;
   margin: 20px 0px 0px 10px;
@@ -874,7 +892,7 @@ blockquote {
   margin: 15px 0px 0px 0px;
   list-style: none;
   height: 150px;
-  width: 60px;
+  width: 65px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
