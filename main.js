@@ -382,16 +382,26 @@ window.onload = function () {
 
     item.appendChild(hoverDescription); // Añadir la descripción al contenedor de cada imagen
 
-    // Mostrar la descripción al hacer hover
-    item.addEventListener("mouseover", () => {
+    //* Mostrar la descripción al entrar dintre container
+    item.addEventListener("mouseenter", () => {
       hoverDescription.style.display = "flex";
+      //*afegir animacio in
+      hoverDescription.setAttribute("transition-style", "in:square:center");
     });
 
-    // Ocultar la descripción al quitar el hover
-    item.addEventListener("mouseout", () => {
-      hoverDescription.style.display = "none";
+    //* Ocultar la descripción al surtir del container
+    item.addEventListener("mouseleave", () => {
+      // hoverDescription.style.display = "none";
+      hoverDescription.setAttribute("transition-style", "out:square:center"); // Set "out" animation
+    
+      // Optionally wait for the animation to complete before hiding
+      setTimeout(() => {
+        hoverDescription.style.display = "none";
+        hoverDescription.removeAttribute("transition-style");
+      }, 2500); // Match this with the duration of the out animation
     });
   });
+
 
 
 //! IMAGES PROJECT :HOVER TO SHOW DESCRIPTION
