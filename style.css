@@ -210,24 +210,24 @@ h2 {
 }
 
 .intro {
-  width: 98%;
+  width: 95%;
   height: 400px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px 0px;
+  padding: 15px 0px 20px;
   margin-bottom: 25px;
 }
 
 .border-container {
   position: relative; 
-  width: 270px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
   border: 5px solid var(--dark-red1); 
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: rotate(-10deg); 
+  transform: rotate(-9deg); 
   border-radius: 15%; 
   overflow: hidden; 
 }
@@ -235,8 +235,8 @@ h2 {
 
 .photo {
   display: block;
-  transform: rotate(12deg);
-  width: 128%;
+  transform: rotate(10deg);
+  width: 125%;
   height: auto;
   position: relative;
   top: 15px;
@@ -248,15 +248,24 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
-  height: 200px;
+  width: 50%;
+  height: 330px;
+  position: relative;
+  top: 20px; 
+}
+
+.info-text {
+  width: 95%;
+  padding: 10px;
+  margin-top: 5px;
 }
 
 .info p {
   color: var(--light-text); 
   width: 100%;
   height: auto;
-  text-align: center;
+  text-align: justify;
+  font-size: 1.2rem;
 }
 
 
@@ -529,12 +538,12 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   }
 
   .project-container {
-  width: 69.68%;
+  width: 70%;
   height: auto;
   margin: 25px 0px;
   padding: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 0.25fr));
+  grid-template-columns: repeat(auto-fit,minmax(270px, 0.25fr));
   justify-content: center;
   align-items: center;
 }
@@ -544,6 +553,8 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   width: 270px;
   height: 270px;
   position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .project-item img {

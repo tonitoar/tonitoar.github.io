@@ -398,7 +398,7 @@ window.onload = function () {
       setTimeout(() => {
         hoverDescription.style.display = "none";
         hoverDescription.removeAttribute("transition-style");
-      }, 2500); // Match this with the duration of the out animation
+      }, 1800); // Match this with the duration of the out animation
     });
   });
 
