@@ -689,8 +689,8 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 }
 
 .contact-text {
-  margin: 40px 0px 15px 0px;
-  width: 60%;
+  margin: 25px 0px 15px 0px;
+  width: 70%;
   height: auto;
   background-color: var(--text-background-color);
   border: 3px solid var(--dark-red2);
