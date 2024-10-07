@@ -1,5 +1,5 @@
 * {
- /* border: 1px solid blue;  */
+ border: 1px solid blue; 
  margin:0;
  padding:0; 
 }
@@ -289,6 +289,11 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: center;
   align-items: center;
+  width: 90%; 
+  height: auto;
+  gap: 50px 100px; 
+  padding: 30px;
+  margin: 25px 0px;
 }
 
 .javascript, .html, 
@@ -304,6 +309,9 @@ h2 {
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
+  width: auto;
+  height: 225px;
+  padding: 10px 20px 15px;
 }
 
 .javascript::before, .html::before, 
@@ -313,8 +321,8 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 110%;
+  height: 110%;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
   z-index: 3; 
   pointer-events: none; 
@@ -327,6 +335,9 @@ h2 {
 }
 
 .card-opacity {
+  height: 100%;
+  width: 100%;
+  padding: 30px 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -926,7 +937,7 @@ blockquote {
     height: auto;
     position: relative;
     bottom: 4px;
-    left: 4.5px; 
+    left: 4px; 
   }
   
   .linkedin:hover {
@@ -973,68 +984,6 @@ blockquote {
     height: 12px; 
     background-color: var(--light-red1); 
     opacity: 0.3;
-  }
-  
-  .cards {
-    width: 90%; 
-    height: auto;
-    gap: 50px 100px; 
-    padding: 30px;
-    margin: 25px 0px;
-  }
-  
-  .javascript, .html, 
-  .css, .react, .node,
-  .express, .mongodb, .git {
-    width: auto;
-    height: 225px;
-    padding: 10px 20px 15px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-  }
-  
-  .javascript::before, .html::before, 
-  .css::before, .react::before, .node::before,
-  .express::before, .mongodb::before, .git::before{
-    content:""; 
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
-    z-index: 3; 
-    pointer-events: none; 
-  }
-  
-  .javascript:hover::before, .html:hover::before, 
-  .css:hover::before, .react:hover::before, .node:hover::before,
-  .express:hover::before, .mongodb:hover::before, .git:hover::before {
-    opacity: 0; 
-  }
-  
-  .card-opacity {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    bottom: 20px;
-    z-index: 2;
-    padding: 30px 20px 10px;
-  }
-  
-  .card-opacity::before {
-   content: "";
-   position: absolute;
-   bottom: 0; 
-   left: 0;
-   width: 96%;
-   height: 91%;
-   background-color: lightgrey;
-   border: 4px solid gray; 
-   border-radius: 20px 20px 8.5px 8.5px;
-   z-index: -1;
-   opacity: 0.3;
   }
   
   .cards img {
@@ -1112,7 +1061,7 @@ blockquote {
   
   
 .project-container {
-    width: 70%;
+    min-width: 64%;
     height: auto;
     margin: 25px 0px;
     padding: 50px;
@@ -1415,7 +1364,7 @@ blockquote {
     height: auto;
     position: relative;
     bottom: 3px;
-    left: 3.5px;
+    left: 3px;
   }
   
   
@@ -1480,6 +1429,32 @@ blockquote {
     .info-text p {
       font-size: 1.3rem;
     }
+
+    .social-media a {
+      width: auto;
+      height: 1.7vw;
+    }
+    
+    .social-media img {
+      width: 1.7vw;
+      height: auto;
+    }
+    
+    /* TODO changing IMAGE by :hover => content: url() */
+    .github:hover {
+      content: url(/images/icons8-github-64\ \(1\).png);
+      width: 2vw;
+      height: auto;
+      position: relative;
+      bottom: 4px;
+      left: 4px; 
+    }
+    
+    .linkedin:hover {
+      content: url(/images/icons8-linkedin-64\ \(1\).png); 
+      width: 1.7vw;
+      height: auto;
+    }
         
     #Skills h2::after {
       left: 28px; 
@@ -1513,7 +1488,7 @@ blockquote {
     
     
   .project-container {
-      width: 64%;
+      min-width: 50%;
       height: auto;
     }
                  
@@ -1661,23 +1636,23 @@ blockquote {
     
     .social-media-footer a {
       width: auto;
-      height: 1.8vw;
+      height: 1.2vw;
     }
     
     .social-media-footer img {
-      width: 1.8vw;
+      width: 1.2vw;
       height: auto;
     }
     
     .linkedin2:hover {
       content: url(/images/icons8-linkedin-64\ \(1\).png);
-      width: 1.9vw;
+      width: 1.2vw;
       height: auto;
     }
     
     .github2:hover {
       content: url(/images/icons8-github-64\ \(1\).png);
-      width: 2.2vw;
+      width: 1.5vw;
       height: auto;
       position: relative;
       bottom: 3px;
