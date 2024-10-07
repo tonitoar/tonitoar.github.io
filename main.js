@@ -6,8 +6,11 @@
  */
 const TWO_PI = Math.PI * 2;
 
-// const purpelBubble = "#560a77";
-const purpelBubble = "#5F0000";
+// const redBubble = "#5C0000";
+const redBubble = "#4E0000";
+// const redBubble = "#4C0000";
+// const redBubble = "#320000";
+// const redBubble = "#230000";
 
 /**
  * Application Class
@@ -214,7 +217,7 @@ class Circle {
    * @return void
    */
   render(context) {
-    context.fillStyle = purpelBubble;
+    context.fillStyle = redBubble;
     context.beginPath();
     context.arc(this.position.x, this.position.y, this.size, 0, TWO_PI);
     context.fill();
