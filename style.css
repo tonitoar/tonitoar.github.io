@@ -1,5 +1,5 @@
 * {
- border: 1px solid blue; 
+ /* border: 1px solid blue;  */
  margin:0;
  padding:0; 
 }
@@ -49,8 +49,6 @@ header {
 }
 
 #inicio {
-  width: 80%;
-  height: 325px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +56,6 @@ header {
 }
 
 h1 {
-  font-size: 4.5vw;
   font-weight: bolder;
   color: var(--light-text);
   text-align: center;
@@ -69,8 +66,6 @@ h1 {
 }
 
 .CV {
-  width: 194px;
-  height: 62px;
   background-color: var(--light-red2);
   border: solid 5px var(--light-red1);
   border-radius: 50px;
@@ -84,22 +79,16 @@ h1 {
 
 .CV a {
   color: var(--light-text);
-  font-size: 1.2rem;
-  font-weight: 600;
   text-decoration: none;
   text-align: center;
-  padding: 17px 29px;
   border-radius: 50px; 
 }
 
 nav {
   background-color: var(--nav-bar-color);
-  width: 50%;
-  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 85px auto 0px auto; 
   border-radius: 25px;
   position: -webkit-sticky; /* For Safari */
   position: sticky;
@@ -108,8 +97,6 @@ nav {
 }
 
 nav ul {
-  width: 90%;
-  height: 50px;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
@@ -125,10 +112,8 @@ nav ul li {
 nav a {
   color: var(--light-text);
   text-decoration: none;
-  font-size: 1.3rem;
   background-color: var(--light-red2);
   border: 3px solid var(--light-red1);
-  padding: 7px 32px;
   border-radius: 25px;
 }
 
@@ -146,9 +131,6 @@ main {
 
 #About {
   scroll-margin-top: 140px;
-  margin: 85px 0px 100px 0px;
-  width: 90vw;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -176,9 +158,6 @@ main {
 }
 
 #About article {
-  width: 90%;
-  height: auto;
-  margin: 50px 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -189,11 +168,9 @@ main {
 
 h2 {
   color: var(--h2-color); 
-  font-size: 2rem;
   font-weight: bolder;
   position: relative;
   display: inline-block;
-  margin-bottom: 20px;
 }
 
 /* TODO crear text underline */
@@ -209,19 +186,13 @@ h2 {
 }
 
 .intro {
-  width: 95%;
-  height: 400px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 15px 0px 40px;
-  margin-bottom: 25px;
 }
 
 .border-container {
   position: relative; 
-  width: 300px;
-  height: 300px;
   border: 6px solid var(--dark-red1); 
   display: flex;
   justify-content: center;
@@ -247,15 +218,11 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
-  height: 310px;
   position: relative;
   top: 15px; 
 }
 
 .info-text {
-  width: 90%;
-  height: auto;
   background-color: var(--dark-red3);
   border: 3px solid var(--dark-red2);
   border-radius: 10px;
@@ -266,53 +233,19 @@ h2 {
 
 .info-text p {
   color: var(--light-text); 
-  width: 100%;
-  padding: 20px 25px;
   height: auto;
   text-align: justify;
-  font-size: 1.2rem;
 }
 
 
 .social-media {
-  width: 20%;
-  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.social-media a {
-  width: auto;
-  height: 2.7vw;
-}
-
-.social-media img {
-  width: 2.7vw;
-  height: auto;
-}
-
-/* TODO changing IMAGE by :hover => content: url() */
-.github:hover {
-  content: url(/images/icons8-github-64\ \(1\).png);
-  width: 3.3vw;
-  height: auto;
-  position: relative;
-  bottom: 4px;
-  left: 4.5px; 
-}
-
-.linkedin:hover {
-  content: url(/images/icons8-linkedin-64\ \(1\).png); 
-  width: 2.7vw;
-  height: auto;
-}
-
 #Skills {
   scroll-margin-top: 140px;
-  margin: 100px 0px;
-  width: 90vw;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,9 +266,6 @@ h2 {
 }
 
 #Skills article {
-  width: 90%;
-  height: auto;
-  margin: 50px 30px;
   position: relative; 
   display: flex;
   flex-direction: column;
@@ -355,15 +285,10 @@ h2 {
 }
 
 .cards {
-  width: 90%; 
-  height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: center;
   align-items: center;
-  gap: 50px 100px; 
-  padding: 30px;
-  margin: 25px 0px;
 }
 
 .javascript, .html, 
@@ -371,13 +296,10 @@ h2 {
 .express, .mongodb, .git {
   background-color: var(--dark-red2); 
   border-radius: 20px;
-  width: auto;
-  height: 225px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px 15px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -405,8 +327,6 @@ h2 {
 }
 
 .card-opacity {
-  height: 100%;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -414,7 +334,6 @@ h2 {
   position: relative;
   bottom: 20px;
   z-index: 2;
-  padding: 30px 20px 10px;
 }
 
 .card-opacity::before {
@@ -431,16 +350,6 @@ h2 {
  opacity: 0.3;
 }
 
-.cards img {
-  width: 95px;
-  height: auto;
-}
-
-.react img {
-  height: 95px;
-  width: 100px; 
-}
-
 .cards p,
 .cards h3 {
   color: var(--light-text);
@@ -452,19 +361,8 @@ h2 {
   bottom: 3px;
 }
 
-.cards p {
-  font-size: 1.25rem;
-}
-
-.cards h3 {
-  font-size: 1.3rem;
-}
-
 #Projects {
   scroll-margin-top: 140px;
-  margin: 100px 0px;
-  width: 90vw;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,9 +383,6 @@ h2 {
 }
 
 #Projects article {
-  width: 90%;
-  height: auto;
-  margin: 50px 30px;
   position: relative; 
   display: flex;
   flex-direction: column;
@@ -506,12 +401,6 @@ h2 {
   opacity: 0.3;
 }
 
-.project-nav {
-  margin: 40px 0px;
-  width: 50%; 
-  height: auto;
-}
-
 .project-nav ul {
   list-style: none;
   display: flex;
@@ -522,9 +411,6 @@ h2 {
 /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
 .project-nav li {
 color: var(--light-text); 
-font-size: 1.2rem;
-width: 180px;
-height: 35px; 
 border: 3px solid transparent;
 text-align: center;
 display: flex;
@@ -543,10 +429,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   }
 
   .project-container {
-  width: 70%;
-  height: auto;
-  margin: 25px 0px;
-  padding: 50px;
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(270px, 0.25fr));
   justify-content: center;
@@ -555,8 +437,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 
 /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
 .project-item {
-  width: 270px;
-  height: 270px;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -588,24 +468,18 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 
 .hover-description h4 {
   color: var(--light-red2);
-  font-size: 1.2rem;
 }
 
 .hover-description p {
   color: black;
-  font-size: 1.1rem;
 }
 
 .hover-description h3 {
   font-size: 1.6rem;
-  color: black;
 }
 
 .hover-description button {
   background-color:rgb(236, 236, 236); 
-  padding: 7px 13px;
-  font-size: 0.9rem;
-  margin-top: 10px; 
   cursor: pointer;
   border: 2.5px solid var(--dark-red2);
 }
@@ -617,9 +491,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 
 #Contact {
   scroll-margin-top: 140px;
-  margin: 100px 0px;
-  width: 90vw;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -640,9 +511,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 }
 
 #Contact article {
-  width: 90%;
-  height: auto;
-  margin: 50px 30px;
   position: relative; 
   display: flex;
   flex-direction: column;
@@ -662,9 +530,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 }
 
 .contact-text {
-  margin: 25px 0px 15px 0px;
-  width: 70%;
-  height: auto;
   background-color: var(--dark-red3);
   border: 3px solid var(--dark-red2);
   border-radius: 10px;
@@ -679,18 +544,11 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 
 .contact-text p {
   color: var(--light-text); 
-  width: 100%;
-  padding: 20px 25px;
   height: auto;
   text-align: justify;
-  font-size: 1.2rem;
 }
 
 .contact-form {
-  width: 45%;
-  height: auto;
-  padding: 20px 10px;
-  margin: 50px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -700,10 +558,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 }
 
 form {
-  width: 90%;
-  height: auto;
-  padding: 30px;
-  margin: 10px 20px;
   display: flex;
   gap: 30px;
   flex-direction: column;
@@ -728,7 +582,6 @@ form::before {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 3px 0px 3px 5px;
 }
 
 .group-horizontal::before {
@@ -748,9 +601,7 @@ form::before {
 .group-vertical {
   display: flex;
   flex-direction: column;
-  height: 250px;
   position: relative;
-  padding: 3px 0px 3px 5px;
 }
 
 .group-vertical::before {
@@ -769,8 +620,6 @@ form::before {
 
 form label {
   color: white;
-  font-size: 1.05rem;
-  margin-left: 5px;
   font-weight: bold;
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -780,41 +629,19 @@ label[for="message"] {
   margin-top: 10px;
 }
 
-form input {
-  width: 250px;
-  height: 15px;
-  padding: 5px;
-  margin-left: 10px;
-  font-size: 0.9rem;
-}
-
 form select {
   height: 30px;
   padding: 5px;
   margin-left: 10px;
 }
 
-form textarea {
-  width: 27.5vw; 
-  resize: none; 
-  height: 450px;
-  margin: 20px 0px 0px 10px;
-  padding: 20px;
-  font-size: 0.9rem;
-}
-
 button[type="submit"] {
-  width: 135px;
-  height: 45px;
-  font-size: 0.95rem;
   font-weight: 550;
-  margin: 15px auto;
   background-color: var(--light-red2);
   color: var(--light-text);
   border: 3px solid var(--light-red1); 
   cursor: pointer;
   border-radius: 10px;
-  padding: 10px;
   text-align: center;
   transition: transform 0.3s ease-in-out; /*! instead of "all" => "transform" because qe have 2 differents animations */
 }
@@ -850,19 +677,13 @@ footer {
 }
 
 .footer-content {
- width: 65%; 
- height: auto;
  display: flex;
  justify-content: space-between;
  align-items: baseline;
- padding: 30px;
 }
 
 
 .footer-left {
-  /* width: 15%; */
-  height: 120px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -871,16 +692,12 @@ footer {
 }
 
 .footer-center {
-  height: 200px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 
 .footer-right {
-  height: 120px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -892,53 +709,20 @@ blockquote {
   font-style: italic;
   text-align: center;
   border-left: 4px solid #fff;
-  padding: 10px; 
 }
 
 .footer-left p, 
 .footer-center p {
   font-weight: 600;
-  font-size: 1rem;
 }
 
 .social-media-footer {
-  width: 70%;
   display: flex;
   justify-content: space-between;
 }
 
-.social-media-footer a {
-  width: auto;
-  height: 2.3vw;
-}
-
-.social-media-footer img {
-  /* width: 30px;  */
-  width: 2.3vw;
-  height: auto;
-}
-
-.linkedin2:hover {
-  content: url(/images/icons8-linkedin-64\ \(1\).png);
-  width: 2.4vw;
-  height: auto;
-}
-
-.github2:hover {
-  content: url(/images/icons8-github-64\ \(1\).png);
-  width: 2.8vw;
-  height: auto;
-  position: relative;
-  bottom: 3px;
-  left: 3.5px;
-}
-
-
 .footer-center ul {
-  margin: 15px 0px 0px 0px;
   list-style: none;
-  height: 150px;
-  width: 65px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -953,4 +737,963 @@ blockquote {
 .footer-center ul li a:hover {
     text-decoration: underline; 
     text-underline-offset: 3px;
+}
+
+
+@media screen and (max-width: 320px) {}
+
+@media screen and (min-width: 321px) and (max-width: 376px) {}
+
+@media screen and (min-width: 377px) and (max-width: 426px) {}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  /* @media screen and (max-width: 535px){
+
+  }
+  @media screen and (max-width: 725px) {
+
+  } */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* @media screen and (max-width: 899px) {
+
+  } 
+  @media screen and (max-width: 962px) {
+
+  } */
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  /* @media screen and (max-width: 1150px) {
+
+  } */
+
+}
+
+@media screen and (min-width: 1441px) {
+
+  #inicio {
+    width: 80%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: clamp(3rem, 4.5vw, 6.8rem);
+  }
+  
+
+  
+  .CV {
+    margin-top: 30px;
+    width: 184px;
+    height: 55px;
+  }
+  
+  .CV a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 17px 29px;
+  }
+  
+  nav {
+    width: 55%;
+    height: 70px;
+    margin: 85px auto 0px auto; 
+  }
+  
+  nav ul {
+    width: 90%;
+    height: 50px;
+  }
+   
+  nav a {
+    font-size: 1.3rem;
+    padding: 7px 32px;
+  }
+    
+  #About {
+    scroll-margin-top: 140px;
+    margin: 85px 0px 100px 0px;
+    width: 90vw;
+    height: auto;
+  }
+  
+  #About::before {
+    content: "";
+    /* ! SEMPRE AQUESTES PROPIETATS */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* ! SEMPRE AQUESTES PROPIETATS */
+    background-color: var(--context-background);
+    border-radius: 10px;
+    opacity: 0.985;
+    z-index: 1; 
+  }
+  
+  #About article {
+    width: 90%;
+    height: auto;
+    margin: 50px 30px;
+    position: relative; 
+    z-index: 2; 
+  }
+  
+  h2 {
+    color: var(--h2-color); 
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* TODO crear text underline */
+  #About h2::after {
+    content: "";
+    position: absolute;
+    left: 27px; 
+    top: 23px;
+    width: 165px;
+    height: 12px; 
+    background-color: var(--light-red1); 
+    opacity: 0.3;
+  }
+  
+  .intro {
+    width: 95%;
+    height: 400px;
+    padding: 15px 0px 40px;
+    margin-bottom: 25px;
+  }
+  
+  .border-container {
+    width: 300px;
+    height: 300px;
+  }
+  
+  
+  .photo {
+    width: 125%;
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .info {
+    width: 50%;
+    height: 310px;
+    position: relative;
+    top: 15px; 
+  }
+  
+  .info-text {
+    width: 90%;
+    height: auto;
+  }
+  
+  .info-text p {
+    width: 100%;
+    padding: 20px 25px;
+    height: auto;
+    font-size: 1.2rem;
+  }
+  
+  
+  .social-media {
+    width: 20%;
+    height: auto;
+  }
+  
+  .social-media a {
+    width: auto;
+    height: 2.3vw;
+  }
+  
+  .social-media img {
+    width: 2.3vw;
+    height: auto;
+  }
+  
+  /* TODO changing IMAGE by :hover => content: url() */
+  .github:hover {
+    content: url(/images/icons8-github-64\ \(1\).png);
+    width: 2.8vw;
+    height: auto;
+    position: relative;
+    bottom: 4px;
+    left: 4.5px; 
+  }
+  
+  .linkedin:hover {
+    content: url(/images/icons8-linkedin-64\ \(1\).png); 
+    width: 2.3vw;
+    height: auto;
+  }
+  
+  #Skills {
+    scroll-margin-top: 140px;
+    margin: 100px 0px;
+    width: 90vw;
+    height: auto;
+    position: relative;
+  }
+  
+  #Skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--context-background);
+    border-radius: 10px;
+    opacity: 0.97;
+    z-index: 1; 
+  }
+  
+  #Skills article {
+    width: 90%;
+    height: auto;
+    margin: 50px 30px;
+    position: relative; 
+    z-index: 2; 
+  }
+  
+  #Skills h2::after {
+    content: "";
+    position: absolute;
+    left: 22px; 
+    top: 23px;
+    width: 115px;
+    height: 12px; 
+    background-color: var(--light-red1); 
+    opacity: 0.3;
+  }
+  
+  .cards {
+    width: 90%; 
+    height: auto;
+    gap: 50px 100px; 
+    padding: 30px;
+    margin: 25px 0px;
+  }
+  
+  .javascript, .html, 
+  .css, .react, .node,
+  .express, .mongodb, .git {
+    width: auto;
+    height: 225px;
+    padding: 10px 20px 15px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .javascript::before, .html::before, 
+  .css::before, .react::before, .node::before,
+  .express::before, .mongodb::before, .git::before{
+    content:""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+    z-index: 3; 
+    pointer-events: none; 
+  }
+  
+  .javascript:hover::before, .html:hover::before, 
+  .css:hover::before, .react:hover::before, .node:hover::before,
+  .express:hover::before, .mongodb:hover::before, .git:hover::before {
+    opacity: 0; 
+  }
+  
+  .card-opacity {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+    z-index: 2;
+    padding: 30px 20px 10px;
+  }
+  
+  .card-opacity::before {
+   content: "";
+   position: absolute;
+   bottom: 0; 
+   left: 0;
+   width: 96%;
+   height: 91%;
+   background-color: lightgrey;
+   border: 4px solid gray; 
+   border-radius: 20px 20px 8.5px 8.5px;
+   z-index: -1;
+   opacity: 0.3;
+  }
+  
+  .cards img {
+    width: 95px;
+    height: auto;
+  }
+  
+  .react img {
+    height: 95px;
+    width: 100px; 
+  }
+  
+
+  .cards p {
+    font-size: 1.25rem;
+  }
+  
+  .cards h3 {
+    font-size: 1.3rem;
+  }
+  
+  #Projects {
+    scroll-margin-top: 140px;
+    margin: 100px 0px;
+    width: 90vw;
+    height: auto;
+    position: relative;
+  }
+  
+  #Projects::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--context-background);
+    border-radius: 10px;
+    opacity: 0.97;
+    z-index: 1; 
+  }
+  
+  #Projects article {
+    width: 90%;
+    height: auto;
+    margin: 50px 30px;
+    position: relative; 
+    z-index: 2; 
+  }
+  
+  #Projects h2::after {
+    content: "";
+    position: absolute;
+    left: 23px; 
+    top: 23px;
+    width: 165px;
+    height: 12px; 
+    background-color: var(--light-red1); 
+    opacity: 0.3;
+  }
+  
+  .project-nav {
+    margin: 40px 0px;
+    width: 45%; 
+    height: auto;
+  }
+  
+  /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
+  .project-nav li {
+  font-size: 1.2rem;
+  width: 180px;
+  height: 35px; 
+  transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  
+.project-container {
+    width: 70%;
+    height: auto;
+    margin: 25px 0px;
+    padding: 50px;
+  }
+  
+  /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
+  .project-item {
+    width: 270px;
+    height: 270px;
+    position: relative;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* TODO div class="hover-description" creat per JS */
+  .hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+  }
+   
+  
+  
+  .hover-description h4 {
+    font-size: 1.2rem;
+  }
+  
+  .hover-description p {
+    font-size: 1.1rem;
+  }
+  
+  .hover-description h3 {
+    color: black;
+  }
+  
+  .hover-description button {
+    padding: 7px 13px;
+    font-size: 0.9rem;
+    margin-top: 10px; 
+  }
+    
+  #Contact {
+    scroll-margin-top: 140px;
+    margin: 100px 0px;
+    width: 90vw;
+    height: auto;
+    position: relative;
+  }
+  
+  #Contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--context-background);
+    border-radius: 10px;
+    opacity: 0.97;
+    z-index: 1; 
+  }
+  
+  #Contact article {
+    width: 90%;
+    height: auto;
+    margin: 50px 30px;
+    position: relative; 
+    z-index: 2; 
+  }
+  
+  #Contact h2::after {
+    content: "";
+    position: absolute;
+    left: 25px; 
+    top: 23px;
+    width: 152px;
+    height: 12px; 
+    background-color: var(--light-red1); 
+    opacity: 0.3;
+  }
+  
+  .contact-text {
+    margin: 25px 0px 15px 0px;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .contact-text span {
+    font-weight: 800;
+  }
+  
+  .contact-text p {
+    width: 100%;
+    padding: 20px 25px;
+    height: auto;
+    font-size: 1.2rem;
+  }
+  
+  .contact-form {
+    width: 45%;
+    height: auto;
+    padding: 20px 10px;
+    margin: 50px 0px;
+  }
+  
+  form {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    margin: 10px 20px;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  form::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-red2);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.6;
+  }
+  
+  .group-horizontal {
+    position: relative;
+    padding: 3px 0px 3px 5px;
+  }
+  
+  .group-horizontal::before {
+    content: "";
+    position: absolute;
+    top: -2px; 
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    border: 2px solid gray;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  
+  .group-vertical {
+    height: 250px;
+    position: relative;
+    padding: 3px 0px 3px 5px;
+  }
+  
+  .group-vertical::before {
+    content: "";
+    position: absolute;
+    top: -2px; 
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+   border: 2px solid gray;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  
+  form label {
+    font-size: 1.05rem;
+    margin-left: 5px;
+  }
+  
+  label[for="message"] {
+    margin-top: 10px;
+  }
+  
+  form input {
+    width: 250px;
+    height: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+  
+  form select {
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  form textarea {
+    width: 27.5vw; 
+    resize: none; 
+    height: 450px;
+    margin: 20px 0px 0px 10px;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+  button[type="submit"] {
+    width: 135px;
+    height: 45px;
+    font-size: 0.95rem;
+    font-weight: 550;
+    margin: 15px auto;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out; /*! instead of "all" => "transform" because qe have 2 differents animations */
+  }
+  
+  button[type="submit"]:hover {
+    animation: shake 0.75s steps(5) 2; /*! Shake animation on hover */
+  }
+  
+  
+  /*! Keyframes for the shake animation (X,Y) and scale*/
+  @keyframes shake {
+    0%, 100% {
+      transform: translate(0, 0) scale(1.15); 
+    }
+    25% {
+      transform: translate(-5px, -3px) scale(1.15); 
+    }
+    50% {
+      transform: translate(5px, 3px) scale(1.15); 
+    }
+    75% {
+      transform: translate(-5px, 3px) scale(1.15); 
+    }
+  }
+  
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-content {
+   width: 65%; 
+   height: auto;
+   padding: 30px;
+  }
+  
+  
+  .footer-left {
+    height: 120px;
+    padding: 10px;
+  }
+  
+  .footer-center {
+    height: 200px;
+    padding: 10px;
+  }
+  
+  .footer-right {
+    height: 120px;
+    padding: 10px;
+    position: relative;
+    top: 100px; 
+  }
+  
+  blockquote {
+    border-left: 4px solid #fff;
+    padding: 10px; 
+  }
+  
+  .footer-left p, 
+  .footer-center p {
+    font-size: 1rem;
+  }
+  
+  .social-media-footer {
+    width: 70%;
+  }
+  
+  .social-media-footer a {
+    width: auto;
+    height: 1.8vw;
+  }
+  
+  .social-media-footer img {
+    width: 1.8vw;
+    height: auto;
+  }
+  
+  .linkedin2:hover {
+    content: url(/images/icons8-linkedin-64\ \(1\).png);
+    width: 1.9vw;
+    height: auto;
+  }
+  
+  .github2:hover {
+    content: url(/images/icons8-github-64\ \(1\).png);
+    width: 2.2vw;
+    height: auto;
+    position: relative;
+    bottom: 3px;
+    left: 3.5px;
+  }
+  
+  
+  .footer-center ul {
+    margin: 15px 0px 0px 0px;
+    height: 150px;
+    width: 65px;
+  }
+
+  @media screen and ( min-width: 2100px ) {
+    .CV {
+      width: 205px;
+      height: 63px;
+    }
+    
+    .CV a {
+      font-size: 1.3rem;
+    }
+
+    nav {
+      width: 60%;
+      height: 70px;
+    }
+    
+    nav ul {
+      height: 50px;
+    }
+     
+    nav a {
+      font-size: 1.5rem;
+    }
+       
+    h2 {
+      color: var(--h2-color); 
+      font-size: 2.5rem;
+    }
+    
+    /* TODO crear text underline */
+    #About h2::after {
+      left: 35px; 
+      top: 29px;
+      width: 207px;
+      height: 12px; 
+    }
+     
+    .border-container {
+      width: 325px;
+      height: 325px;
+    }
+    
+    
+    .photo {
+      width: 120%;
+      height: auto;
+    }
+    
+    .info {
+      width: 50%;
+      height: 310px;
+    }
+       
+    .info-text p {
+      font-size: 1.3rem;
+    }
+        
+    #Skills h2::after {
+      left: 28px; 
+      top: 30px;
+      width: 140px;
+      height: 12px; 
+    }
+    
+    .cards p {
+      font-size: 1.35rem;
+    }
+    
+    .cards h3 {
+      font-size: 1.4rem;
+    }
+    
+    #Projects h2::after {
+      left: 30px; 
+      top: 31px;
+      width: 205px;
+      height: 12px; 
+    }
+    
+    
+    /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
+    .project-nav li {
+    font-size: 1.3rem;
+    width: 200px;
+    height: 35px; 
+    }
+    
+    
+  .project-container {
+      width: 64%;
+      height: auto;
+    }
+                 
+    #Contact h2::after {
+      left: 34px; 
+      top: 30px;
+      width: 190px;
+      height: 12px; 
+    }
+       
+    .contact-text p {
+      font-size: 1.3rem;
+    }
+       
+    form {
+      width: 90%;
+      height: auto;
+      padding: 30px;
+      margin: 10px 20px;
+      gap: 30px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    form::before {
+      content: "";
+      position: absolute;
+      top: 0; 
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--dark-red2);
+      border-radius: 5px;
+      z-index: -1;
+      opacity: 0.6;
+    }
+    
+    .group-horizontal {
+      position: relative;
+      padding: 3px 0px 3px 5px;
+    }
+    
+    .group-horizontal::before {
+      content: "";
+      position: absolute;
+      top: -2px; 
+      left: -2px;
+      width: 100%;
+      height: 100%;
+      background-color: lightgrey;
+      border: 2px solid gray;
+      border-radius: 5px;
+      z-index: -1;
+      opacity: 0.5;
+    }
+    
+    .group-vertical {
+      height: 250px;
+      position: relative;
+      padding: 3px 0px 3px 5px;
+    }
+    
+    .group-vertical::before {
+      content: "";
+      position: absolute;
+      top: -2px; 
+      left: -2px;
+      width: 100%;
+      height: 100%;
+      background-color: lightgrey;
+     border: 2px solid gray;
+      border-radius: 5px;
+      z-index: -1;
+      opacity: 0.5;
+    }
+    
+    form label {
+      font-size: 1.2rem;
+    }
+     
+    form input {
+      width: 270px;
+      height: 17px;
+      padding: 5px;
+      font-size: 1rem;
+    }
+    
+    form select {
+      height: 30px;
+      padding: 5px;
+      margin-left: 10px;
+      font-size: 1rem;
+    }
+    
+    form textarea {
+      width: 100%; 
+      max-width: 90%;
+      font-size: 1rem;
+    }
+    
+    button[type="submit"] {
+      width: 150px;
+      height: 50px;
+      font-size: 1.1rem;
+    }
+         
+    .footer-content {
+     width: 75%; 
+     height: auto;
+     padding: 30px;
+    }
+    
+    
+    .footer-left {
+      height: 120px;
+      padding: 10px;
+    }
+    
+    .footer-center {
+      height: 200px;
+      padding: 10px;
+    }
+    
+    .footer-right {
+      height: 120px;
+      padding: 10px;
+      position: relative;
+      top: 100px; 
+    }
+    
+    blockquote {
+      border-left: 4px solid #fff;
+      padding: 10px; 
+      font-size: 1.1rem;
+    }
+    
+    .footer-left p, 
+    .footer-center p {
+      font-size: 1.1rem;
+    }
+    
+    .social-media-footer {
+      width: 70%;
+    }
+    
+    .social-media-footer a {
+      width: auto;
+      height: 1.8vw;
+    }
+    
+    .social-media-footer img {
+      width: 1.8vw;
+      height: auto;
+    }
+    
+    .linkedin2:hover {
+      content: url(/images/icons8-linkedin-64\ \(1\).png);
+      width: 1.9vw;
+      height: auto;
+    }
+    
+    .github2:hover {
+      content: url(/images/icons8-github-64\ \(1\).png);
+      width: 2.2vw;
+      height: auto;
+      position: relative;
+      bottom: 3px;
+      left: 3.5px;
+    }
+    
+    
+    .footer-center ul {
+      margin: 15px 0px 0px 0px;
+      height: 150px;
+      width: 75px;
+    }
+
+    .footer-center a {
+      font-size: 1.05rem;
+    }
+  }
+  
 }
