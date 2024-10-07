@@ -508,7 +508,7 @@ h2 {
 
 .project-nav {
   margin: 40px 0px;
-  width: 45%; 
+  width: 50%; 
   height: auto;
 }
 
@@ -607,11 +607,11 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   font-size: 0.9rem;
   margin-top: 10px; 
   cursor: pointer;
-  border: 2.5px solid var(--light-red2);
+  border: 2.5px solid var(--dark-red2);
 }
 
 .hover-description button:hover {
- background-color: var(--light-red2);
+ background-color: var(--dark-red2);
  color: white;
 }
 
