@@ -248,9 +248,9 @@ h2 {
   justify-content: space-between;
   align-items: center;
   width: 50%;
-  height: 350px;
+  height: 310px;
   position: relative;
-  top: 25px; 
+  top: 15px; 
 }
 
 .info-text {
@@ -284,27 +284,27 @@ h2 {
 
 .social-media a {
   width: auto;
-  height: 2vw;
+  height: 2.7vw;
 }
 
 .social-media img {
-  width: 2vw;
+  width: 2.7vw;
   height: auto;
 }
 
 /* TODO changing IMAGE by :hover => content: url() */
 .github:hover {
-  content: url(/images/GitHubIcon.png);
-  width: 2.4vw;
+  content: url(/images/icons8-github-64\ \(1\).png);
+  width: 3.3vw;
   height: auto;
   position: relative;
-  bottom: 3px;
-  left: 4px; 
+  bottom: 4px;
+  left: 3px; 
 }
 
 .linkedin:hover {
-  content: url(/images/LinkedinIcon.png); 
-  width: 2vw;
+  content: url(/images/icons8-linkedin-64\ \(1\).png); 
+  width: 2.7vw;
   height: auto;
 }
 
@@ -584,34 +584,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   padding: 20px;
 }
  
-/* TODO ANIMACIONS IN I OUT AFEGIDES AMB JS EN EL DIV CLASS=HOVER-DESCRITPION */
 
-/* @keyframes square-in-center {
-  from {
-    clip-path: inset(100% 100% 100% 100%);
-  }
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
-[transition-style="in:square:center"] {
-  animation: 0.1s cubic-bezier(0.8, 0, 0.2, 1) square-out-center both; 
-}
-
-@keyframes square-out-center {
-  from {
-    clip-path: inset(0 0 0 0);
-  }
-  to {
-    clip-path: inset(100% 100% 100% 100%);
-  }
-}
-
-[transition-style="out:square:center"] {
-  animation: 0.3s cubic-bezier(0.5, 0, 0.3, 1) square-out-center both; 
-} */
-/* TODO ANIMACIONS IN I OUT */
 
 .hover-description h4 {
   color: var(--light-red2);
@@ -936,18 +909,24 @@ blockquote {
 
 .social-media-footer a {
   width: auto;
-  height: 2vw;
+  height: 2.3vw;
 }
 
 .social-media-footer img {
   /* width: 30px;  */
-  width: 2vw;
+  width: 2.3vw;
+  height: auto;
+}
+
+.linkedin2:hover {
+  content: url(/images/icons8-linkedin-64\ \(1\).png);
+  width: 2.4vw;
   height: auto;
 }
 
 .github2:hover {
-  content: url(/images/GitHubIcon.png);
-  width: 2.4vw;
+  content: url(/images/icons8-github-64\ \(1\).png);
+  width: 2.8vw;
   height: auto;
   position: relative;
   bottom: 3px;
