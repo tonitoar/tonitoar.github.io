@@ -1,5 +1,5 @@
 * {
- /* border: 1px solid blue;  */
+ border: 1px solid blue; 
  margin:0;
  padding:0; 
 }
@@ -131,7 +131,6 @@ main {
 
 #About {
   scroll-margin-top: 140px;
-  scroll-margin-top: 140px;
   margin: 85px 0px 100px 0px;
   width: 90vw;
   height: auto;
@@ -168,9 +167,6 @@ main {
   flex-direction: column;
   position: relative; 
   z-index: 2; 
-  width: 90%;
-  height: auto;
-  margin: 50px 30px;
 }
 
 h2 {
@@ -800,12 +796,596 @@ blockquote {
   } */
 }
 
+
+
+
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   /* @media screen and (max-width: 1150px) {
 
   } */
 
+  #inicio {
+    width: 80%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: clamp(3rem, 5.6vw, 6.8rem);
+  }
+  
+
+  
+  .CV {
+    margin-top: 40px;
+    width: 174px;
+    height: 53px;
+  }
+  
+  .CV a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: 17px 29px;
+  }
+  
+  nav {
+    min-width: 750px;
+    width: 65%;
+    height: 70px;
+    margin: 85px auto 0px auto; 
+  }
+  
+  nav ul {
+    width: 90%;
+    height: 50px;
+  }
+  
+  nav a {
+    font-size: 1.2rem;
+    padding: 6px 25px;
+  }
+
+    
+  h2 {
+    color: var(--h2-color); 
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  /* TODO crear text underline */
+  #About h2::after {
+    content: "";
+    position: absolute;
+    left: 27px; 
+    top: 23px;
+    width: 165px;
+    height: 12px; 
+    background-color: var(--light-red1); 
+    opacity: 0.3;
+  }
+
+  #About article {
+    width: 95%;
+    height: auto;
+    margin: 50px 30px;
+  }
+  
+  .intro {
+    width: 95%;
+    height: 400px;
+    padding: 15px 0px 40px;
+    margin-bottom: 25px;
+  }
+  
+  .border-container {
+    min-width: 250px;
+    min-height: 250px;
+    width: 20vw;
+    height: 37vh;
+  }
+  
+  
+  .photo {
+    min-width: 349px;
+    width: 30vw;
+    max-width: 349px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .info {
+    width: 50%;
+    height: 310px;
+    position: relative;
+    top: 20px; 
+    padding-bottom: 20px;
+  }
+  
+  .info-text {
+    width: 95%;
+    height: auto;
+  }
+  
+  .info-text p {
+    width: 100%;
+    padding: 20px 25px;
+    height: auto;
+    font-size: 1.1rem;
+  }
+  
+  
+  .social-media {
+    width: 20%;
+    min-width: 110px;
+    height: 110px;
+  }
+  
+  .social-media a {
+    width: auto;
+    height: 2.7vw;
+  }
+  
+  .linkedin {
+    width: 2.7vw;
+    height: auto;
+    min-width: 40px;
+  }
+
+  .github {
+    width: 2.6vw;
+    min-width: 39px;
+    height: auto;
+    position: relative;
+    top: 1px;
+  }
+  
+  /* TODO changing IMAGE by :hover => content: url() */
+  .github:hover {
+    content: url(/images/icons8-github-64\ \(1\).png);
+    width: 2.8vw;
+    height: auto;
+    position: relative;
+    top: -5px;
+    left: 5px;
+  }
+  
+  .linkedin:hover {
+    content: url(/images/icons8-linkedin-64\ \(1\).png); 
+    width: 2.3vw;
+    height: auto;
+  }
+  
+@media screen and (max-width: 1177px) {
+
+  .info {
+    top: 5px; 
+  }
+
+  .info-text p {
+    font-size: 1.07rem;
+  }
+
+
+  .social-media a {
+    width: auto;
+    height: 2.7vw;
+  }
+  
+  .linkedin {
+    width: 2.7vw;
+    height: auto;
+  }
+
+  .github {
+    width: 2.6vw;
+    height: auto;
+    position: relative;
+    top: 1px;
+  }
+  
+  /* TODO changing IMAGE by :hover => content: url() */
+  .github:hover {
+    content: url(/images/icons8-github-64\ \(1\).png);
+    width: 3.3vw;
+    height: auto;
+    position: relative;
+    top: -5px;
+    left: 5px;
+  }
+  
+  .linkedin:hover {
+    content: url(/images/icons8-linkedin-64\ \(1\).png); 
+    width: 2.7vw;
+    height: auto;
+  }
 }
+
+  #Skills {
+    scroll-margin-top: 140px;
+    margin: 100px 0px;
+    width: 90vw;
+    height: auto;
+    position: relative;
+  }
+  
+  #Skills::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--context-background);
+    border-radius: 10px;
+    opacity: 0.97;
+    z-index: 1; 
+  }
+   
+  #Skills h2::after {
+    content: "";
+    position: absolute;
+    left: 22px; 
+    top: 23px;
+    width: 115px;
+    height: 12px; 
+    background-color: var(--light-red1); 
+    opacity: 0.3;
+  }
+  
+  .cards p {
+    font-size: 1.25rem;
+  }
+  
+  .cards h3 {
+    font-size: 1.3rem;
+  }
+    
+  .project-nav {
+    margin: 40px 0px;
+    min-width: 53%; 
+    height: auto;
+  }
+  
+  /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
+  .project-nav li {
+  font-size: 1.2rem;
+  width: 180px;
+  height: 35px; 
+  transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  
+.project-container {
+    min-width: 64%;
+    height: auto;
+    margin: 25px 0px;
+    padding: 50px;
+  }
+  
+  /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
+  .project-item {
+    width: 270px;
+    height: 270px;
+    position: relative;
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* TODO div class="hover-description" creat per JS */
+  .hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+  }
+   
+  
+  
+  .hover-description h4 {
+    font-size: 1.2rem;
+  }
+  
+  .hover-description p {
+    font-size: 1.1rem;
+  }
+  
+  .hover-description h3 {
+    color: black;
+  }
+  
+  .hover-description button {
+    padding: 7px 13px;
+    font-size: 0.9rem;
+    margin-top: 10px; 
+  }
+    
+  .contact-text {
+    margin: 25px 0px 15px 0px;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .contact-text span {
+    font-weight: 800;
+  }
+  
+  .contact-text p {
+    width: 100%;
+    padding: 20px 25px;
+    height: auto;
+    font-size: 1.2rem;
+  }
+  
+  .contact-form {
+    width: 45%;
+    height: auto;
+    padding: 20px 10px;
+    margin: 50px 0px;
+  }
+  
+  form {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    margin: 10px 20px;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  form::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-red2);
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.6;
+  }
+  
+  .group-horizontal {
+    position: relative;
+    padding: 3px 0px 3px 5px;
+  }
+  
+  .group-horizontal::before {
+    content: "";
+    position: absolute;
+    top: -2px; 
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+    border: 2px solid gray;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  
+  .group-vertical {
+    height: 250px;
+    position: relative;
+    padding: 3px 0px 3px 5px;
+  }
+  
+  .group-vertical::before {
+    content: "";
+    position: absolute;
+    top: -2px; 
+    left: -2px;
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+   border: 2px solid gray;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0.5;
+  }
+  
+  form label {
+    font-size: 1.03rem;
+    margin-left: 5px;
+  }
+  
+  label[for="message"] {
+    margin-top: 10px;
+  }
+  
+  form input {
+    width: 290px;
+    height: 17px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+  
+  form select {
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 0.9rem;
+  }
+ 
+
+  form textarea {
+    width: 88%;
+    resize: none; 
+    height: 500px;
+    margin: 20px 0px 0px 10px;
+    padding: 20px;
+    font-size: 1.05rem;
+  }
+  
+  @media screen and (max-width: 1600px) {
+    form textarea {
+      width: 85%;
+    }
+  }
+
+  button[type="submit"] {
+    width: 135px;
+    height: 45px;
+    font-size: 0.95rem;
+    font-weight: 550;
+    margin: 15px auto;
+    padding: 10px;
+  }
+  
+ @media screen and (min-width: 1500px) {
+    @keyframes shake {
+      0%, 100% {
+        transform: translate(0, 0) scale(1.1); 
+      }
+      25% {
+        transform: translate(-5px, -3px) scale(1.1); 
+      }
+      50% {
+        transform: translate(5px, 3px) scale(1.1); 
+      }
+      75% {
+        transform: translate(-5px, 3px) scale(1.1); 
+      }
+    }
+  }
+  
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-content {
+   width: 78%; 
+   height: auto;
+   padding: 30px;
+  }
+  
+  
+  .footer-left {
+    height: 120px;
+    padding: 10px;
+  }
+  
+  .footer-center {
+    height: 200px;
+    width: auto;
+    padding: 10px;
+  }
+  
+  .footer-right {
+    height: 120px;
+    padding: 10px;
+    position: relative;
+    top: 100px; 
+  }
+  
+  blockquote {
+    border-left: 4px solid #fff;
+    padding: 10px; 
+  }
+  
+  .footer-left p, 
+  .footer-center p {
+    font-size: 1rem;
+  }
+  
+  .social-media-footer {
+    width: 63%;
+  }
+  
+  .social-media-footer a {
+    width: auto;
+    height: 1.8vw;
+  }
+  
+  .linkedin2 {
+    width: 1.8vw;
+    height: auto;
+  }
+
+  .github2 {
+    width: 1.7vw;
+    height: auto;
+    position: relative;
+    top: 1.2px;
+  }
+  
+  .linkedin2:hover {
+    content: url(/images/icons8-linkedin-64\ \(1\).png);
+    width: 1.9vw;
+    height: auto;
+  }
+  
+  .github2:hover {
+    content: url(/images/icons8-github-64\ \(1\).png);
+    width: 2.2vw;
+    height: auto;
+    position: relative;
+    top: -3px;
+    left: 3px;
+  }
+  
+  @media screen and (max-width: 1600px) {
+
+    .social-media-footer a {
+      width: auto;
+      height: 2.1vw;
+    }
+
+    .linkedin2 {
+      width: 2.1vw;
+      height: auto;
+    }
+  
+    .github2 {
+      width: 2vw;
+      height: auto;
+      position: relative;
+      top: 1.2px;
+    }
+    
+    .linkedin2:hover {
+      width: 2vw;
+      height: auto;
+    }
+    
+    .github2:hover {
+      width: 2.5vw;
+      height: auto;
+      position: relative;
+      top: -3px;
+      left: 3px;
+    }
+  }
+  
+  .footer-center ul {
+    margin: 15px 0px 0px 2px;
+    height: 150px;
+    width: 67px;
+  }
+
+
+
+}
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1441px) {
 
@@ -850,6 +1430,12 @@ blockquote {
   nav a {
     font-size: 1.3rem;
     padding: 7px 32px;
+  }
+
+  #About article {
+    width: 90%;
+    height: auto;
+    margin: 50px 30px;
   }
     
   h2 {
