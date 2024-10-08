@@ -131,6 +131,10 @@ main {
 
 #About {
   scroll-margin-top: 140px;
+  scroll-margin-top: 140px;
+  margin: 85px 0px 100px 0px;
+  width: 90vw;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,6 +168,9 @@ main {
   flex-direction: column;
   position: relative; 
   z-index: 2; 
+  width: 90%;
+  height: auto;
+  margin: 50px 30px;
 }
 
 h2 {
@@ -171,18 +178,6 @@ h2 {
   font-weight: bolder;
   position: relative;
   display: inline-block;
-}
-
-/* TODO crear text underline */
-#About h2::after {
-  content: "";
-  position: absolute;
-  left: 27px; 
-  top: 23px;
-  width: 165px;
-  height: 12px; 
-  background-color: var(--light-red1); 
-  opacity: 0.3;
 }
 
 .intro {
@@ -250,6 +245,9 @@ h2 {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 100px 0px;
+  width: 90vw;
+  height: auto;
 }
 
 #Skills::before {
@@ -271,6 +269,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   z-index: 2; 
+  width: 90%;
+  height: auto;
+  margin: 50px 30px;
 }
 
 #Skills h2::after {
@@ -361,6 +362,16 @@ h2 {
  opacity: 0.3;
 }
 
+.cards img {
+  width: 95px;
+  height: auto;
+}
+
+.react img {
+  height: 95px;
+  width: 100px; 
+}
+
 .cards p,
 .cards h3 {
   color: var(--light-text);
@@ -378,6 +389,9 @@ h2 {
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 100px 0px;
+  width: 90vw;
+  height: auto;
 }
 
 #Projects::before {
@@ -399,6 +413,9 @@ h2 {
   flex-direction: column;
   align-items: center;
   z-index: 2; 
+  width: 90%;
+  height: auto;
+  margin: 50px 30px;
 }
 
 #Projects h2::after {
@@ -475,8 +492,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   padding: 20px;
 }
  
-
-
 .hover-description h4 {
   color: var(--light-red2);
 }
@@ -506,6 +521,9 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   justify-content: center;
   align-items: center;
   position: relative;
+  margin: 100px 0px;
+  width: 90vw;
+  height: auto;
 }
 
 #Contact::before {
@@ -527,6 +545,9 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   flex-direction: column;
   align-items: center;
   z-index: 2; 
+  width: 90%;
+  height: auto;
+  margin: 50px 30px;
 }
 
 #Contact h2::after {
@@ -831,36 +852,6 @@ blockquote {
     padding: 7px 32px;
   }
     
-  #About {
-    scroll-margin-top: 140px;
-    margin: 85px 0px 100px 0px;
-    width: 90vw;
-    height: auto;
-  }
-  
-  #About::before {
-    content: "";
-    /* ! SEMPRE AQUESTES PROPIETATS */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* ! SEMPRE AQUESTES PROPIETATS */
-    background-color: var(--context-background);
-    border-radius: 10px;
-    opacity: 0.985;
-    z-index: 1; 
-  }
-  
-  #About article {
-    width: 90%;
-    height: auto;
-    margin: 50px 30px;
-    position: relative; 
-    z-index: 2; 
-  }
-  
   h2 {
     color: var(--h2-color); 
     font-size: 2rem;
@@ -1014,15 +1005,7 @@ blockquote {
     opacity: 0.97;
     z-index: 1; 
   }
-  
-  #Skills article {
-    width: 90%;
-    height: auto;
-    margin: 50px 30px;
-    position: relative; 
-    z-index: 2; 
-  }
-  
+   
   #Skills h2::after {
     content: "";
     position: absolute;
@@ -1034,17 +1017,6 @@ blockquote {
     opacity: 0.3;
   }
   
-  .cards img {
-    width: 95px;
-    height: auto;
-  }
-  
-  .react img {
-    height: 95px;
-    width: 100px; 
-  }
-  
-
   .cards p {
     font-size: 1.25rem;
   }
@@ -1052,47 +1024,7 @@ blockquote {
   .cards h3 {
     font-size: 1.3rem;
   }
-  
-  #Projects {
-    scroll-margin-top: 140px;
-    margin: 100px 0px;
-    width: 90vw;
-    height: auto;
-    position: relative;
-  }
-  
-  #Projects::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--context-background);
-    border-radius: 10px;
-    opacity: 0.97;
-    z-index: 1; 
-  }
-  
-  #Projects article {
-    width: 90%;
-    height: auto;
-    margin: 50px 30px;
-    position: relative; 
-    z-index: 2; 
-  }
-  
-  #Projects h2::after {
-    content: "";
-    position: absolute;
-    left: 23px; 
-    top: 23px;
-    width: 165px;
-    height: 12px; 
-    background-color: var(--light-red1); 
-    opacity: 0.3;
-  }
-  
+    
   .project-nav {
     margin: 40px 0px;
     min-width: 53%; 
@@ -1157,46 +1089,6 @@ blockquote {
     margin-top: 10px; 
   }
     
-  #Contact {
-    scroll-margin-top: 140px;
-    margin: 100px 0px;
-    width: 90vw;
-    height: auto;
-    position: relative;
-  }
-  
-  #Contact::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--context-background);
-    border-radius: 10px;
-    opacity: 0.97;
-    z-index: 1; 
-  }
-  
-  #Contact article {
-    width: 90%;
-    height: auto;
-    margin: 50px 30px;
-    position: relative; 
-    z-index: 2; 
-  }
-  
-  #Contact h2::after {
-    content: "";
-    position: absolute;
-    left: 25px; 
-    top: 23px;
-    width: 152px;
-    height: 12px; 
-    background-color: var(--light-red1); 
-    opacity: 0.3;
-  }
-  
   .contact-text {
     margin: 25px 0px 15px 0px;
     width: 70%;
@@ -1331,27 +1223,9 @@ blockquote {
     font-weight: 550;
     margin: 15px auto;
     padding: 10px;
-    transition: transform 0.3s ease-in-out; /*! instead of "all" => "transform" because qe have 2 differents animations */
   }
   
-  
-  /*! Keyframes for the shake animation (X,Y) and scale*/
-  @keyframes shake {
-    0%, 100% {
-      transform: translate(0, 0) scale(1.15); 
-    }
-    25% {
-      transform: translate(-5px, -3px) scale(1.15); 
-    }
-    50% {
-      transform: translate(5px, 3px) scale(1.15); 
-    }
-    75% {
-      transform: translate(-5px, 3px) scale(1.15); 
-    }
-  }
-
-  @media screen and (min-width: 1500px) {
+ @media screen and (min-width: 1500px) {
     @keyframes shake {
       0%, 100% {
         transform: translate(0, 0) scale(1.1); 
