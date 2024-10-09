@@ -176,6 +176,17 @@ h2 {
   display: inline-block;
 }
 
+#About h2::after {
+  content: "";
+  position: absolute;
+  left: 27px; 
+  top: 23px;
+  width: 165px;
+  height: 12px; 
+  background-color: var(--light-red1); 
+  opacity: 0.3;
+}
+
 .intro {
   display: flex;
   justify-content: space-around;
@@ -265,9 +276,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   z-index: 2; 
-  width: 90%;
-  height: auto;
-  margin: 50px 30px;
 }
 
 #Skills h2::after {
@@ -283,9 +291,10 @@ h2 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   justify-content: center;
   align-items: center;
+  justify-items: center;
   width: 90%; 
   height: auto;
   gap: 50px 100px; 
@@ -308,7 +317,7 @@ h2 {
   cursor: pointer;
   width: auto;
   height: 225px;
-  padding: 10px 20px 15px;
+  padding: 10px 35px 15px;
 }
 
 .javascript::before, .html::before, 
@@ -316,11 +325,12 @@ h2 {
 .express::before, .mongodb::before, .git::before{
   content:""; 
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1;
+  left: -1;
   width: 110%;
   height: 110%;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  /* border: 2px solid rgba(0, 0, 0, 0.9); */
   z-index: 3; 
   pointer-events: none; 
 }
@@ -348,9 +358,9 @@ h2 {
  content: "";
  position: absolute;
  bottom: 0; 
- left: 0;
- width: 96%;
- height: 91%;
+ right: 0.5;
+ width: 112.56%;
+ height: 90.96%;
  background-color: lightgrey;
  border: 4px solid gray; 
  border-radius: 20px 20px 8.5px 8.5px;
@@ -409,9 +419,6 @@ h2 {
   flex-direction: column;
   align-items: center;
   z-index: 2; 
-  width: 90%;
-  height: auto;
-  margin: 50px 30px;
 }
 
 #Projects h2::after {
@@ -541,9 +548,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   flex-direction: column;
   align-items: center;
   z-index: 2; 
-  width: 90%;
-  height: auto;
-  margin: 50px 30px;
 }
 
 #Contact h2::after {
@@ -854,18 +858,6 @@ blockquote {
     margin-bottom: 20px;
   }
   
-  /* TODO crear text underline */
-  #About h2::after {
-    content: "";
-    position: absolute;
-    left: 27px; 
-    top: 23px;
-    width: 165px;
-    height: 12px; 
-    background-color: var(--light-red1); 
-    opacity: 0.3;
-  }
-
   #About article {
     width: 95%;
     height: auto;
@@ -880,10 +872,10 @@ blockquote {
   }
   
   .border-container {
-    min-width: 250px;
-    min-height: 250px;
+    min-width: 280px;
+    min-height: 280px;
     width: 20vw;
-    height: 37vh;
+    height: 51.5vh;
   }
   
   
@@ -968,35 +960,6 @@ blockquote {
     font-size: 1.07rem;
   }
 
-
-  /* .social-media {
-    width: 20%;
-    min-width: 110px;
-    height: 40px;
-  }
-  
-  .social-media a {
-    width: 2.7w;
-    height: 15vh;
-  }
-
-  .social-media a {
-    width: auto;
-    height: 2.7vw;
-  }
-  
-  .linkedin {
-    width: 2.7vw;
-    height: auto;
-  }
-
-  .github {
-    width: 2.6vw;
-    height: auto;
-    position: relative;
-    top: 1px;
-  }
-   */
   /* TODO changing IMAGE by :hover => content: url() */
   /* .github:hover {
     content: url(/images/icons8-github-64\ \(1\).png);
@@ -1045,18 +1008,62 @@ blockquote {
     background-color: var(--light-red1); 
     opacity: 0.3;
   }
-  
+
+  #Skills article {
+    width: 95%;
+    height: auto;
+    margin: 50px 30px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(143px, 1fr));
+    justify-items: center;
+  }
+
+  .javascript, .html, 
+.css, .react, .node,
+.express, .mongodb, .git {
+  width: auto;
+  height: 225px;
+  padding: 10px 30px 15px;
+}
+
+.card-opacity::before {
+  bottom: -1; 
+  right: 0.5;
+  width: 107.5%;
+  height: 91.1%;
+ }
+ 
+ .cards img {
+   width: 85px;
+   height: auto;
+ }
+ 
+ .react img {
+   height: 85px;
+   width: 95px; 
+ }
+
+
   .cards p {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
   
   .cards h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
-    
+
+  #Projects article {
+    width: 95%;
+    height: auto;
+    margin: 50px 30px;
+  }
+
   .project-nav {
     margin: 40px 0px;
-    min-width: 53%; 
+    min-width: 610px;
+    width: 53%; 
     height: auto;
   }
   
@@ -1070,22 +1077,18 @@ blockquote {
   
   
 .project-container {
-    min-width: 64%;
+    width: 80%;
     height: auto;
-    margin: 25px 0px;
+    margin: 25px;
     padding: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(252.4px, 0.25fr));
   }
   
   /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
   .project-item {
-    width: 270px;
-    height: 270px;
+    width: 250px;
+    height: 250px;
     position: relative;
-  }
-  
-  .project-item img {
-    width: 100%;
-    height: 100%;
   }
   
   /* TODO div class="hover-description" creat per JS */
@@ -1101,20 +1104,20 @@ blockquote {
   
   
   .hover-description h4 {
-    font-size: 1.2rem;
-  }
-  
-  .hover-description p {
     font-size: 1.1rem;
   }
   
+  .hover-description p {
+    font-size: 1.05rem;
+  }
+  
   .hover-description h3 {
-    color: black;
+    font-size: 1.45rem;
   }
   
   .hover-description button {
-    padding: 7px 13px;
-    font-size: 0.9rem;
+    padding: 6px 12px;
+    font-size: 0.85rem;
     margin-top: 10px; 
   }
     
@@ -1455,18 +1458,6 @@ blockquote {
     margin-bottom: 20px;
   }
   
-  /* TODO crear text underline */
-  #About h2::after {
-    content: "";
-    position: absolute;
-    left: 27px; 
-    top: 23px;
-    width: 165px;
-    height: 12px; 
-    background-color: var(--light-red1); 
-    opacity: 0.3;
-  }
-  
   .intro {
     width: 95%;
     height: 400px;
@@ -1579,36 +1570,11 @@ blockquote {
   }
 }
 
-  #Skills {
-    scroll-margin-top: 140px;
-    margin: 100px 0px;
-    width: 90vw;
+
+  #Skills article {
+    width: 90%;
     height: auto;
-    position: relative;
-  }
-  
-  #Skills::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--context-background);
-    border-radius: 10px;
-    opacity: 0.97;
-    z-index: 1; 
-  }
-   
-  #Skills h2::after {
-    content: "";
-    position: absolute;
-    left: 22px; 
-    top: 23px;
-    width: 115px;
-    height: 12px; 
-    background-color: var(--light-red1); 
-    opacity: 0.3;
+    margin: 50px 30px;
   }
   
   .cards p {
@@ -1618,7 +1584,13 @@ blockquote {
   .cards h3 {
     font-size: 1.3rem;
   }
-    
+
+  #Projects article {
+    width: 90%;
+    height: auto;
+    margin: 50px 30px;
+  }
+
   .project-nav {
     margin: 40px 0px;
     min-width: 53%; 
@@ -1648,11 +1620,6 @@ blockquote {
     position: relative;
   }
   
-  .project-item img {
-    width: 100%;
-    height: 100%;
-  }
-  
   /* TODO div class="hover-description" creat per JS */
   .hover-description {
     position: absolute;
@@ -1663,8 +1630,6 @@ blockquote {
     padding: 20px;
   }
    
-  
-  
   .hover-description h4 {
     font-size: 1.2rem;
   }
@@ -1681,6 +1646,12 @@ blockquote {
     padding: 7px 13px;
     font-size: 0.9rem;
     margin-top: 10px; 
+  }
+
+  #Contact article {
+    width: 90%;
+    height: auto;
+    margin: 50px 30px;
   }
     
   .contact-text {
