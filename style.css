@@ -899,10 +899,9 @@ blockquote {
   
   .info {
     width: 50%;
-    height: 310px;
+    height: 350px;
     position: relative;
     top: 20px; 
-    padding-bottom: 20px;
   }
   
   .info-text {
@@ -921,12 +920,12 @@ blockquote {
   .social-media {
     width: 20%;
     min-width: 110px;
-    height: 110px;
+    height: 43px;
   }
   
   .social-media a {
-    width: auto;
-    height: 2.7vw;
+    width: 2.7w;
+    height: 7.23vh;
   }
   
   .linkedin {
@@ -970,6 +969,17 @@ blockquote {
   }
 
 
+  /* .social-media {
+    width: 20%;
+    min-width: 110px;
+    height: 40px;
+  }
+  
+  .social-media a {
+    width: 2.7w;
+    height: 15vh;
+  }
+
   .social-media a {
     width: auto;
     height: 2.7vw;
@@ -986,9 +996,9 @@ blockquote {
     position: relative;
     top: 1px;
   }
-  
+   */
   /* TODO changing IMAGE by :hover => content: url() */
-  .github:hover {
+  /* .github:hover {
     content: url(/images/icons8-github-64\ \(1\).png);
     width: 3.3vw;
     height: auto;
@@ -1001,7 +1011,7 @@ blockquote {
     content: url(/images/icons8-linkedin-64\ \(1\).png); 
     width: 2.7vw;
     height: auto;
-  }
+  } */
 }
 
   #Skills {
@@ -1500,21 +1510,26 @@ blockquote {
   
   .social-media {
     width: 20%;
-    height: auto;
+    max-width: 150px;
+    height: 50px;
   }
   
   .social-media a {
-    width: auto;
-    height: 2.3vw;
+    width: 2.6vw;
+    max-width: 45px;
+    height: 6.6vh;
+    max-height: 44px;
   }
   
   .linkedin {
     width: 2.3vw;
+    min-width: 42px;
     height: auto;
   }
 
   .github {
-    width: 2.15vw;
+    width: 2.25vw;
+    min-width: 40px;
     height: auto;
     position: relative;
     top: 1px;
@@ -1525,9 +1540,6 @@ blockquote {
     content: url(/images/icons8-github-64\ \(1\).png);
     width: 2.8vw;
     height: auto;
-    position: relative;
-    top: -5px;
-    left: 5px;
   }
   
   .linkedin:hover {
@@ -1553,19 +1565,15 @@ blockquote {
     position: relative;
     top: 1px;
   }
-  
-  /* TODO changing IMAGE by :hover => content: url() */
   .github:hover {
-    content: url(/images/icons8-github-64\ \(1\).png);
-    width: 3.3vw;
+    width: 3.1vw;
     height: auto;
     position: relative;
-    top: -5px;
-    left: 5px;
+    top: -3px;
+    left: -2px;
   }
   
   .linkedin:hover {
-    content: url(/images/icons8-linkedin-64\ \(1\).png); 
     width: 2.7vw;
     height: auto;
   }
