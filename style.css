@@ -243,6 +243,10 @@ h2 {
 .social-media {
   display: flex;
   justify-content: space-between;
+}
+
+.social-media a {
+  display: flex;
   align-items: center;
 }
 
@@ -755,6 +759,11 @@ blockquote {
 .social-media-footer {
   display: flex;
   justify-content: space-between;
+}
+
+.social-media-footer a {
+  display: flex;
+  align-items: center;
 }
 
 .footer-center ul {
@@ -1416,7 +1425,7 @@ blockquote {
   .CV {
     margin-top: 50px;
     width: 184px;
-    height: 55px;
+    height: 60px;
   }
   
   .CV a {
@@ -1501,15 +1510,13 @@ blockquote {
   
   .social-media {
     width: 20%;
-    max-width: 150px;
-    height: 50px;
+    max-width: 180px;
+    height: auto;
   }
   
   .social-media a {
-    width: 2.6vw;
-    max-width: 45px;
-    height: 6.6vh;
-    max-height: 44px;
+    width: auto;
+    height: 50px;
   }
   
   .linkedin {
@@ -1522,15 +1529,15 @@ blockquote {
     width: 2.25vw;
     min-width: 40px;
     height: auto;
-    position: relative;
-    top: 1px;
   }
   
   /* TODO changing IMAGE by :hover => content: url() */
   .github:hover {
     content: url(/images/icons8-github-64\ \(1\).png);
-    width: 2.8vw;
+    width: 2.75vw;
     height: auto;
+    position: relative;
+    left: 3.5px;
   }
   
   .linkedin:hover {
@@ -1539,12 +1546,7 @@ blockquote {
     height: auto;
   }
   
-@media screen and (max-width: 1600px) {
-  .social-media a {
-    width: auto;
-    height: 2.7vw;
-  }
-  
+@media screen and (max-width: 1600px) {  
   .linkedin {
     width: 2.7vw;
     height: auto;
@@ -1553,15 +1555,12 @@ blockquote {
   .github {
     width: 2.6vw;
     height: auto;
-    position: relative;
-    top: 1px;
   }
   .github:hover {
-    width: 3.1vw;
+    width: 3.25vw;
     height: auto;
     position: relative;
-    top: -3px;
-    left: -0.3px;
+    left: 4px;
   }
   
   .linkedin:hover {
@@ -1853,7 +1852,7 @@ blockquote {
   
   .social-media-footer a {
     width: auto;
-    height: 1.8vw;
+    height: 30px;
   }
   
   .linkedin2 {
@@ -1864,8 +1863,6 @@ blockquote {
   .github2 {
     width: 1.7vw;
     height: auto;
-    position: relative;
-    top: 1.2px;
   }
   
   .linkedin2:hover {
@@ -1876,19 +1873,13 @@ blockquote {
   
   .github2:hover {
     content: url(/images/icons8-github-64\ \(1\).png);
-    width: 2.2vw;
+    width: 2.15vw;
     height: auto;
     position: relative;
-    top: -3px;
     left: 3px;
   }
   
   @media screen and (max-width: 1600px) {
-
-    .social-media-footer a {
-      width: auto;
-      height: 2.1vw;
-    }
 
     .linkedin2 {
       width: 2.1vw;
@@ -1898,8 +1889,6 @@ blockquote {
     .github2 {
       width: 2vw;
       height: auto;
-      position: relative;
-      top: 1.2px;
     }
     
     .linkedin2:hover {
@@ -1908,11 +1897,8 @@ blockquote {
     }
     
     .github2:hover {
-      width: 2.5vw;
+      width: 2.45vw;
       height: auto;
-      position: relative;
-      top: -3px;
-      left: 3px;
     }
   }
   
@@ -1950,7 +1936,6 @@ blockquote {
       font-size: 2.5rem;
     }
     
-    /* TODO crear text underline */
     #About h2::after {
       left: 35px; 
       top: 29px;
@@ -1980,7 +1965,7 @@ blockquote {
 
     .social-media a {
       width: auto;
-      height: 1.7vw;
+      height: 50px;
     }
     
     .social-media img {
@@ -1988,14 +1973,12 @@ blockquote {
       height: auto;
     }
  
-    /* TODO changing IMAGE by :hover => content: url() */
     .github:hover {
       content: url(/images/icons8-github-64\ \(1\).png);
-      width: 2vw;
+      width: 2.3vw;
       height: auto;
       position: relative;
-      bottom: 4px;
-      left: 4px; 
+      left: 4.2px;
     }
     
     .linkedin:hover {
@@ -2034,7 +2017,6 @@ blockquote {
       height: auto;
     }
 
-    /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
     .project-nav li {
     font-size: 1.3rem;
     width: 200px;
@@ -2187,13 +2169,9 @@ blockquote {
     
     .social-media-footer {
       width: 70%;
+      max-width: 250px;
     }
-    
-    .social-media-footer a {
-      width: auto;
-      height: 1.2vw;
-    }
-    
+      
     .social-media-footer img {
       width: 1.2vw;
       height: auto;
@@ -2209,9 +2187,6 @@ blockquote {
       content: url(/images/icons8-github-64\ \(1\).png);
       width: 1.5vw;
       height: auto;
-      position: relative;
-      bottom: 3px;
-      left: 3.5px;
     }
     
     
