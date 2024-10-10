@@ -176,7 +176,7 @@ h2 {
   display: inline-block;
 }
 
-#About h2::after {
+#About h2::before {
   content: "";
   position: absolute;
   left: 27px; 
@@ -282,7 +282,7 @@ h2 {
   z-index: 2; 
 }
 
-#Skills h2::after {
+#Skills h2::before {
   content: "";
   position: absolute;
   left: 22px; 
@@ -317,16 +317,17 @@ h2 {
   align-items: center;
   position: relative;
   overflow: hidden;
-  z-index: 1;
   cursor: pointer;
   width: auto;
+  z-index: 1;
   height: 225px;
   padding: 10px 35px 15px;
 }
 
-.javascript::before, .html::before, 
-.css::before, .react::before, .node::before,
-.express::before, .mongodb::before, .git::before{
+/* TODO  ::after per que esta la imatge i per sobre la sombra (img > sombra) (*/
+.javascript::after, .html::after, 
+.css::after, .react::after, .node::after,
+.express::after, .mongodb::after, .git::after{
   content:""; 
   position: absolute;
   top: -1;
@@ -334,14 +335,14 @@ h2 {
   width: 110%;
   height: 110%;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
-  /* border: 2px solid rgba(0, 0, 0, 0.9); */
-  z-index: 3; 
+  z-index: 2; 
+  opacity: 1;
   pointer-events: none; 
 }
 
-.javascript:hover::before, .html:hover::before, 
-.css:hover::before, .react:hover::before, .node:hover::before,
-.express:hover::before, .mongodb:hover::before, .git:hover::before {
+.javascript:hover::after, .html:hover::after, 
+.css:hover::after, .react:hover::after, .node:hover::after,
+.express:hover::after, .mongodb:hover::after, .git:hover::after {
   opacity: 0; 
 }
 
@@ -425,7 +426,7 @@ h2 {
   z-index: 2; 
 }
 
-#Projects h2::after {
+#Projects h2::before {
   content: "";
   position: absolute;
   left: 23px; 
@@ -554,7 +555,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   z-index: 2; 
 }
 
-#Contact h2::after {
+#Contact h2::before {
   content: "";
   position: absolute;
   left: 25px; 
@@ -638,6 +639,8 @@ form::before {
   display: flex;
   flex-direction: column;
   position: relative;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .group-vertical::before {
@@ -652,6 +655,15 @@ form::before {
   border-radius: 5px;
   z-index: -1;
   opacity: 0.5;
+}
+
+.message-label {
+width: 100%;
+margin: 8px 0px 0px 0px;
+}
+
+.textarea-container {
+  overflow: hidden;
 }
 
 form label {
@@ -813,9 +825,6 @@ blockquote {
 
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-  /* @media screen and (max-width: 1150px) {
-
-  } */
 
   #inicio {
     width: 80%;
@@ -881,26 +890,25 @@ blockquote {
   }
   
   .border-container {
-    min-width: 280px;
-    min-height: 280px;
-    width: 20vw;
-    height: 51.5vh;
+    width: 22.5vw; 
+    max-width: 270px;
+    min-height: 255px;
+    height: 32vh;
   }
   
   
   .photo {
-    min-width: 349px;
-    width: 30vw;
-    max-width: 349px;
+    width: 28vw;
+    max-width: 320px;
     height: auto;
     position: relative;
     top: 15px;
-    right: 15px;
+    right: 10px;
   }
   
   .info {
     width: 50%;
-    height: 350px;
+    height: 320px;
     position: relative;
     top: 20px; 
   }
@@ -917,57 +925,53 @@ blockquote {
     font-size: 1.1rem;
   }
   
-  
   .social-media {
-    width: 20%;
-    min-width: 110px;
-    height: 43px;
+    width: 25%;
+    height: auto;
   }
   
   .social-media a {
-    width: 2.7w;
-    height: 7.23vh;
+    width: auto;
+    height: 50px;
   }
   
   .linkedin {
-    width: 2.7vw;
+    width: 3.5vw;
+    max-width: 40px;
     height: auto;
-    min-width: 40px;
   }
 
   .github {
-    width: 2.6vw;
-    min-width: 39px;
+    width: 3.3vw;
+    max-width: 39px;
     height: auto;
-    position: relative;
-    top: 1px;
   }
   
   /* TODO changing IMAGE by :hover => content: url() */
   .github:hover {
     content: url(/images/icons8-github-64\ \(1\).png);
-    width: 2.8vw;
+    width: 3vw;
     height: auto;
-    position: relative;
-    top: -5px;
-    left: 5px;
+    
   }
   
   .linkedin:hover {
     content: url(/images/icons8-linkedin-64\ \(1\).png); 
-    width: 2.3vw;
+    width: 3.5vw;
     height: auto;
   }
   
-@media screen and (max-width: 1177px) {
+@media screen and (max-width: 1190px) {
 
   .info {
-    top: 5px; 
+    height: 335px;
   }
 
-  .info-text p {
-    font-size: 1.07rem;
+  @media screen and (max-width: 1177px) {
+    .info-text p {
+      font-size: 1.07rem;
   }
+}
 
   /* TODO changing IMAGE by :hover => content: url() */
   /* .github:hover {
@@ -1090,7 +1094,7 @@ blockquote {
     height: auto;
     margin: 25px;
     padding: 50px;
-    grid-template-columns: repeat(auto-fit,minmax(252.4px, 0.25fr));
+    grid-template-columns: repeat(auto-fit,minmax(251.2px, 0.25fr));
   }
   
   /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
@@ -1130,6 +1134,12 @@ blockquote {
     margin-top: 10px; 
   }
     
+  #Contact article {
+    width: 95%;
+    height: auto;
+    margin: 50px 30px;
+  }
+
   .contact-text {
     margin: 25px 0px 15px 0px;
     width: 70%;
@@ -1145,11 +1155,18 @@ blockquote {
     width: 100%;
     padding: 20px 25px;
     height: auto;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
+
+  @media screen and (max-width: 1177px) {
+    .contact-text p {
+      font-size: 1.07rem;
+  }
+}
   
   .contact-form {
     width: 45%;
+    min-width: 500px;
     height: auto;
     padding: 20px 10px;
     margin: 50px 0px;
@@ -1164,6 +1181,7 @@ blockquote {
     position: relative;
     z-index: 2;
   }
+
   
   form::before {
     content: "";
@@ -1216,6 +1234,12 @@ blockquote {
     z-index: -1;
     opacity: 0.5;
   }
+
+  .textarea-container {
+    width: 90%;
+    margin: 20px 0px;
+    height: auto;
+   }
   
   form label {
     font-size: 1.03rem;
@@ -1241,21 +1265,35 @@ blockquote {
     font-size: 0.9rem;
   }
  
-
+  /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
+  /*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
   form textarea {
-    width: 88%;
+    width: 100%;
     resize: none; 
     height: 500px;
-    margin: 20px 0px 0px 10px;
-    padding: 20px;
+    padding: 15px 10px;
     font-size: 1.05rem;
+    box-sizing: border-box;
+    overflow: auto;
   }
   
-  @media screen and (max-width: 1600px) {
-    form textarea {
-      width: 85%;
+  @media screen and (max-width: 1177px) {
+    form label {
+      font-size: 1rem;
     }
-  }
+
+    form input {
+      font-size: 0.9rem;
+    }
+
+    form select {
+      font-size: 0.8rem;
+    }
+    form textarea {
+      font-size: 0.9rem;
+    }
+
+}
 
   button[type="submit"] {
     width: 135px;
@@ -1721,7 +1759,7 @@ blockquote {
   }
   
   .group-vertical {
-    height: 250px;
+    height: 360px;
     position: relative;
     padding: 3px 0px 3px 5px;
   }
@@ -1738,6 +1776,12 @@ blockquote {
     border-radius: 5px;
     z-index: -1;
     opacity: 0.5;
+  }
+
+  .textarea-container {
+    width: 85%;
+    margin: 20px 0px 25px 0px;
+    height: auto;
   }
   
   form label {
@@ -1766,12 +1810,13 @@ blockquote {
  
 
   form textarea {
-    width: 88%;
-    resize: none; 
-    height: 500px;
-    margin: 20px 0px 0px 10px;
-    padding: 20px;
+    width: 100%;
+    height: 285px;
+    padding: 30px 20px;
     font-size: 1.05rem;
+    box-sizing: border-box;
+    overflow: auto;
+    resize: none; 
   }
   
   @media screen and (max-width: 1600px) {
