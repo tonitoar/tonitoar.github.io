@@ -681,7 +681,33 @@ form select {
   height: 30px;
   padding: 5px;
   margin-left: 10px;
+   /*! eliminar border blue per default */
+   border: 1px solid #ccc;
 }
+
+
+form input {
+  padding: 5px;
+  margin-left: 10px;
+  /*! eliminar border blue per default */
+  border: 1px solid #ccc;
+}
+
+form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  resize: none; 
+  /*! eliminar border blau per default */
+  border: 1px solid #ccc;
+}
+
+ /*! eliminar default border quan escrius*/
+ form textarea:focus,
+ form input:focus
+ {
+   outline: none;
+ }
 
 button[type="submit"] {
   font-weight: 550;
@@ -1796,29 +1822,19 @@ blockquote {
   form input {
     width: 290px;
     height: 17px;
-    padding: 5px;
-    margin-left: 10px;
     font-size: 1rem;
   }
   
   form select {
-    height: 30px;
-    padding: 5px;
-    margin-left: 10px;
     font-size: 0.9rem;
   }
  
-
   form textarea {
-    width: 100%;
     height: 285px;
     padding: 30px 20px;
     font-size: 1.05rem;
-    box-sizing: border-box;
-    overflow: auto;
-    resize: none; 
   }
-  
+
   @media screen and (max-width: 1600px) {
     form textarea {
       width: 85%;
