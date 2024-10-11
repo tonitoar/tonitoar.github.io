@@ -1822,23 +1822,21 @@ blockquote {
   form input {
     width: 290px;
     height: 17px;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
   
   form select {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
  
   form textarea {
-    height: 285px;
-    padding: 30px 20px;
-    font-size: 1.05rem;
-  }
-
-  @media screen and (max-width: 1600px) {
-    form textarea {
-      width: 85%;
-    }
+    width: 100%;
+    resize: none; 
+    height: 280px;
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 30px 20px 0px 20px;
+    font-size: 1rem;
   }
 
   button[type="submit"] {
