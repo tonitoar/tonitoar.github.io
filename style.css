@@ -346,6 +346,12 @@ h2 {
   opacity: 0; 
 }
 
+.javascript:hover, .html:hover, 
+.css:hover, .react:hover, .node:hover,
+.express:hover, .mongodb:hover, .git:hover {
+  box-shadow: 11px 12px 5px rgba(0, 0, 0, 0.4);
+}
+
 .card-opacity {
   height: 100%;
   width: 100%;
@@ -728,16 +734,16 @@ button[type="submit"]:hover {
 /*! Keyframes for the shake animation (X,Y) and scale*/
 @keyframes shake {
   0%, 100% {
-    transform: translate(0, 0) scale(1.15); 
+    transform: translate(0, 0) scale(1.1); 
   }
   25% {
-    transform: translate(-5px, -3px) scale(1.15); 
+    transform: translate(-5px, -3px) scale(1.1); 
   }
   50% {
-    transform: translate(5px, 3px) scale(1.15); 
+    transform: translate(5px, 3px) scale(1.1); 
   }
   75% {
-    transform: translate(-5px, 3px) scale(1.15); 
+    transform: translate(-5px, 3px) scale(1.1); 
   }
 }
 
@@ -893,7 +899,6 @@ blockquote {
     font-size: 1.2rem;
     padding: 6px 25px;
   }
-
     
   h2 {
     color: var(--h2-color); 
@@ -934,7 +939,8 @@ blockquote {
   
   .info {
     width: 50%;
-    height: 320px;
+    /* height: 320px; */
+    height: 90%;
     position: relative;
     top: 20px; 
   }
@@ -987,16 +993,35 @@ blockquote {
     height: auto;
   }
   
-@media screen and (max-width: 1190px) {
-
-  .info {
-    height: 335px;
-  }
-
-  @media screen and (max-width: 1177px) {
+  @media screen and (max-width: 1233px) {
+    .info {
+      height: 85%;
+    }
+    
     .info-text p {
-      font-size: 1.07rem;
+      font-size: 1.05rem;
   }
+
+  @media screen and (max-width: 1184px) {
+    .info {
+      height: 90%;
+    }
+    
+  }
+  @media screen and (max-width: 1121px) {
+    .info {
+      height: 95%;
+    }
+    
+  }
+
+  @media screen and (max-width: 1072px) {
+    .info {
+      height: 100%;
+    }
+    
+  }
+
 }
 
   /* TODO changing IMAGE by :hover => content: url() */
@@ -1014,7 +1039,7 @@ blockquote {
     width: 2.7vw;
     height: auto;
   } */
-}
+
 
   #Skills {
     scroll-margin-top: 140px;
@@ -1184,9 +1209,9 @@ blockquote {
     font-size: 1.1rem;
   }
 
-  @media screen and (max-width: 1177px) {
+  @media screen and (max-width: 1233px) {
     .contact-text p {
-      font-size: 1.07rem;
+      font-size: 1.05rem;
   }
 }
   
@@ -1281,14 +1306,14 @@ blockquote {
     height: 17px;
     padding: 5px;
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: 0.93rem;
   }
   
   form select {
     height: 30px;
     padding: 5px;
     margin-left: 10px;
-    font-size: 0.9rem;
+    font-size: 0.83rem;
   }
  
   /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
@@ -1298,54 +1323,70 @@ blockquote {
     resize: none; 
     height: 500px;
     padding: 15px 10px;
-    font-size: 1.05rem;
+    font-size: 0.98rem;
     box-sizing: border-box;
     overflow: auto;
   }
   
-  @media screen and (max-width: 1177px) {
+  @media screen and (max-width: 1233px) {
     form label {
       font-size: 1rem;
     }
 
     form input {
-      font-size: 0.9rem;
+      font-size: 0.92rem;
     }
 
     form select {
-      font-size: 0.8rem;
+      font-size: 0.83rem;
     }
+
     form textarea {
-      font-size: 0.9rem;
+      font-size: 0.95rem;
     }
 
 }
 
   button[type="submit"] {
-    width: 135px;
-    height: 45px;
-    font-size: 0.95rem;
+    width: 125px;
+    height: 42px;
+    font-size: 0.85rem;
     font-weight: 550;
     margin: 15px auto;
     padding: 10px;
   }
   
- @media screen and (min-width: 1500px) {
     @keyframes shake {
       0%, 100% {
-        transform: translate(0, 0) scale(1.1); 
+        transform: translate(0, 0) scale(1.08); 
       }
       25% {
-        transform: translate(-5px, -3px) scale(1.1); 
+        transform: translate(-5px, -3px) scale(1.08); 
       }
       50% {
-        transform: translate(5px, 3px) scale(1.1); 
+        transform: translate(5px, 3px) scale(1.08); 
       }
       75% {
-        transform: translate(-5px, 3px) scale(1.1); 
+        transform: translate(-5px, 3px) scale(1.08); 
       }
     }
-  }
+
+    @media screen and (max-width: 1233px) {
+      @keyframes shake {
+        0%, 100% {
+          transform: translate(0, 0) scale(1.07); 
+        }
+        25% {
+          transform: translate(-5px, -3px) scale(1.07); 
+        }
+        50% {
+          transform: translate(5px, 3px) scale(1.07); 
+        }
+        75% {
+          transform: translate(-5px, 3px) scale(1.07); 
+        }
+      }
+    }
   
   footer {
     width: 100%;
@@ -1353,7 +1394,7 @@ blockquote {
   }
   
   .footer-content {
-   width: 78%; 
+   width: 85%; 
    height: auto;
    padding: 30px;
   }
@@ -1379,13 +1420,22 @@ blockquote {
   
   blockquote {
     border-left: 4px solid #fff;
-    padding: 10px; 
+    padding: 10px 0px 10px 10px; 
   }
   
   .footer-left p, 
-  .footer-center p {
+  .footer-center p,
+  .footer-right p{
     font-size: 1rem;
   }
+
+  @media screen and (max-width: 1233px) {
+   .footer-left p, 
+  .footer-center p,
+  .footer-right p {
+    font-size: 0.9rem;
+  }
+}
   
   .social-media-footer {
     width: 63%;
@@ -1462,9 +1512,9 @@ blockquote {
     width: 67px;
   }
 
-
-
 }
+
+
 
 
 
@@ -1811,7 +1861,7 @@ blockquote {
   }
   
   form label {
-    font-size: 1.03rem;
+    font-size: 1.05rem;
     margin-left: 5px;
   }
   
@@ -1847,24 +1897,7 @@ blockquote {
     margin: 15px auto;
     padding: 10px;
   }
-  
- @media screen and (min-width: 1500px) {
-    @keyframes shake {
-      0%, 100% {
-        transform: translate(0, 0) scale(1.1); 
-      }
-      25% {
-        transform: translate(-5px, -3px) scale(1.1); 
-      }
-      50% {
-        transform: translate(5px, 3px) scale(1.1); 
-      }
-      75% {
-        transform: translate(-5px, 3px) scale(1.1); 
-      }
-    }
-  }
-  
+    
   footer {
     width: 100%;
     height: auto;
@@ -1897,7 +1930,7 @@ blockquote {
   
   blockquote {
     border-left: 4px solid #fff;
-    padding: 10px; 
+    padding: 10px 0px 10px 10px; 
   }
   
   .footer-left p, 
