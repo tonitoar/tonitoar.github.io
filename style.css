@@ -1,5 +1,5 @@
 * {
- border: 1px solid blue; 
+ /* border: 1px solid blue;  */
  margin:0;
  padding:0; 
 }
@@ -313,7 +313,8 @@ h2 {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -346,11 +347,11 @@ h2 {
   opacity: 0; 
 }
 
-.javascript:hover, .html:hover, 
+/* .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
 .express:hover, .mongodb:hover, .git:hover {
-  box-shadow: 11px 12px 5px rgba(0, 0, 0, 0.4);
-}
+  box-shadow: 11px 12px 5px rgba(0, 0, 0, 0.8);
+} */
 
 .card-opacity {
   height: 100%;
@@ -368,15 +369,15 @@ h2 {
 .card-opacity::before {
  content: "";
  position: absolute;
- bottom: 0; 
- right: 0.5;
- width: 112.56%;
- height: 90.96%;
  background-color: lightgrey;
  border: 4px solid gray; 
  border-radius: 20px 20px 8.5px 8.5px;
  z-index: -1;
  opacity: 0.3;
+ bottom: 0; 
+ right: 0.5;
+ width: 112.56%;
+ height: 90.96%;
 }
 
 .cards img {
@@ -625,6 +626,7 @@ form::before {
   display: flex;
   align-items: center;
   position: relative;
+  padding: 3px 0px 3px 5px;
 }
 
 .group-horizontal::before {
@@ -645,8 +647,9 @@ form::before {
   display: flex;
   flex-direction: column;
   position: relative;
-  /* justify-content: center; */
   align-items: center;
+  height: 360px;
+  padding: 3px 0px 10px 5px;
 }
 
 .group-vertical::before {
@@ -939,10 +942,21 @@ blockquote {
   
   .info {
     width: 50%;
-    /* height: 320px; */
     height: 90%;
     position: relative;
-    top: 20px; 
+    top: 30px; 
+  }
+
+  @media screen and (max-width: 1233px) {
+    .info {
+      height: 95%;
+    }
+  }
+
+  @media screen and (max-width: 1165px){
+    .info {
+      height: 100%;
+    }
   }
   
   .info-text {
@@ -956,9 +970,20 @@ blockquote {
     height: auto;
     font-size: 1.1rem;
   }
+
+  @media screen and (max-width: 1114px) {
+    .info-text p {
+      font-size: 1.05rem;
+  }
+
+  .info {
+    height: 98%;
+  }
+  }
   
   .social-media {
     width: 25%;
+    min-width: 125px;
     height: auto;
   }
   
@@ -968,78 +993,33 @@ blockquote {
   }
   
   .linkedin {
-    width: 3.5vw;
-    max-width: 40px;
+    width: 3.8vw;
     height: auto;
+    max-width: 42px;
   }
 
   .github {
-    width: 3.3vw;
-    max-width: 39px;
+    width: 3.6vw;
+    max-width: 40px;
     height: auto;
   }
   
   /* TODO changing IMAGE by :hover => content: url() */
   .github:hover {
     content: url(/images/icons8-github-64\ \(1\).png);
-    width: 3vw;
-    height: auto;
-    
-  }
-  
-  .linkedin:hover {
-    content: url(/images/icons8-linkedin-64\ \(1\).png); 
-    width: 3.5vw;
-    height: auto;
-  }
-  
-  @media screen and (max-width: 1233px) {
-    .info {
-      height: 85%;
-    }
-    
-    .info-text p {
-      font-size: 1.05rem;
-  }
-
-  @media screen and (max-width: 1184px) {
-    .info {
-      height: 90%;
-    }
-    
-  }
-  @media screen and (max-width: 1121px) {
-    .info {
-      height: 95%;
-    }
-    
-  }
-
-  @media screen and (max-width: 1072px) {
-    .info {
-      height: 100%;
-    }
-    
-  }
-
-}
-
-  /* TODO changing IMAGE by :hover => content: url() */
-  /* .github:hover {
-    content: url(/images/icons8-github-64\ \(1\).png);
-    width: 3.3vw;
+    width: 4.5vw;
+    max-width: 48px;
     height: auto;
     position: relative;
-    top: -5px;
-    left: 5px;
+    left: 3px;
   }
   
   .linkedin:hover {
     content: url(/images/icons8-linkedin-64\ \(1\).png); 
-    width: 2.7vw;
+    width: 3.8vw;
     height: auto;
-  } */
-
+  }
+   
 
   #Skills {
     scroll-margin-top: 140px;
@@ -1093,10 +1073,10 @@ blockquote {
 }
 
 .card-opacity::before {
-  bottom: -1; 
-  right: 0.5;
-  width: 107.5%;
-  height: 91.1%;
+  bottom: 0px; 
+  right: -9.8px;
+  width: 107.141%;
+  height: 90.94%;
  }
  
  .cards img {
@@ -1104,10 +1084,10 @@ blockquote {
    height: auto;
  }
  
- .react img {
+ /* .react img {
    height: 85px;
    width: 95px; 
- }
+ } */
 
 
   .cards p {
@@ -1209,7 +1189,7 @@ blockquote {
     font-size: 1.1rem;
   }
 
-  @media screen and (max-width: 1233px) {
+  @media screen and (max-width: 1114px) {
     .contact-text p {
       font-size: 1.05rem;
   }
@@ -1233,59 +1213,10 @@ blockquote {
     z-index: 2;
   }
 
-  
-  form::before {
-    content: "";
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--dark-red2);
-    border-radius: 5px;
-    z-index: -1;
-    opacity: 0.6;
-  }
-  
-  .group-horizontal {
-    position: relative;
-    padding: 3px 0px 3px 5px;
-  }
-  
-  .group-horizontal::before {
-    content: "";
-    position: absolute;
-    top: -2px; 
-    left: -2px;
-    width: 100%;
-    height: 100%;
-    background-color: lightgrey;
-    border: 2px solid gray;
-    border-radius: 5px;
-    z-index: -1;
-    opacity: 0.5;
-  }
-  
   .group-vertical {
     height: 250px;
-    position: relative;
-    padding: 3px 0px 3px 5px;
   }
   
-  .group-vertical::before {
-    content: "";
-    position: absolute;
-    top: -2px; 
-    left: -2px;
-    width: 100%;
-    height: 100%;
-    background-color: lightgrey;
-   border: 2px solid gray;
-    border-radius: 5px;
-    z-index: -1;
-    opacity: 0.5;
-  }
-
   .textarea-container {
     width: 90%;
     margin: 20px 0px;
@@ -1297,8 +1228,8 @@ blockquote {
     margin-left: 5px;
   }
   
-  label[for="message"] {
-    margin-top: 10px;
+  .message-label {
+    margin-top: 9px;
   }
   
   form input {
@@ -1328,7 +1259,7 @@ blockquote {
     overflow: auto;
   }
   
-  @media screen and (max-width: 1233px) {
+  @media screen and (max-width: 1114px) {
     form label {
       font-size: 1rem;
     }
@@ -1371,7 +1302,7 @@ blockquote {
       }
     }
 
-    @media screen and (max-width: 1233px) {
+    @media screen and (max-width: 1114px) {
       @keyframes shake {
         0%, 100% {
           transform: translate(0, 0) scale(1.07); 
@@ -1604,9 +1535,21 @@ blockquote {
   
   .info {
     width: 50%;
-    height: 310px;
+    height: 90%;
     position: relative;
-    top: 15px; 
+    top: 30px; 
+  }
+
+  @media screen and (max-width:1695px) {
+    .info {
+      height: 95%;
+    }
+  }
+
+  @media screen and (max-width:1475px) {
+    .info {
+      height: 100%;
+    }
   }
   
   .info-text {
@@ -1623,7 +1566,7 @@ blockquote {
   
   
   .social-media {
-    width: 20%;
+    width: 25%;
     max-width: 180px;
     height: auto;
   }
@@ -1802,58 +1745,6 @@ blockquote {
     z-index: 2;
   }
   
-  form::before {
-    content: "";
-    position: absolute;
-    top: 0; 
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--dark-red2);
-    border-radius: 5px;
-    z-index: -1;
-    opacity: 0.6;
-  }
-  
-  .group-horizontal {
-    position: relative;
-    padding: 3px 0px 3px 5px;
-  }
-  
-  /* .group-horizontal::before {
-    content: "";
-    position: absolute;
-    top: -2px; 
-    left: -2px;
-    width: 100%;
-    height: 100%;
-    background-color: lightgrey;
-    border: 2px solid gray;
-    border-radius: 5px;
-    z-index: -1;
-    opacity: 0.5;
-  } */
-  
-  .group-vertical {
-    height: 360px;
-    position: relative;
-    padding: 3px 0px 10px 5px;
-  }
-  
-  /* .group-vertical::before {
-    content: "";
-    position: absolute;
-    top: -2px; 
-    left: -2px;
-    width: 100%;
-    height: 100%;
-    background-color: lightgrey;
-   border: 2px solid gray;
-    border-radius: 5px;
-    z-index: -1;
-    opacity: 0.5;
-  } */
-
   .textarea-container {
     width: 85%;
     margin: 20px 0px 25px 0px;
@@ -1861,14 +1752,14 @@ blockquote {
   }
   
   form label {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     margin-left: 5px;
   }
   
-  label[for="message"] {
-    margin-top: 10px;
+  .message-label {
+    margin-top: 9px;
   }
-  
+
   form input {
     width: 290px;
     height: 17px;
@@ -1886,7 +1777,7 @@ blockquote {
     box-sizing: border-box;
     overflow: auto;
     padding: 30px 20px 0px 20px;
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
 
   button[type="submit"] {
@@ -1996,9 +1887,9 @@ blockquote {
   }
   
   .footer-center ul {
-    margin: 15px 0px 0px 2px;
+    margin: 15px 0px 0px 5px;
     height: 150px;
-    width: 67px;
+    width: 68px;
   }
 
   @media screen and ( min-width: 2100px ) {
