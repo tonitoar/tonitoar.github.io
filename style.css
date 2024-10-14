@@ -1,7 +1,7 @@
 * {
- /* border: 1px solid blue;  */
- margin:0;
- padding:0; 
+/* border: 1px solid blue;  */
+margin:0;
+padding:0; 
 }
 
 /* ? CUSTOM VARIABLES */
@@ -202,6 +202,7 @@ h2 {
   transform: rotate(-9deg); 
   border-radius: 15%; 
   overflow: hidden; 
+  box-shadow: 13px 15px 18px rgba(0, 0, 0);
 }
 
 
@@ -231,6 +232,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 13px 15px 18px rgba(0, 0, 0);
 }
 
 .info-text p {
@@ -303,7 +305,6 @@ h2 {
   height: auto;
   gap: 50px 100px; 
   padding: 30px;
-  margin: 25px 0px;
 }
 
 .javascript, .html, 
@@ -313,7 +314,6 @@ h2 {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -347,11 +347,11 @@ h2 {
   opacity: 0; 
 }
 
-/* .javascript:hover, .html:hover, 
+.javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
 .express:hover, .mongodb:hover, .git:hover {
-  box-shadow: 11px 12px 5px rgba(0, 0, 0, 0.8);
-} */
+  box-shadow: 13px 15px 18px rgba(0, 0, 0);
+}
 
 .card-opacity {
   height: 100%;
@@ -367,17 +367,17 @@ h2 {
 }
 
 .card-opacity::before {
- content: "";
- position: absolute;
- background-color: lightgrey;
- border: 4px solid gray; 
- border-radius: 20px 20px 8.5px 8.5px;
- z-index: -1;
- opacity: 0.3;
- bottom: 0; 
- right: 0.5;
- width: 112.56%;
- height: 90.96%;
+content: "";
+position: absolute;
+background-color: lightgrey;
+border: 4px solid gray; 
+border-radius: 20px 20px 8.5px 8.5px;
+z-index: -1;
+opacity: 0.3;
+bottom: 0; 
+right: 0.5;
+width: 112.56%;
+height: 90.96%;
 }
 
 .cards img {
@@ -506,7 +506,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   text-align: center; 
   padding: 20px;
 }
- 
+
 .hover-description h4 {
   color: var(--light-red2);
 }
@@ -526,8 +526,8 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
 }
 
 .hover-description button:hover {
- background-color: var(--dark-red2);
- color: white;
+background-color: var(--dark-red2);
+color: white;
 }
 
 #Contact {
@@ -580,6 +580,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 13px 15px 18px rgba(0, 0, 0);
 }
 
 .contact-text span {
@@ -599,6 +600,7 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   background-color: var(--dark-red1);
   border: 3px solid var(--dark-red2);
   border-radius: 20px;
+  box-shadow: 13px 15px 18px rgba(0, 0, 0);
 }
 
 form {
@@ -637,7 +639,7 @@ form::before {
   width: 100%;
   height: 100%;
   background-color: lightgrey;
- border: 2px solid gray;
+border: 2px solid gray;
   border-radius: 5px;
   z-index: -1;
   opacity: 0.5;
@@ -660,7 +662,7 @@ form::before {
   width: 100%;
   height: 100%;
   background-color: lightgrey;
- border: 2px solid gray;
+border: 2px solid gray;
   border-radius: 5px;
   z-index: -1;
   opacity: 0.5;
@@ -690,13 +692,13 @@ form select {
   height: 30px;
   padding: 5px;
   margin-left: 10px;
-   /*! eliminar border blue per default */
-   border: 1px solid #ccc;
+  /*! eliminar border blue per default */
+  border: 1px solid #ccc;
 }
 
 
 form input {
-  padding: 5px;
+  padding: 5px 5px 5px 7px;
   margin-left: 10px;
   /*! eliminar border blue per default */
   border: 1px solid #ccc;
@@ -711,12 +713,12 @@ form textarea {
   border: 1px solid #ccc;
 }
 
- /*! eliminar default border quan escrius*/
- form textarea:focus,
- form input:focus
- {
-   outline: none;
- }
+/*! eliminar default border quan escrius*/
+form textarea:focus,
+form input:focus
+{
+  outline: none;
+}
 
 button[type="submit"] {
   font-weight: 550;
@@ -760,9 +762,9 @@ footer {
 }
 
 .footer-content {
- display: flex;
- justify-content: space-between;
- align-items: baseline;
+display: flex;
+justify-content: space-between;
+align-items: baseline;
 }
 
 
@@ -913,7 +915,7 @@ blockquote {
   #About article {
     width: 95%;
     height: auto;
-    margin: 50px 30px;
+    margin: 60px 30px;
   }
   
   .intro {
@@ -924,16 +926,14 @@ blockquote {
   }
   
   .border-container {
-    width: 22.5vw; 
-    max-width: 270px;
-    min-height: 255px;
-    height: 32vh;
+    width: 23vw; 
+    max-width: 275px;
+    height: 35vh;
   }
   
-  
   .photo {
-    width: 28vw;
-    max-width: 320px;
+    width: 31vw;
+    max-width: 340px;
     height: auto;
     position: relative;
     top: 15px;
@@ -999,16 +999,16 @@ blockquote {
   }
 
   .github {
-    width: 3.6vw;
-    max-width: 40px;
+    width: 3.3vw;
+    max-width: 39.5px;
     height: auto;
   }
   
   /* TODO changing IMAGE by :hover => content: url() */
   .github:hover {
     content: url(/images/icons8-github-64\ \(1\).png);
-    width: 4.5vw;
-    max-width: 48px;
+    width: 3.3vw;
+    max-width: 47px;
     height: auto;
     position: relative;
     left: 3px;
@@ -1019,52 +1019,20 @@ blockquote {
     width: 3.8vw;
     height: auto;
   }
-   
-
-  #Skills {
-    scroll-margin-top: 140px;
-    margin: 100px 0px;
-    width: 90vw;
-    height: auto;
-    position: relative;
-  }
   
-  #Skills::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--context-background);
-    border-radius: 10px;
-    opacity: 0.97;
-    z-index: 1; 
-  }
-   
-  #Skills h2::after {
-    content: "";
-    position: absolute;
-    left: 22px; 
-    top: 23px;
-    width: 115px;
-    height: 12px; 
-    background-color: var(--light-red1); 
-    opacity: 0.3;
-  }
-
   #Skills article {
     width: 95%;
     height: auto;
-    margin: 50px 30px;
+    margin: 60px 30px;
   }
 
   .cards {
     grid-template-columns: repeat(auto-fill, minmax(143px, 1fr));
     justify-items: center;
+    margin: 10px 0px;
   }
 
-  .javascript, .html, 
+.javascript, .html, 
 .css, .react, .node,
 .express, .mongodb, .git {
   width: auto;
@@ -1075,20 +1043,14 @@ blockquote {
 .card-opacity::before {
   bottom: 0px; 
   right: -9.8px;
-  width: 107.141%;
+  width: 107.15%;
   height: 90.94%;
- }
- 
- .cards img {
-   width: 85px;
-   height: auto;
- }
- 
- /* .react img {
-   height: 85px;
-   width: 95px; 
- } */
+}
 
+.cards img {
+  width: 85px;
+  height: auto;
+}
 
   .cards p {
     font-size: 1.15rem;
@@ -1101,11 +1063,11 @@ blockquote {
   #Projects article {
     width: 95%;
     height: auto;
-    margin: 50px 30px;
+    margin: 60px 30px;
   }
 
   .project-nav {
-    margin: 40px 0px;
+    margin: 50px 0px 20px 0px;
     min-width: 610px;
     width: 53%; 
     height: auto;
@@ -1144,8 +1106,6 @@ blockquote {
     bottom: 0;
     padding: 20px;
   }
-   
-  
   
   .hover-description h4 {
     font-size: 1.1rem;
@@ -1168,7 +1128,7 @@ blockquote {
   #Contact article {
     width: 95%;
     height: auto;
-    margin: 50px 30px;
+    margin: 60px 30px;
   }
 
   .contact-text {
@@ -1221,7 +1181,7 @@ blockquote {
     width: 90%;
     margin: 20px 0px;
     height: auto;
-   }
+  }
   
   form label {
     font-size: 1.03rem;
@@ -1242,11 +1202,10 @@ blockquote {
   
   form select {
     height: 30px;
-    padding: 5px;
     margin-left: 10px;
-    font-size: 0.83rem;
+    font-size: 0.85rem;
   }
- 
+
   /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
   /*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
   form textarea {
@@ -1254,28 +1213,27 @@ blockquote {
     resize: none; 
     height: 500px;
     padding: 15px 10px;
-    font-size: 0.98rem;
+    font-size: 1rem;
     box-sizing: border-box;
     overflow: auto;
   }
   
   @media screen and (max-width: 1114px) {
     form label {
-      font-size: 1rem;
+      font-size: 1.02rem;
     }
 
     form input {
-      font-size: 0.92rem;
+      font-size: 0.9rem;
     }
 
     form select {
-      font-size: 0.83rem;
+      font-size: 0.85rem;
     }
 
     form textarea {
-      font-size: 0.95rem;
+      font-size: 1rem;
     }
-
 }
 
   button[type="submit"] {
@@ -1325,11 +1283,10 @@ blockquote {
   }
   
   .footer-content {
-   width: 85%; 
-   height: auto;
-   padding: 30px;
+  width: 85%; 
+  height: auto;
+  padding: 30px;
   }
-  
   
   .footer-left {
     height: 120px;
@@ -1342,6 +1299,12 @@ blockquote {
     padding: 10px;
   }
   
+  .footer-center ul {
+    margin: 15px 0px 0px 2px;
+    height: 150px;
+    width: 67px;
+  }
+
   .footer-right {
     height: 120px;
     padding: 10px;
@@ -1356,15 +1319,21 @@ blockquote {
   
   .footer-left p, 
   .footer-center p,
-  .footer-right p{
+  .footer-right p,
+  .footer-center a{
     font-size: 1rem;
   }
 
-  @media screen and (max-width: 1233px) {
-   .footer-left p, 
+  @media screen and (max-width: 1114px) {
+  .footer-left p, 
   .footer-center p,
-  .footer-right p {
+  .footer-right p,
+  .footer-center a {
     font-size: 0.9rem;
+  }
+
+  blockquote {
+    font-size: 0.97rem;
   }
 }
   
@@ -1374,74 +1343,36 @@ blockquote {
   
   .social-media-footer a {
     width: auto;
-    height: 1.8vw;
+    height: 30px;
   }
   
   .linkedin2 {
-    width: 1.8vw;
+    width: 2.5vw;
+    max-width: 30px;
     height: auto;
   }
 
   .github2 {
-    width: 1.7vw;
+    width: 2.3vw;
+    max-width: 28px;
     height: auto;
-    position: relative;
-    top: 1.2px;
   }
   
   .linkedin2:hover {
     content: url(/images/icons8-linkedin-64\ \(1\).png);
-    width: 1.9vw;
+    width: 2.5vw;
     height: auto;
   }
   
   .github2:hover {
     content: url(/images/icons8-github-64\ \(1\).png);
-    width: 2.2vw;
+    width: 3vw;
     height: auto;
+    max-width: 35px;
     position: relative;
-    top: -3px;
     left: 3px;
   }
   
-  @media screen and (max-width: 1600px) {
-
-    .social-media-footer a {
-      width: auto;
-      height: 2.1vw;
-    }
-
-    .linkedin2 {
-      width: 2.1vw;
-      height: auto;
-    }
-  
-    .github2 {
-      width: 2vw;
-      height: auto;
-      position: relative;
-      top: 1.2px;
-    }
-    
-    .linkedin2:hover {
-      width: 2vw;
-      height: auto;
-    }
-    
-    .github2:hover {
-      width: 2.5vw;
-      height: auto;
-      position: relative;
-      top: -3px;
-      left: 3px;
-    }
-  }
-  
-  .footer-center ul {
-    margin: 15px 0px 0px 2px;
-    height: 150px;
-    width: 67px;
-  }
 
 }
 
@@ -1502,7 +1433,7 @@ blockquote {
   #About article {
     width: 90%;
     height: auto;
-    margin: 50px 30px;
+    margin: 60px 30px;
   }
     
   h2 {
@@ -1516,7 +1447,7 @@ blockquote {
     width: 95%;
     height: 400px;
     padding: 15px 0px 40px;
-    margin-bottom: 25px;
+    margin: 30px 0px;
   }
   
   .border-container {
@@ -1630,7 +1561,11 @@ blockquote {
   #Skills article {
     width: 90%;
     height: auto;
-    margin: 50px 30px;
+    margin: 60px 30px;
+  }
+
+  .cards {
+    margin: 40px 0px;
   }
   
   .cards p {
@@ -1644,11 +1579,11 @@ blockquote {
   #Projects article {
     width: 90%;
     height: auto;
-    margin: 50px 30px;
+    margin: 60px 30px;
   }
 
   .project-nav {
-    margin: 40px 0px;
+    margin: 60px 0px 45px 0px;
     min-width: 53%; 
     height: auto;
   }
@@ -1665,7 +1600,7 @@ blockquote {
 .project-container {
     min-width: 64%;
     height: auto;
-    margin: 25px 0px;
+    margin: 5px 0px;
     padding: 50px;
   }
   
@@ -1707,11 +1642,11 @@ blockquote {
   #Contact article {
     width: 90%;
     height: auto;
-    margin: 50px 30px;
+    margin: 60px 30px;
   }
     
   .contact-text {
-    margin: 25px 0px 15px 0px;
+    margin: 50px 0px 15px 0px;
     width: 70%;
     height: auto;
     border-radius: 10px;
@@ -1732,7 +1667,7 @@ blockquote {
     width: 45%;
     height: auto;
     padding: 20px 10px;
-    margin: 50px 0px;
+    margin: 85px 0px;
   }
   
   form {
@@ -1752,7 +1687,7 @@ blockquote {
   }
   
   form label {
-    font-size: 1.08rem;
+    font-size: 1.1rem;
     margin-left: 5px;
   }
   
@@ -1763,11 +1698,11 @@ blockquote {
   form input {
     width: 290px;
     height: 17px;
-    font-size: 0.95rem;
+    font-size: 0.96rem;
   }
   
   form select {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
  
   form textarea {
