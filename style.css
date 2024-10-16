@@ -598,7 +598,7 @@ color: white;
   background-color: var(--dark-red1);
   border: 3px solid var(--dark-red2);
   border-radius: 20px;
-  box-shadow: 13px 15px 18px rgba(0, 0, 0);
+  /* box-shadow: 13px 15px 18px rgba(0, 0, 0); */
 }
 
 form {
