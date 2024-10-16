@@ -418,15 +418,28 @@ const templateID = 'template_portfolio';
 
 emailjs.init(userID); 
 
-const form = document.getElementById("email-content");
+const form = document.getElementById("email-content"); //* unique
+const formInput = document.getElementsByTagName("input"); //* array of inputs
+const formTextArea = document.getElementsByTagName("textarea"); //* array of inputs
+const subjectOption = document.getElementById("subject_type"); //* unique
 
 form.addEventListener("submit", function(event) {
   event.preventDefault(); //* Prevent default form submission
 
+//TODO this = form data (const form)
   emailjs.sendForm(serviceID, templateID, this)
   .then(function(response) {
     console.log("Success!", response.status, response.text);
     alert("Message sent successfully!");
+    //TODO empty container every time after submit => as an array --> needs to set "value" to "" each one elements of the array
+    for (let i = 0; i < formInput.length; i++) {
+      formInput[i].value = ""; 
+    }
+    for (let i = 0; i < formTextArea.length; i++) {
+      formTextArea[i].value = ""; 
+    }
+    //TODO back to default value
+    subjectOption.value = "Recruiter"; 
   }, function(error) {
     console.log("Failed...", error);
     alert("Failed to send message");
