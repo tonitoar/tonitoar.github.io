@@ -431,14 +431,14 @@ form.addEventListener("submit", function(event) {
   .then(function(response) {
     console.log("Success!", response.status, response.text);
     alert("Message sent successfully!");
-    //TODO empty container every time after submit => as an array --> needs to set "value" to "" each one elements of the array
+    //TODO empty container every time after submit => as an array --> needs to set "value" to "" each one elements of the array (RESET)
     for (let i = 0; i < formInput.length; i++) {
       formInput[i].value = ""; 
     }
     for (let i = 0; i < formTextArea.length; i++) {
       formTextArea[i].value = ""; 
     }
-    //TODO back to default value
+    //TODO back to default value (RESET)
     subjectOption.value = "Recruiter"; 
   }, function(error) {
     console.log("Failed...", error);
