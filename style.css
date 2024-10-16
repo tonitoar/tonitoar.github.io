@@ -71,6 +71,9 @@ h1 {
   border-radius: 50px;
   transition: all 0.3s ease-in-out;
   cursor: pointer; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .CV:hover {
@@ -851,6 +854,558 @@ blockquote {
   @media screen and (max-width: 962px) {
 
   } */
+
+  #inicio {
+    width: 80%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: clamp(2.7rem, 5.7vw, 6.8rem);
+  }
+  
+
+  
+  .CV {
+    margin-top: 40px;
+    width: calc(184px * 0.90);
+    height: calc(60px * 0.90);
+  }
+  
+  .CV a {
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    padding: calc(17px * 0.90) calc(29px * 0.90);
+  }
+
+  .CV:hover {
+    transform: scale(1.07);
+  }
+
+  @media screen and (max-width: 962px) {
+ 
+    .CV {
+      width: calc(184px * 0.85);
+      height: calc(60px * 0.85);
+    }
+    
+    .CV a {
+      font-size: 0.95rem;
+      padding: calc(17px * 0.83) calc(29px * 0.83);
+    }
+
+    .CV:hover {
+      transform: scale(1.065);
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+ 
+    .CV {
+      width: calc(184px * 0.83);
+      height: calc(60px * 0.83);
+    }
+    
+    .CV a {
+      font-size: 0.93rem;
+      padding: calc(17px * 0.80) calc(29px * 0.80);
+    }
+
+    .CV:hover {
+      transform: scale(1.06);
+    }
+  }
+
+
+  
+  nav {
+    min-width: 750px;
+    width: 65%;
+    height: 70px;
+    margin: 85px auto 0px auto; 
+  }
+  
+  nav ul {
+    width: 90%;
+    height: 50px;
+  }
+  
+  nav a {
+    font-size: 1.2rem;
+    padding: 6px 25px;
+  }
+    
+  h2 {
+    color: var(--h2-color); 
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  #About article {
+    width: 95%;
+    height: auto;
+    margin: 60px 30px;
+  }
+  
+  .intro {
+    width: 95%;
+    height: 400px;
+    padding: 15px 0px 40px;
+    margin-bottom: 25px;
+  }
+  
+  .border-container {
+    width: 23vw; 
+    max-width: 275px;
+    height: 35vh;
+  }
+  
+  .photo {
+    width: 31vw;
+    max-width: 340px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 10px;
+  }
+  
+  .info {
+    width: 50%;
+    height: 90%;
+    position: relative;
+    top: 30px; 
+  }
+
+  @media screen and (max-width: 1233px) {
+    .info {
+      height: 95%;
+    }
+  }
+
+  @media screen and (max-width: 1165px){
+    .info {
+      height: 100%;
+    }
+  }
+  
+  .info-text {
+    width: 95%;
+    height: auto;
+  }
+  
+  .info-text p {
+    width: 100%;
+    padding: 20px 25px;
+    height: auto;
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 1114px) {
+    .info-text p {
+      font-size: 1.05rem;
+  }
+
+  .info {
+    height: 98%;
+  }
+  }
+  
+  .social-media {
+    width: 25%;
+    min-width: 125px;
+    height: auto;
+  }
+  
+  .social-media a {
+    width: auto;
+    height: 50px;
+  }
+  
+  .linkedin {
+    width: 3.8vw;
+    height: auto;
+    max-width: 42px;
+  }
+
+  .github {
+    width: 3.3vw;
+    max-width: 39.5px;
+    height: auto;
+  }
+  
+  /* TODO changing IMAGE by :hover => content: url() */
+  .github:hover {
+    content: url(/images/icons8-github-64\ \(1\).png);
+    width: 3.3vw;
+    max-width: 47px;
+    height: auto;
+    position: relative;
+    left: 3px;
+  }
+  
+  .linkedin:hover {
+    content: url(/images/icons8-linkedin-64\ \(1\).png); 
+    width: 3.8vw;
+    height: auto;
+  }
+  
+  #Skills article {
+    width: 95%;
+    height: auto;
+    margin: 60px 30px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(143px, 1fr));
+    justify-items: center;
+    margin: 10px 0px;
+  }
+
+.javascript, .html, 
+.css, .react, .node,
+.express, .mongodb, .git {
+  width: auto;
+  height: 225px;
+  padding: 10px 30px 15px;
+}
+
+.card-opacity::before {
+  bottom: 0px; 
+  right: -9.8px;
+  width: 107.15%;
+  height: 90.94%;
+}
+
+.cards img {
+  width: 85px;
+  height: auto;
+}
+
+  .cards p {
+    font-size: 1.15rem;
+  }
+  
+  .cards h3 {
+    font-size: 1.1rem;
+  }
+
+  #Projects article {
+    width: 95%;
+    height: auto;
+    margin: 60px 30px;
+  }
+
+  .project-nav {
+    margin: 50px 0px 20px 0px;
+    min-width: 610px;
+    width: 53%; 
+    height: auto;
+  }
+  
+  /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
+  .project-nav li {
+  font-size: 1.2rem;
+  width: 180px;
+  height: 35px; 
+  transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
+  }
+  
+  
+.project-container {
+    width: 80%;
+    height: auto;
+    margin: 25px;
+    padding: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(251.2px, 0.25fr));
+  }
+  
+  /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
+  .project-item {
+    width: 250px;
+    height: 250px;
+    position: relative;
+  }
+  
+  /* TODO div class="hover-description" creat per JS */
+  .hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+  }
+  
+  .hover-description h4 {
+    font-size: 1.1rem;
+  }
+  
+  .hover-description p {
+    font-size: 1.05rem;
+  }
+  
+  .hover-description h3 {
+    font-size: 1.45rem;
+  }
+  
+  .hover-description button {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    margin-top: 10px; 
+  }
+    
+  #Contact article {
+    width: 95%;
+    height: auto;
+    margin: 60px 30px;
+  }
+
+  .contact-text {
+    margin: 25px 0px 15px 0px;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .contact-text span {
+    font-weight: 800;
+  }
+  
+  .contact-text p {
+    width: 100%;
+    padding: 20px 25px;
+    height: auto;
+    font-size: 1.1rem;
+  }
+
+  @media screen and (max-width: 1114px) {
+    .contact-text p {
+      font-size: 1.05rem;
+  }
+}
+  
+  .contact-form {
+    width: 45%;
+    min-width: 500px;
+    height: auto;
+    padding: 20px 10px;
+    margin: 50px 0px;
+  }
+  
+  form {
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    margin: 10px 20px;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .group-vertical {
+    height: 250px;
+  }
+  
+  .textarea-container {
+    width: 90%;
+    margin: 20px 0px;
+    height: auto;
+  }
+  
+  form label {
+    font-size: 1.03rem;
+    margin-left: 5px;
+  }
+  
+  .message-label {
+    margin-top: 9px;
+  }
+  
+  form input {
+    width: 290px;
+    height: 17px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 0.93rem;
+  }
+  
+  form select {
+    height: 30px;
+    margin-left: 10px;
+    font-size: 0.85rem;
+  }
+
+  /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
+  /*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
+  form textarea {
+    width: 100%;
+    resize: none; 
+    height: 500px;
+    padding: 15px 10px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  @media screen and (max-width: 1114px) {
+    form label {
+      font-size: 1.02rem;
+    }
+
+    form input {
+      font-size: 0.9rem;
+    }
+
+    form select {
+      font-size: 0.85rem;
+    }
+
+    form textarea {
+      font-size: 1rem;
+    }
+}
+
+  button[type="submit"] {
+    width: 125px;
+    height: 42px;
+    font-size: 0.85rem;
+    font-weight: 550;
+    margin: 15px auto;
+    padding: 10px;
+  }
+  
+    @keyframes shake {
+      0%, 100% {
+        transform: translate(0, 0) scale(1.08); 
+      }
+      25% {
+        transform: translate(-5px, -3px) scale(1.08); 
+      }
+      50% {
+        transform: translate(5px, 3px) scale(1.08); 
+      }
+      75% {
+        transform: translate(-5px, 3px) scale(1.08); 
+      }
+    }
+
+    @media screen and (max-width: 1114px) {
+      @keyframes shake {
+        0%, 100% {
+          transform: translate(0, 0) scale(1.07); 
+        }
+        25% {
+          transform: translate(-5px, -3px) scale(1.07); 
+        }
+        50% {
+          transform: translate(5px, 3px) scale(1.07); 
+        }
+        75% {
+          transform: translate(-5px, 3px) scale(1.07); 
+        }
+      }
+    }
+  
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-content {
+  width: 85%; 
+  height: auto;
+  padding: 30px;
+  }
+  
+  .footer-left {
+    height: 120px;
+    padding: 10px;
+  }
+  
+  .footer-center {
+    height: 200px;
+    width: auto;
+    padding: 10px;
+  }
+  
+  .footer-center ul {
+    margin: 15px 0px 0px 2px;
+    height: 150px;
+    width: 67px;
+  }
+
+  .footer-right {
+    height: 120px;
+    padding: 10px;
+    position: relative;
+    top: 100px; 
+  }
+  
+  blockquote {
+    border-left: 4px solid #fff;
+    padding: 10px 0px 10px 10px; 
+  }
+  
+  .footer-left p, 
+  .footer-center p,
+  .footer-right p,
+  .footer-center a{
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 1114px) {
+  .footer-left p, 
+  .footer-center p,
+  .footer-right p,
+  .footer-center a {
+    font-size: 0.9rem;
+  }
+
+  blockquote {
+    font-size: 0.97rem;
+  }
+}
+  
+  .social-media-footer {
+    width: 63%;
+  }
+  
+  .social-media-footer a {
+    width: auto;
+    height: 30px;
+  }
+  
+  .linkedin2 {
+    width: 2.5vw;
+    max-width: 30px;
+    height: auto;
+  }
+
+  .github2 {
+    width: 2.3vw;
+    max-width: 28px;
+    height: auto;
+  }
+  
+  .linkedin2:hover {
+    content: url(/images/icons8-linkedin-64\ \(1\).png);
+    width: 2.5vw;
+    height: auto;
+  }
+  
+  .github2:hover {
+    content: url(/images/icons8-github-64\ \(1\).png);
+    width: 3vw;
+    height: auto;
+    max-width: 35px;
+    position: relative;
+    left: 3px;
+  }
+  
+
 }
 
 
@@ -867,22 +1422,44 @@ blockquote {
     font-size: clamp(3rem, 5.6vw, 6.8rem);
   }
   
-
-  
+/*! REDUCCÍO PROPROCIONAL*/
   .CV {
     margin-top: 40px;
-    width: 174px;
-    height: 53px;
+    width: calc(184px * 0.95);
+    height: calc(60px * 0.95);
   }
   
   .CV a {
-    font-size: 1rem;
+    font-size: 1.05rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    padding: 17px 29px;
+    padding: calc(17px * 0.95) calc(29px * 0.95);
   }
-  
+
+  .CV:hover {
+    transform: scale(1.09);
+  }
+
+
+  @media screen and (max-width: 1190px) {
+
+    .CV {
+      width: calc(184px * 0.90);
+      height: calc(60px * 0.90);
+    }
+    
+    .CV a {
+      font-size: 1rem;
+      padding: calc(17px * 0.90) calc(29px * 0.90);
+    }
+
+    .CV:hover {
+      transform: scale(1.08);
+    }
+  }
+
+
   nav {
     min-width: 750px;
     width: 65%;
@@ -1405,6 +1982,27 @@ blockquote {
     text-decoration: none;
     text-align: center;
     padding: 17px 29px;
+  }
+
+  @media screen and (max-width: 1700px) {
+
+    .CV {
+      margin-top: 50px;
+      width: calc(184px * 0.95);
+      height: calc(60px * 0.95);
+    }
+    
+    .CV a {
+      font-size: 1.05rem;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      padding: calc(17px * 0.95) calc(29px * 0.95);
+    }
+
+      .CV:hover {
+        transform: scale(1.09);
+      }
   }
   
   nav {
