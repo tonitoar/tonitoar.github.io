@@ -1,5 +1,5 @@
 * {
-/* border: 1px solid blue;  */
+border: 1px solid blue; 
 margin:0;
 padding:0; 
 }
@@ -921,20 +921,21 @@ blockquote {
 
   
   nav {
-    min-width: 750px;
+    min-width: 600px;
     width: 65%;
-    height: 70px;
+    height: 60px;
     margin: 85px auto 0px auto; 
   }
   
   nav ul {
+    min-width: 550px;
     width: 90%;
-    height: 50px;
+    height: 40px;
   }
   
   nav a {
-    font-size: 1.2rem;
-    padding: 6px 25px;
+    font-size: 1.1rem;
+    padding: calc(7px * 0.7) calc(32px * 0.7);
   }
     
   h2 {
@@ -952,7 +953,7 @@ blockquote {
   
   .intro {
     width: 95%;
-    height: 400px;
+    height: 450px;
     padding: 15px 0px 40px;
     margin-bottom: 25px;
   }
@@ -979,16 +980,20 @@ blockquote {
     top: 30px; 
   }
 
-  @media screen and (max-width: 1233px) {
+  @media screen and (max-width: 970px) {
     .info {
       height: 95%;
     }
   }
 
-  @media screen and (max-width: 1165px){
+  /* @media screen and (max-width: 900px){
     .info {
       height: 100%;
     }
+  } */
+
+  @media screen and (max-width: 962px) {
+/*COLUMNA*/
   }
   
   .info-text {
@@ -1000,17 +1005,7 @@ blockquote {
     width: 100%;
     padding: 20px 25px;
     height: auto;
-    font-size: 1.1rem;
-  }
-
-  @media screen and (max-width: 1114px) {
-    .info-text p {
-      font-size: 1.05rem;
-  }
-
-  .info {
-    height: 98%;
-  }
+    font-size: 1.05rem;
   }
   
   .social-media {
@@ -1459,7 +1454,6 @@ blockquote {
     }
   }
 
-
   nav {
     min-width: 750px;
     width: 65%;
@@ -1474,9 +1468,9 @@ blockquote {
   
   nav a {
     font-size: 1.2rem;
-    padding: 6px 25px;
+    padding: calc(7px * 0.86) calc(32px * 0.782);
   }
-    
+   
   h2 {
     color: var(--h2-color); 
     font-size: 2rem;
@@ -2006,9 +2000,9 @@ blockquote {
   }
   
   nav {
-    min-width: 65%;
-    width: 100%;
-    max-width: 65%;
+    min-width: 930px;
+    width: 60%;
+    max-width: 1200px; 
     height: 70px;
     margin: 85px auto 0px auto; 
   }
