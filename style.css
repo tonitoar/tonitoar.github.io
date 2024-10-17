@@ -861,15 +861,15 @@ blockquote {
   }
   
   h1 {
-    font-size: clamp(2.7rem, 5.7vw, 6.8rem);
+    font-size: clamp(2.7rem, 5.5vw, 6.8rem);
   }
   
 
   
   .CV {
     margin-top: 40px;
-    width: calc(184px * 0.90);
-    height: calc(60px * 0.90);
+    width: calc(184px * 0.91);
+    height: calc(60px * 0.91);
   }
   
   .CV a {
@@ -887,8 +887,8 @@ blockquote {
   @media screen and (max-width: 962px) {
  
     .CV {
-      width: calc(184px * 0.85);
-      height: calc(60px * 0.85);
+      width: calc(184px * 0.86);
+      height: calc(60px * 0.86);
     }
     
     .CV a {
@@ -904,8 +904,9 @@ blockquote {
   @media screen and (max-width: 850px) {
  
     .CV {
-      width: calc(184px * 0.83);
-      height: calc(60px * 0.83);
+      margin-top: 35px;
+      width: calc(184px * 0.84);
+      height: calc(60px * 0.84);
     }
     
     .CV a {
@@ -979,23 +980,13 @@ blockquote {
     position: relative;
     top: 30px; 
   }
-
+  
   @media screen and (max-width: 970px) {
     .info {
       height: 95%;
     }
   }
 
-  /* @media screen and (max-width: 900px){
-    .info {
-      height: 100%;
-    }
-  } */
-
-  @media screen and (max-width: 962px) {
-/*COLUMNA*/
-  }
-  
   .info-text {
     width: 95%;
     height: auto;
@@ -1018,6 +1009,7 @@ blockquote {
     width: auto;
     height: 50px;
   }
+  
   
   .linkedin {
     width: 3.8vw;
@@ -1047,6 +1039,81 @@ blockquote {
     height: auto;
   }
   
+  @media screen and (max-width: 962px) {
+
+     
+  #About article {
+    width: 95%;
+    height: auto;
+    margin: 50px 30px 30px;
+  }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: center; */
+      height: auto;
+      min-height: 900px;
+      padding: 15px 0px;
+    }
+
+    .info {
+      width: 70%;
+      height: auto;
+      gap: 50px ; 
+      position: relative; 
+      top: 0px; 
+    }
+    
+    /* @media screen and (max-width: 866px) {
+      .info {
+        height: 42.5%;
+      }
+    } */
+
+    .info-text {
+      width: 90%;
+      height: auto;
+    }
+    
+    .info-text p {
+      text-align: center;
+      width: 100%;
+      padding: 20px;
+      height: auto;
+      font-size: 1.05rem;
+    }
+  
+    .border-container {
+      width: 40vw; 
+      height: 40vh;
+    }
+    
+    .photo {
+      width: 43vw;
+      max-width: 325px;
+      height: auto;
+      position: relative;
+      top: 11px;
+      right: 10px;
+    }
+
+    .linkedin {
+        width: 4.8vw;
+        height: auto;
+        max-width: 38px;
+      }
+
+      .github {
+        width: 4.6vw;
+        max-width: 36px;
+        height: auto;
+      }
+
+  }
+
+
   #Skills article {
     width: 95%;
     height: auto;
@@ -1420,8 +1487,8 @@ blockquote {
 /*! REDUCCÍO PROPROCIONAL*/
   .CV {
     margin-top: 40px;
-    width: calc(184px * 0.95);
-    height: calc(60px * 0.95);
+    width: calc(184px * 0.96);
+    height: calc(60px * 0.96);
   }
   
   .CV a {
@@ -1429,7 +1496,7 @@ blockquote {
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    padding: calc(17px * 0.95) calc(29px * 0.95);
+    padding: calc(17px * 0.96) calc(29px * 0.96);
   }
 
   .CV:hover {
@@ -1440,8 +1507,8 @@ blockquote {
   @media screen and (max-width: 1190px) {
 
     .CV {
-      width: calc(184px * 0.90);
-      height: calc(60px * 0.90);
+      width: calc(184px * 0.91);
+      height: calc(60px * 0.91);
     }
     
     .CV a {
@@ -1982,8 +2049,8 @@ blockquote {
 
     .CV {
       margin-top: 50px;
-      width: calc(184px * 0.95);
-      height: calc(60px * 0.95);
+      width: calc(184px * 0.96);
+      height: calc(60px * 0.96);
     }
     
     .CV a {
@@ -1991,7 +2058,7 @@ blockquote {
       font-weight: 600;
       text-decoration: none;
       text-align: center;
-      padding: calc(17px * 0.95) calc(29px * 0.95);
+      padding: calc(17px * 0.96) calc(29px * 0.96);
     }
 
       .CV:hover {
