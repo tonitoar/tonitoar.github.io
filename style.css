@@ -1,5 +1,5 @@
 * {
-/* border: 1px solid blue;  */
+border: 1px solid blue; 
 margin:0;
 padding:0; 
 }
@@ -959,10 +959,9 @@ blockquote {
     margin-bottom: 25px;
   }
   
-  .border-container {
-    width: 23vw; 
-    max-width: 275px;
-    height: 35vh;
+  /* .border-container {
+    width: 25vw; 
+    height: 37vh;
   }
   
   .photo {
@@ -972,7 +971,7 @@ blockquote {
     position: relative;
     top: 15px;
     right: 10px;
-  }
+  } */
   
   .info {
     width: 50%;
@@ -1041,7 +1040,6 @@ blockquote {
   
   @media screen and (max-width: 962px) {
 
-     
   #About article {
     width: 95%;
     height: auto;
@@ -1052,11 +1050,12 @@ blockquote {
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: auto;
-      min-height: 950px;
-      max-height: 1000px;
+      /* height: auto;
+      min-height: 900px; */
+      height: 120vh;
       margin-top: 20px;
       padding: 15px 0px;
+      gap: 30px
     }
 
     .info {
@@ -1083,20 +1082,21 @@ blockquote {
       width: 100%;
       padding: 20px;
       height: auto;
-      font-size: 1.05rem;
+      font-size: 1.1rem;
     }
-  
+
     .border-container {
-      width: 40vw; 
-      height: 40vh;
+      width: 45%; 
+      height: 33%;
+      max-width: 280px;     
     }
     
     .photo {
-      width: 43vw;
-      max-width: 325px;
+      width: 118%;
+      max-width: 400px;
       height: auto;
       position: relative;
-      top: 11px;
+      top: 15px;
       right: 10px;
     }
 
@@ -1560,14 +1560,14 @@ blockquote {
   }
   
   .border-container {
-    width: 23vw; 
-    max-width: 275px;
-    height: 35vh;
+    width: 32%; 
+    max-width: 290px;
+    height: 70%;
   }
   
   .photo {
-    width: 31vw;
-    max-width: 340px;
+    width: 119%;
+    max-width: 336px;
     height: auto;
     position: relative;
     top: 15px;
@@ -2112,7 +2112,7 @@ blockquote {
   
   
   .photo {
-    width: 125%;
+    width: 119.5%;
     height: auto;
     position: relative;
     top: 15px;
