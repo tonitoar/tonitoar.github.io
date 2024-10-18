@@ -248,12 +248,57 @@ h2 {
 .social-media {
   display: flex;
   justify-content: space-between;
+  gap: 10px; /* Adjust spacing as needed */
 }
 
 .social-media a {
   display: flex;
   align-items: center;
+  position: relative;
 }
+
+.social-media img {
+  height: auto; /* Adjust the height as needed */
+  display: block; /* Ensures they behave as block elements */
+}
+
+/* Hide the original image on hover */
+.social-media a:hover img {
+  opacity: 0; /* Hide original image on hover */
+}
+
+/* Using ::after to display the hover image */
+.social-media a::after {
+  content: '';
+  background-image: url(/images/icons8-linkedin-64\ \(1\).png); /* Hover image for LinkedIn */
+  background-size: cover; /* Make background cover the area */
+  position: absolute; /* Position it absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for LinkedIn */
+.social-media a:hover::after {
+  opacity: 1; /* Show hover image on hover */
+}
+
+/* Repeat for GitHub with another class [(nth-child(2) del <a> significa el seguent -->]*/
+.social-media a:nth-child(2)::after {
+background-image: url(/images/icons8-github-64\ \(1\).png);
+transform: scale(1.15);
+position: absolute; 
+top: 1px; 
+left: -3px;
+}
+
+.social-media a:nth-child(2):hover::after {
+opacity: 1; /* Show hover image on hover */
+}
+
 
 #Skills {
   scroll-margin-top: 140px;
@@ -959,19 +1004,20 @@ blockquote {
     margin-bottom: 25px;
   }
   
-  /* .border-container {
-    width: 25vw; 
-    height: 37vh;
+  .border-container {
+    width: 35%; 
+    height: 65%;
+    max-width: 270px;     
   }
   
   .photo {
-    width: 31vw;
-    max-width: 340px;
+    width: 119%;
+    max-width: 338px;
     height: auto;
     position: relative;
     top: 15px;
     right: 10px;
-  } */
+  }
   
   .info {
     width: 50%;
@@ -982,7 +1028,7 @@ blockquote {
   
   @media screen and (max-width: 970px) {
     .info {
-      height: 95%;
+      height: 92%;
     }
   }
 
@@ -999,59 +1045,18 @@ blockquote {
   }
   
   .social-media {
-    width: 25%;
-    min-width: 125px;
+    width: 35%;
     height: auto;
-    display: flex; /* Keep items in a row */
-    gap: 10px; /* Adjust spacing as needed */
 }
 
-.social-media a {
-    position: relative; /* Allows absolute positioning of the pseudo-element */
-    display: inline-block; /* Keep the link as an inline-block element */
+.social-media .linkedin {
+  width: 4vw; 
+  max-width: 47px; 
 }
 
-.social-media img {
-    width: 3.8vw; 
-    max-width: 42px; 
-    height: auto; /* Adjust the height as needed */
-    display: block; /* Ensures they behave as block elements */
-}
-
-/* Hide the original image on hover */
-.social-media a:hover img {
-    opacity: 0; /* Hide original image on hover */
-}
-
-/* Using ::after to display the hover image */
-.social-media a::after {
-    content: '';
-    background-image: url(/images/icons8-linkedin-64\ \(1\).png); /* Hover image for LinkedIn */
-    background-size: cover; /* Make background cover the area */
-    position: absolute; /* Position it absolutely */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    opacity: 0; /* Start hidden */
-    transition: opacity 0.3s ease; /* Smooth transition */
-}
-
-/* Hover effect for LinkedIn */
-.social-media a:hover::after {
-    opacity: 1; /* Show hover image on hover */
-}
-
-/* Repeat for GitHub with another class [(nth-child(2) del <a> significa el seguent -->]*/
-.social-media a:nth-child(2)::after {
-  background-image: url(/images/icons8-github-64\ \(1\).png);
-  transform: scale(1.15);
-  position: absolute; 
-  left: -1.1px;
-}
-
-.social-media a:nth-child(2):hover::after {
-  opacity: 1; /* Show hover image on hover */
+.social-media .github {
+  width: 3.8vw; 
+  max-width: 44px; 
 }
 
 
@@ -1067,8 +1072,6 @@ blockquote {
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* height: auto;
-      min-height: 900px; */
       height: 120vh;
       margin-top: 20px;
       padding: 15px 0px;
@@ -1117,10 +1120,15 @@ blockquote {
       right: 10px;
     }
 
-    .social-media img {
-      width: 5vw;
-      max-width: 40px;
-  }
+    .social-media .linkedin {
+      width: 5vw; 
+      max-width: 43px; 
+    }
+    
+    .social-media .github {
+      width: 4.8vw; 
+      max-width: 40px; 
+    }
 
   }
 
@@ -1619,50 +1627,23 @@ blockquote {
     .info-text p {
       font-size: 1.05rem;
   }
-
-  .info {
-    height: 98%;
-  }
   }
   
   .social-media {
-    width: 25%;
-    min-width: 125px;
+    width: 35%;
+    max-width: 170px;
     height: auto;
   }
   
-  .social-media a {
-    width: auto;
-    height: 50px;
+  .social-media .linkedin {
+    width: 4vw; 
+    max-width: 47px; 
   }
   
-  .linkedin {
-    width: 3.8vw;
-    height: auto;
-    max-width: 42px;
-  }
-
-  .github {
-    width: 3.3vw;
-    max-width: 39.5px;
-    height: auto;
-  }
-  
-  /* TODO changing IMAGE by :hover => content: url() */
-  .github:hover {
-    content: url(/images/icons8-github-64\ \(1\).png);
-    width: 3.3vw;
-    max-width: 47px;
-    height: auto;
-    position: relative;
-    left: 3px;
-  }
-  
-  .linkedin:hover {
-    content: url(/images/icons8-linkedin-64\ \(1\).png); 
-    width: 3.8vw;
-    height: auto;
-  }
+  .social-media .github {
+    width: 3.8vw; 
+    max-width: 44px; 
+}
   
   #Skills article {
     width: 95%;
@@ -2166,62 +2147,16 @@ blockquote {
     max-width: 180px;
     height: auto;
   }
-  
-  .social-media a {
-    width: auto;
-    height: 50px;
-  }
-  
-  .linkedin {
-    width: 2.3vw;
-    min-width: 42px;
-    height: auto;
-  }
 
-  .github {
-    width: 2.25vw;
-    min-width: 40px;
-    height: auto;
+  .social-media .linkedin {
+    width: 3vw; 
+    max-width: 45px; 
   }
   
-  /* TODO changing IMAGE by :hover => content: url() */
-  .github:hover {
-    content: url(/images/icons8-github-64\ \(1\).png);
-    width: 2.75vw;
-    height: auto;
-    position: relative;
-    left: 3.5px;
-  }
-  
-  .linkedin:hover {
-    content: url(/images/icons8-linkedin-64\ \(1\).png); 
-    width: 2.3vw;
-    height: auto;
-  }
-  
-@media screen and (max-width: 1600px) {  
-  .linkedin {
-    width: 2.7vw;
-    height: auto;
-  }
-
-  .github {
-    width: 2.6vw;
-    height: auto;
-  }
-  .github:hover {
-    width: 3.25vw;
-    height: auto;
-    position: relative;
-    left: 4px;
-  }
-  
-  .linkedin:hover {
-    width: 2.7vw;
-    height: auto;
-  }
+  .social-media .github {
+    width: 2.8vw; 
+    max-width: 42px; 
 }
-
 
   #Skills article {
     width: 90%;
