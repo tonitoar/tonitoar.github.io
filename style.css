@@ -1,5 +1,5 @@
 * {
-border: 1px solid blue; 
+/* border: 1px solid blue;  */
 margin:0;
 padding:0; 
 }
@@ -1045,16 +1045,17 @@ blockquote {
   #About article {
     width: 95%;
     height: auto;
-    margin: 50px 30px 30px;
+    margin: 50px 30px 40px;
   }
 
     .intro {
       display: flex;
       flex-direction: column;
       align-items: center;
-      /* justify-content: center; */
       height: auto;
-      min-height: 900px;
+      min-height: 950px;
+      max-height: 1000px;
+      margin-top: 20px;
       padding: 15px 0px;
     }
 
