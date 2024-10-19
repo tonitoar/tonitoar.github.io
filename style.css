@@ -248,18 +248,19 @@ h2 {
 .social-media {
   display: flex;
   justify-content: space-between;
-  gap: 10px; /* Adjust spacing as needed */
+  align-items: center;
 }
 
 .social-media a {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
 }
 
 .social-media img {
   height: auto; /* Adjust the height as needed */
-  display: block; /* Ensures they behave as block elements */
+  /* display: block;  */
 }
 
 /* Hide the original image on hover */
@@ -292,7 +293,7 @@ background-image: url(/images/icons8-github-64\ \(1\).png);
 transform: scale(1.15);
 position: absolute; 
 top: 1px; 
-left: -3px;
+left: -1.2px;
 }
 
 .social-media a:nth-child(2):hover::after {
@@ -849,13 +850,55 @@ blockquote {
 }
 
 .social-media-footer {
+  width: 73%;
+  height: auto;
   display: flex;
   justify-content: space-between;
+  gap: 10px; 
 }
 
 .social-media-footer a {
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.social-media-footer img {
+  height: auto; 
+  display: block; 
+}
+
+.social-media-footer a:hover img {
+  opacity: 0; 
+}
+
+.social-media-footer a::after {
+  content: '';
+  background-image: url(/images/icons8-linkedin-64\ \(1\).png); 
+  background-size: cover; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.social-media-footer a:hover::after {
+  opacity: 1; 
+}
+
+.social-media-footer a:nth-child(2)::after {
+background-image: url(/images/icons8-github-64\ \(1\).png);
+transform: scale(1.15);
+position: absolute; 
+top: 1px; 
+left: -2.5px;
+}
+
+.social-media-footer a:nth-child(2):hover::after {
+opacity: 1; 
 }
 
 .footer-center ul {
@@ -1055,16 +1098,14 @@ blockquote {
 }
 
 .social-media .github {
-  width: 3.8vw; 
-  max-width: 44px; 
+  width: 3.6vw; 
+  max-width: 43px; 
 }
 
 
   @media screen and (max-width: 962px) {
 
   #About article {
-    width: 95%;
-    height: auto;
     margin: 50px 30px 40px;
   }
 
@@ -1086,19 +1127,13 @@ blockquote {
       top: 0px; 
     }
     
-    /* @media screen and (max-width: 866px) {
-      .info {
-        height: 42.5%;
-      }
-    } */
-
     .info-text {
       width: 90%;
       height: auto;
     }
     
     .info-text p {
-      text-align: center;
+      text-align: justify;
       width: 100%;
       padding: 20px;
       height: auto;
@@ -1126,10 +1161,24 @@ blockquote {
     }
     
     .social-media .github {
-      width: 4.8vw; 
-      max-width: 40px; 
+      width: 4.5vw; 
+      max-width: 38px; 
+    }
+ 
+    /*! to make the :hover image disable */
+    .social-media a:hover img {
+    opacity: 1; 
     }
 
+    /*! to make the :hover image disable */
+    .social-media a::after {
+      display: none;
+    }
+    
+    /*! to make the :hover image disable */
+    .social-media a:nth-child(2)::after {
+    display: none;
+    }
   }
 
 
@@ -1149,28 +1198,40 @@ blockquote {
 .css, .react, .node,
 .express, .mongodb, .git {
   width: auto;
-  height: 225px;
+  height: 200px;
   padding: 10px 30px 15px;
 }
 
 .card-opacity::before {
   bottom: 0px; 
-  right: -9.8px;
-  width: 107.15%;
-  height: 90.94%;
+  right: -9.7px;
+  width: 107.5%;
+  height: 90%;
 }
 
 .cards img {
-  width: 85px;
+  width: 75px;
   height: auto;
 }
 
   .cards p {
-    font-size: 1.15rem;
+    font-size: 1.09rem;
   }
   
   .cards h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+  }
+
+  @media screen and (max-width: 962px) {
+
+    #Skills article {
+      margin: 50px 30px 40px;
+    }
+  
+    .cards {
+      grid-template-columns: repeat(auto-fill, minmax(122px, 1fr));
+    }
+
   }
 
   #Projects article {
@@ -1182,31 +1243,29 @@ blockquote {
   .project-nav {
     margin: 50px 0px 20px 0px;
     min-width: 610px;
-    width: 53%; 
+    width: 75%; 
     height: auto;
   }
   
   /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
-  font-size: 1.2rem;
-  width: 180px;
-  height: 35px; 
-  transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
+  font-size: 1.1rem;
+  width: calc(180px * 0.95); 
+  height: calc(35px * 0.95); 
   }
-  
-  
+    
 .project-container {
     width: 80%;
     height: auto;
-    margin: 25px;
-    padding: 50px;
-    grid-template-columns: repeat(auto-fit,minmax(251.2px, 0.25fr));
+    margin: 20px;
+    padding: 45px;
+    grid-template-columns: repeat(auto-fit,minmax(241.2px, 0.25fr));
   }
   
   /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
   .project-item {
-    width: 250px;
-    height: 250px;
+    width: 240px;
+    height: 240px;
     position: relative;
   }
   
@@ -1220,22 +1279,70 @@ blockquote {
     padding: 20px;
   }
   
-  .hover-description h4 {
-    font-size: 1.1rem;
-  }
-  
-  .hover-description p {
-    font-size: 1.05rem;
-  }
-  
   .hover-description h3 {
-    font-size: 1.45rem;
+    font-size: 1.4rem;
+  }
+
+  .hover-description p {
+    font-size: 1.04rem;
+  }
+
+  .hover-description h4 {
+    font-size: 1.09rem;
   }
   
   .hover-description button {
-    padding: 6px 12px;
-    font-size: 0.85rem;
+    padding: 5.5px 11px;
+    font-size: 0.8rem;
     margin-top: 10px; 
+  }
+
+  @media screen and (max-width: 962px) {
+
+    #Projects article {
+      margin: 50px 30px 40px;
+    }
+  
+    .project-nav {
+      min-width: 610px;
+      width: 80%; 
+    }
+    
+    /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
+    .project-nav li {
+    font-size: 1.05rem;
+    width: calc(180px * 0.92); 
+    height: calc(35px * 0.9); 
+    }
+      
+  .project-container {
+      grid-template-columns: repeat(auto-fit,minmax(231px, 0.25fr));
+    }
+    
+    /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
+    .project-item {
+      width: 230px;
+      height: 230px;
+    }
+    
+    .hover-description h3 {
+      font-size: 1.3rem;
+    }
+  
+    .hover-description p {
+      font-size: 1.03rem;
+    }
+  
+    .hover-description h4 {
+      font-size: 1.08rem;
+    }
+    
+    .hover-description button {
+      padding: 5.5px 11px;
+      font-size: 0.75rem;
+      margin-top: 10px; 
+    }
+  
   }
     
   #Contact article {
@@ -1259,14 +1366,8 @@ blockquote {
     width: 100%;
     padding: 20px 25px;
     height: auto;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
-
-  @media screen and (max-width: 1114px) {
-    .contact-text p {
-      font-size: 1.05rem;
-  }
-}
   
   .contact-form {
     width: 45%;
@@ -1297,7 +1398,7 @@ blockquote {
   }
   
   form label {
-    font-size: 1.03rem;
+    font-size: 1rem;
     margin-left: 5px;
   }
   
@@ -1310,13 +1411,13 @@ blockquote {
     height: 17px;
     padding: 5px;
     margin-left: 10px;
-    font-size: 0.93rem;
+    font-size: 0.9rem;
   }
   
   form select {
     height: 30px;
     margin-left: 10px;
-    font-size: 0.85rem;
+    font-size: 0.83rem;
   }
 
   /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
@@ -1326,33 +1427,15 @@ blockquote {
     resize: none; 
     height: 500px;
     padding: 15px 10px;
-    font-size: 1rem;
+    font-size: 0.95rem;
     box-sizing: border-box;
     overflow: auto;
   }
   
-  @media screen and (max-width: 1114px) {
-    form label {
-      font-size: 1.02rem;
-    }
-
-    form input {
-      font-size: 0.9rem;
-    }
-
-    form select {
-      font-size: 0.85rem;
-    }
-
-    form textarea {
-      font-size: 1rem;
-    }
-}
-
   button[type="submit"] {
-    width: 125px;
-    height: 42px;
-    font-size: 0.85rem;
+    width: calc(135px * 0.94);
+    height: calc(45px * 0.94);
+    font-size: 0.88rem;
     font-weight: 550;
     margin: 15px auto;
     padding: 10px;
@@ -1360,33 +1443,16 @@ blockquote {
   
     @keyframes shake {
       0%, 100% {
-        transform: translate(0, 0) scale(1.08); 
+        transform: translate(0, 0) scale(1.065); 
       }
       25% {
-        transform: translate(-5px, -3px) scale(1.08); 
+        transform: translate(-5px, -3px) scale(1.065); 
       }
       50% {
-        transform: translate(5px, 3px) scale(1.08); 
+        transform: translate(5px, 3px) scale(1.065); 
       }
       75% {
-        transform: translate(-5px, 3px) scale(1.08); 
-      }
-    }
-
-    @media screen and (max-width: 1114px) {
-      @keyframes shake {
-        0%, 100% {
-          transform: translate(0, 0) scale(1.07); 
-        }
-        25% {
-          transform: translate(-5px, -3px) scale(1.07); 
-        }
-        50% {
-          transform: translate(5px, 3px) scale(1.07); 
-        }
-        75% {
-          transform: translate(-5px, 3px) scale(1.07); 
-        }
+        transform: translate(-5px, 3px) scale(1.065); 
       }
     }
   
@@ -1399,6 +1465,12 @@ blockquote {
   width: 85%; 
   height: auto;
   padding: 30px;
+  }
+
+  @media screen and (max-width: 822px) {
+    .footer-content {
+      width: 100%;
+    }
   }
   
   .footer-left {
@@ -1428,63 +1500,25 @@ blockquote {
   blockquote {
     border-left: 4px solid #fff;
     padding: 10px 0px 10px 10px; 
+    font-size: 0.95rem;
   }
   
   .footer-left p, 
   .footer-center p,
   .footer-right p,
   .footer-center a{
-    font-size: 1rem;
+    font-size: 0.88rem;
   }
-
-  @media screen and (max-width: 1114px) {
-  .footer-left p, 
-  .footer-center p,
-  .footer-right p,
-  .footer-center a {
-    font-size: 0.9rem;
-  }
-
-  blockquote {
-    font-size: 0.97rem;
-  }
+   
+  .social-media-footer .linkedin2 {
+  width: 4vw; 
+  max-width: 33px; 
 }
-  
-  .social-media-footer {
-    width: 63%;
-  }
-  
-  .social-media-footer a {
-    width: auto;
-    height: 30px;
-  }
-  
-  .linkedin2 {
-    width: 2.5vw;
-    max-width: 30px;
-    height: auto;
-  }
 
-  .github2 {
-    width: 2.3vw;
-    max-width: 28px;
-    height: auto;
-  }
-  
-  .linkedin2:hover {
-    content: url(/images/icons8-linkedin-64\ \(1\).png);
-    width: 2.5vw;
-    height: auto;
-  }
-  
-  .github2:hover {
-    content: url(/images/icons8-github-64\ \(1\).png);
-    width: 3vw;
-    height: auto;
-    max-width: 35px;
-    position: relative;
-    left: 3px;
-  }
+.social-media-footer .github2 {
+  width: 4vw; 
+  max-width: 31px; 
+}
   
 
 }
@@ -1637,12 +1671,12 @@ blockquote {
   
   .social-media .linkedin {
     width: 4vw; 
-    max-width: 47px; 
+    /* max-width: 47px;  */
   }
   
   .social-media .github {
-    width: 3.8vw; 
-    max-width: 44px; 
+    width: 3.5vw; 
+    /* max-width: 44px;  */
 }
   
   #Skills article {
@@ -1693,8 +1727,8 @@ blockquote {
 
   .project-nav {
     margin: 50px 0px 20px 0px;
-    min-width: 610px;
-    width: 53%; 
+    min-width: 680px;
+    width: 63%; 
     height: auto;
   }
   
@@ -1703,15 +1737,14 @@ blockquote {
   font-size: 1.2rem;
   width: 180px;
   height: 35px; 
-  transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
   }
   
-  
+
 .project-container {
     width: 80%;
     height: auto;
-    margin: 25px;
-    padding: 50px;
+    margin: 20px;
+    padding: 45px;
     grid-template-columns: repeat(auto-fit,minmax(251.2px, 0.25fr));
   }
   
@@ -1862,14 +1895,14 @@ blockquote {
 }
 
   button[type="submit"] {
-    width: 125px;
-    height: 42px;
-    font-size: 0.85rem;
+    width: calc(135px * 0.98);
+    height: calc(45px * 0.98);
+    font-size: 0.9rem;
     font-weight: 550;
     margin: 15px auto;
     padding: 10px;
   }
-  
+
     @keyframes shake {
       0%, 100% {
         transform: translate(0, 0) scale(1.08); 
@@ -1962,43 +1995,16 @@ blockquote {
   }
 }
   
-  .social-media-footer {
-    width: 63%;
-  }
-  
-  .social-media-footer a {
-    width: auto;
-    height: 30px;
-  }
-  
-  .linkedin2 {
-    width: 2.5vw;
-    max-width: 30px;
-    height: auto;
-  }
+.social-media-footer .linkedin2 {
+width: 3vw; 
+max-width: 36px; 
+}
 
-  .github2 {
-    width: 2.3vw;
-    max-width: 28px;
-    height: auto;
-  }
+.social-media-footer .github2 {
+width: 2.8vw; 
+max-width: 33px; 
+}
   
-  .linkedin2:hover {
-    content: url(/images/icons8-linkedin-64\ \(1\).png);
-    width: 2.5vw;
-    height: auto;
-  }
-  
-  .github2:hover {
-    content: url(/images/icons8-github-64\ \(1\).png);
-    width: 3vw;
-    height: auto;
-    max-width: 35px;
-    position: relative;
-    left: 3px;
-  }
-  
-
 }
 
 
@@ -2150,12 +2156,12 @@ blockquote {
 
   .social-media .linkedin {
     width: 3vw; 
-    max-width: 45px; 
+    max-width: 43px; 
   }
   
   .social-media .github {
-    width: 2.8vw; 
-    max-width: 42px; 
+    width: 2.5vw; 
+    max-width: 40px; 
 }
 
   #Skills article {
@@ -2184,7 +2190,8 @@ blockquote {
 
   .project-nav {
     margin: 60px 0px 45px 0px;
-    min-width: 53%; 
+    width: 53%; 
+    min-width: 700px;
     height: auto;
   }
   
@@ -2193,9 +2200,7 @@ blockquote {
   font-size: 1.2rem;
   width: 180px;
   height: 35px; 
-  transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
   }
-  
   
 .project-container {
     min-width: 64%;
@@ -2365,40 +2370,17 @@ blockquote {
     font-size: 1rem;
   }
   
-  .social-media-footer {
-    width: 63%;
-  }
-  
-  .social-media-footer a {
-    width: auto;
-    height: 30px;
-  }
-  
-  .linkedin2 {
-    width: 1.8vw;
-    height: auto;
-  }
+  .social-media-footer .linkedin2 {
+  width: 2.5vw; 
+  max-width: 36px; 
+}
 
-  .github2 {
-    width: 1.7vw;
-    height: auto;
-  }
+.social-media-footer .github2 {
+  width: 2.3vw; 
+  max-width: 33px; 
+}
   
-  .linkedin2:hover {
-    content: url(/images/icons8-linkedin-64\ \(1\).png);
-    width: 1.9vw;
-    height: auto;
-  }
-  
-  .github2:hover {
-    content: url(/images/icons8-github-64\ \(1\).png);
-    width: 2.15vw;
-    height: auto;
-    position: relative;
-    left: 3px;
-  }
-  
-  @media screen and (max-width: 1600px) {
+  /* @media screen and (max-width: 1600px) {
 
     .linkedin2 {
       width: 2.1vw;
@@ -2419,7 +2401,7 @@ blockquote {
       width: 2.45vw;
       height: auto;
     }
-  }
+  } */
   
   .footer-center ul {
     margin: 15px 0px 0px 5px;
