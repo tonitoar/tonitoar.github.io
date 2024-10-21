@@ -1,5 +1,5 @@
 * {
-/* border: 1px solid blue;  */
+border: 1px solid blue; 
 margin:0;
 padding:0; 
 }
@@ -135,7 +135,7 @@ main {
 #About {
   scroll-margin-top: 140px;
   margin: 85px 0px 100px 0px;
-  width: 90vw;
+  width: 90%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -308,7 +308,7 @@ opacity: 1; /* Show hover image on hover */
   align-items: center;
   position: relative;
   margin: 100px 0px;
-  width: 90vw;
+  width: 90%;
   height: auto;
 }
 
@@ -452,7 +452,7 @@ height: 90.96%;
   align-items: center;
   position: relative;
   margin: 100px 0px;
-  width: 90vw;
+  width: 90%;
   height: auto;
 }
 
@@ -581,7 +581,7 @@ color: white;
   align-items: center;
   position: relative;
   margin: 100px 0px;
-  width: 90vw;
+  width: 90%;
   height: auto;
 }
 
@@ -924,7 +924,7 @@ opacity: 1;
 
 @media screen and (min-width: 321px) and (max-width: 376px) {}
 
-@media screen and (min-width: 377px) and (max-width: 426px) {}
+@media screen and (min-width: 377px) and (max-width: 425px) {}
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   /* @media screen and (max-width: 535px){
@@ -933,15 +933,443 @@ opacity: 1;
   @media screen and (max-width: 725px) {
 
   } */
+
+
+
+  header {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #inicio {
+    width: 80%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: clamp(2.35rem, 8.8vw, 8.5rem);
+  }
+  
+  .CV {
+    margin-top: 35px;
+    width: calc(184px * 0.82);
+    height: calc(60px * 0.82);
+  }
+  
+  .CV a {
+    font-size: 0.93rem;
+    padding: calc(17px * 0.78) calc(29px * 0.78);
+  }
+
+  .CV:hover {
+    transform: scale(1.06);
+  }
+
+  nav {
+    width: 80%;
+    height: 60px;
+    margin: 85px auto 0px; 
+  }
+  
+  nav ul {
+    width: 90%;
+    height: 40px;
+  }
+  
+  nav a {
+    font-size: 1.05rem;
+    padding: calc(7px * 0.65) calc(32px * 0.6);
+  }
+
+  @media screen and (max-width: 675px) {
+    nav {
+      display: none;
+    }
+  }
+    
+  h2 {
+    color: var(--h2-color); 
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  #About article {
+    width: 95%;
+    height: auto;
+    margin: 50px 30px 40px;
+  }
+  
+  .intro {
+    width: 95%;
+    padding: 15px 0px 40px;
+    margin-bottom: 25px;
+    height: 120vh;
+    margin-top: 20px;
+    padding: 15px 0px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .border-container {
+    width: 45%; 
+    height: 33%;
+    max-width: 280px;     
+  }
+  
+  .photo {
+    width: 118%;
+    max-width: 400px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 10px;
+  }
+
+  .info {
+    width: 70%;
+    height: auto;
+    gap: 50px ; 
+  }
+  
+  .info-text {
+    width: 90%;
+    height: auto;
+  }
+  
+  .info-text p {
+    text-align: justify;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    font-size: 1.1rem;
+  }
+
+
+
+  .social-media {
+    width: 35%;
+    height: auto;
 }
 
+.social-media .linkedin {
+  width: 5vw; 
+  max-width: 43px; 
+}
+
+.social-media .github {
+  width: 4.5vw; 
+  max-width: 38px; 
+}
+
+/*! to make the :hover image disable */
+.social-media a:hover img {
+opacity: 1; 
+}
+
+/*! to make the :hover image disable */
+.social-media a::after {
+  display: none;
+}
+
+/*! to make the :hover image disable */
+.social-media a:nth-child(2)::after {
+display: none;
+}
+
+
+#Skills article {
+  width: 95%;
+  height: auto;
+  margin: 50px 30px 40px;
+}
+
+.cards {
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  justify-items: center;
+  margin: 10px 0px;
+  width: 85%; 
+}
+
+.javascript, .html, 
+.css, .react, .node,
+.express, .mongodb, .git {
+  width: auto;
+  height: 200px;
+  padding: 10px 30px 15px;
+}
+
+.card-opacity::before {
+  bottom: 0px; 
+  right: -9.7px;
+  width: 107.5%;
+  height: 90%;
+}
+
+.cards img {
+  width: 75px;
+  height: auto;
+}
+
+.cards p {
+  font-size: 1.09rem;
+}
+
+.cards h3 {
+  font-size: 1.05rem;
+}
+
+  #Projects article {
+    width: 95%;
+    height: auto;
+    margin: 50px 20px 40px;
+  }
+
+  .project-nav {
+    margin: 50px 0px 20px 0px;
+    width: 80%; 
+    height: auto;
+  }
+  
+  /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
+  .project-nav li {
+    font-size: 1.05rem;
+    width: calc(180px * 0.92); 
+    height: calc(35px * 0.9); 
+  }
+    
+.project-container {
+    width: 80%;
+    height: auto;
+    margin: 20px;
+    padding: 45px;
+    grid-template-columns: repeat(auto-fit,minmax(231px, 0.25fr));
+  }
+  
+  /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
+  .project-item {
+    width: 230px;
+    height: 230px;
+    position: relative;
+  }
+  
+  /* TODO div class="hover-description" creat per JS */
+  .hover-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+  }
+  
+  .hover-description h3 {
+    font-size: 1.3rem;
+  }
+
+  .hover-description p {
+    font-size: 1.03rem;
+  }
+
+  .hover-description h4 {
+    font-size: 1.08rem;
+  }
+  
+  .hover-description button {
+    padding: 5.5px 11px;
+    font-size: 0.75rem;
+    margin-top: 10px; 
+  }
+  
+  #Contact article {
+    width: 95%;
+    height: auto;
+    margin: 50px 30px 40px;
+  }
+
+  .contact-text {
+    margin: 25px 0px 15px 0px;
+    width: 80%;
+    /* min-width: 520px; */
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .contact-text span {
+    font-weight: 800;
+  }
+  
+  .contact-text p {
+    width: 100%;
+    padding: 20px 25px;
+    height: auto;
+    font-size: 1.1rem;
+  }
+  
+  .contact-form {
+    width: 45%;
+    /* min-width: 460px; */
+    height: auto;
+    padding: 20px 10px;
+    margin: 50px 0px;
+  }
+  
+  form {
+    width: 79%;
+    height: auto;
+    padding: 30px;
+    margin: 10px 20px;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .group-vertical {
+    height: 250px;
+  }
+  
+  .textarea-container {
+    width: 85%;
+    margin: 20px 0px;
+    height: auto;
+  }
+  
+  form label {
+    font-size: 1.025rem;
+    margin-left: 5px;
+  }
+  
+  .message-label {
+    margin-top: 9px;
+  }
+  
+  form input {
+    width: 70%;
+    height: 17px;
+    padding: 5px;
+    margin-left: 10px;
+    font-size: 0.88rem;
+  }
+  
+  form select {
+    height: 30px;
+    margin-left: 10px;
+    font-size: 0.83rem;
+  }
+
+  /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
+  /*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
+  form textarea {
+    width: 100%;
+    resize: none; 
+    height: 500px;
+    padding: 15px 10px;
+    font-size: 0.98rem;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  button[type="submit"] {
+    width: calc(135px * 0.92);
+    height: calc(45px * 0.93);
+    font-size: 0.85rem;
+    font-weight: 550;
+    margin: 15px auto;
+    padding: 10px;
+    transition: none; /*! DISABLE ANIMATION */
+  }
+  
+  button[type="submit"]:hover {
+    animation: none; /*! DISABLE ANIMATION */
+  }
+  
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  
+  .footer-content {
+  width: 100%; 
+  height: auto;
+  padding: 30px;
+  }
+
+  .footer-left {
+    height: 120px;
+    padding: 10px;
+  }
+  
+  .footer-center {
+    height: 200px;
+    width: auto;
+    padding: 10px;
+  }
+  
+  .footer-center ul {
+    margin: 15px 0px 0px 2px;
+    height: 150px;
+    width: 67px;
+  }
+
+  .footer-right {
+    height: 120px;
+    padding: 10px;
+    position: relative;
+    top: 100px; 
+  }
+  
+  blockquote {
+    border-left: 4px solid #fff;
+    padding: 10px 0px 10px 10px; 
+    font-size: 0.95rem;
+  }
+  
+  .footer-left p, 
+  .footer-center p,
+  .footer-right p,
+  .footer-center a{
+    font-size: 0.88rem;
+  }
+   
+  .social-media-footer .linkedin2 {
+  width: 4vw; 
+  max-width: 32px; 
+}
+
+.social-media-footer .github2 {
+  width: 3.6vw; 
+  max-width: 29.5px; 
+}
+  
+
+ /*! to make the :hover image disable */
+ .social-media-footer a:hover img {
+  opacity: 1; 
+  }
+
+  /*! to make the :hover image disable */
+  .social-media-footer a::after {
+    display: none;
+  }
+  
+  /*! to make the :hover image disable */
+  .social-media-footer a:nth-child(2)::after {
+  display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* @media screen and (max-width: 899px) {
-
-  } 
-  @media screen and (max-width: 962px) {
-
-  } */
 
   #inicio {
     width: 80%;
@@ -1239,7 +1667,7 @@ opacity: 1;
   #Projects article {
     width: 95%;
     height: auto;
-    margin: 60px 30px;
+    margin: 60px 20px;
   }
 
   .project-nav {
@@ -2258,7 +2686,7 @@ max-width: 32px;
   #Projects article {
     width: 90%;
     height: auto;
-    margin: 60px 30px;
+    margin: 60px 20px;
   }
 
   .project-nav {
