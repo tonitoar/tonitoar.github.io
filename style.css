@@ -1189,9 +1189,10 @@ opacity: 1;
   }
 
   .cards {
-    grid-template-columns: repeat(auto-fill, minmax(143px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(161px, 1fr));
     justify-items: center;
     margin: 10px 0px;
+    width: 85%; 
   }
 
 .javascript, .html, 
@@ -1229,7 +1230,8 @@ opacity: 1;
     }
   
     .cards {
-      grid-template-columns: repeat(auto-fill, minmax(122px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      width: 85%; 
     }
 
   }
@@ -1567,12 +1569,12 @@ opacity: 1;
    
   .social-media-footer .linkedin2 {
   width: 4vw; 
-  max-width: 33px; 
+  max-width: 32px; 
 }
 
 .social-media-footer .github2 {
   width: 3.6vw; 
-  max-width: 30.5px; 
+  max-width: 29.5px; 
 }
   
 
