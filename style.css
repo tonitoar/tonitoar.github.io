@@ -783,16 +783,16 @@ button[type="submit"]:hover {
 /*! Keyframes for the shake animation (X,Y) and scale*/
 @keyframes shake {
   0%, 100% {
-    transform: translate(0, 0) scale(1.1); 
+    transform: translate(0, 0) scale(1.06); 
   }
   25% {
-    transform: translate(-5px, -3px) scale(1.1); 
+    transform: translate(-5px, -3px) scale(1.06); 
   }
   50% {
-    transform: translate(5px, 3px) scale(1.1); 
+    transform: translate(5px, 3px) scale(1.06); 
   }
   75% {
-    transform: translate(-5px, 3px) scale(1.1); 
+    transform: translate(-5px, 3px) scale(1.06); 
   }
 }
 
@@ -1353,7 +1353,8 @@ opacity: 1;
 
   .contact-text {
     margin: 25px 0px 15px 0px;
-    width: 70%;
+    width: 80%;
+    min-width:680px;
     height: auto;
     border-radius: 10px;
   }
@@ -1371,14 +1372,14 @@ opacity: 1;
   
   .contact-form {
     width: 45%;
-    min-width: 500px;
+    min-width: 480px;
     height: auto;
     padding: 20px 10px;
     margin: 50px 0px;
   }
   
   form {
-    width: 90%;
+    width: 79%;
     height: auto;
     padding: 30px;
     margin: 10px 20px;
@@ -1392,7 +1393,7 @@ opacity: 1;
   }
   
   .textarea-container {
-    width: 90%;
+    width: 85%;
     margin: 20px 0px;
     height: auto;
   }
@@ -1407,7 +1408,7 @@ opacity: 1;
   }
   
   form input {
-    width: 290px;
+    width: 72%;
     height: 17px;
     padding: 5px;
     margin-left: 10px;
@@ -1434,7 +1435,7 @@ opacity: 1;
   
   button[type="submit"] {
     width: calc(135px * 0.94);
-    height: calc(45px * 0.94);
+    height: calc(45px * 0.95);
     font-size: 0.88rem;
     font-weight: 550;
     margin: 15px auto;
@@ -1443,18 +1444,72 @@ opacity: 1;
   
     @keyframes shake {
       0%, 100% {
-        transform: translate(0, 0) scale(1.065); 
+        transform: translate(0, 0) scale(1.05); 
       }
       25% {
-        transform: translate(-5px, -3px) scale(1.065); 
+        transform: translate(-5px, -3px) scale(1.05); 
       }
       50% {
-        transform: translate(5px, 3px) scale(1.065); 
+        transform: translate(5px, 3px) scale(1.05); 
       }
       75% {
-        transform: translate(-5px, 3px) scale(1.065); 
+        transform: translate(-5px, 3px) scale(1.05); 
       }
     }
+
+    @media screen and (max-width: 962px) {
+
+    #Contact article {
+    margin: 50px 30px 40px;
+  }
+
+  .contact-text {
+    width: 80%;
+    min-width: 520px;
+  }
+  
+  .contact-text p {
+    font-size: 1.1rem;
+  }
+  
+  .contact-form {
+    width: 45%;
+    min-width: 460px;
+  }
+  
+  form {
+    width: 79%;
+  }
+
+  form label {
+    font-size: 1.025rem;
+  }
+   
+  form input {
+    width: 70%;
+    font-size: 0.88rem;
+  }
+  
+  form select {
+    font-size: 0.83rem;
+  }
+
+  form textarea {
+    font-size: 0.98rem;
+  }
+  
+  button[type="submit"] {
+    width: calc(135px * 0.92);
+    height: calc(45px * 0.93);
+    font-size: 0.85rem;
+    transition: none; /*! DISABLE ANIMATION */
+  }
+
+  button[type="submit"]:hover {
+    animation: none; /*! DISABLE ANIMATION */
+  }
+  
+}
   
   footer {
     width: 100%;
@@ -1516,10 +1571,25 @@ opacity: 1;
 }
 
 .social-media-footer .github2 {
-  width: 4vw; 
-  max-width: 31px; 
+  width: 3.6vw; 
+  max-width: 30.5px; 
 }
   
+
+ /*! to make the :hover image disable */
+ .social-media-footer a:hover img {
+  opacity: 1; 
+  }
+
+  /*! to make the :hover image disable */
+  .social-media-footer a::after {
+    display: none;
+  }
+  
+  /*! to make the :hover image disable */
+  .social-media-footer a:nth-child(2)::after {
+  display: none;
+  }
 
 }
 
@@ -1670,13 +1740,13 @@ opacity: 1;
   }
   
   .social-media .linkedin {
-    width: 4vw; 
-    /* max-width: 47px;  */
+    width: 3.9vw; 
+    max-width: 45px; 
   }
   
   .social-media .github {
     width: 3.5vw; 
-    /* max-width: 44px;  */
+    max-width: 39px; 
 }
   
   #Skills article {
@@ -1792,6 +1862,7 @@ opacity: 1;
   .contact-text {
     margin: 25px 0px 15px 0px;
     width: 70%;
+    min-width:680px;
     height: auto;
     border-radius: 10px;
   }
@@ -1836,7 +1907,7 @@ opacity: 1;
   }
   
   .textarea-container {
-    width: 90%;
+    width: 85%;
     margin: 20px 0px;
     height: auto;
   }
@@ -1851,7 +1922,7 @@ opacity: 1;
   }
   
   form input {
-    width: 290px;
+    width: 73%;
     height: 17px;
     padding: 5px;
     margin-left: 10px;
@@ -1896,7 +1967,7 @@ opacity: 1;
 
   button[type="submit"] {
     width: calc(135px * 0.98);
-    height: calc(45px * 0.98);
+    height: calc(45px * 0.99);
     font-size: 0.9rem;
     font-weight: 550;
     margin: 15px auto;
@@ -1905,32 +1976,32 @@ opacity: 1;
 
     @keyframes shake {
       0%, 100% {
-        transform: translate(0, 0) scale(1.08); 
+        transform: translate(0, 0) scale(1.06); 
       }
       25% {
-        transform: translate(-5px, -3px) scale(1.08); 
+        transform: translate(-5px, -3px) scale(1.06); 
       }
       50% {
-        transform: translate(5px, 3px) scale(1.08); 
+        transform: translate(5px, 3px) scale(1.06); 
       }
       75% {
-        transform: translate(-5px, 3px) scale(1.08); 
+        transform: translate(-5px, 3px) scale(1.06); 
       }
     }
 
     @media screen and (max-width: 1114px) {
       @keyframes shake {
         0%, 100% {
-          transform: translate(0, 0) scale(1.07); 
+          transform: translate(0, 0) scale(1.05); 
         }
         25% {
-          transform: translate(-5px, -3px) scale(1.07); 
+          transform: translate(-5px, -3px) scale(1.05); 
         }
         50% {
-          transform: translate(5px, 3px) scale(1.07); 
+          transform: translate(5px, 3px) scale(1.05); 
         }
         75% {
-          transform: translate(-5px, 3px) scale(1.07); 
+          transform: translate(-5px, 3px) scale(1.05); 
         }
       }
     }
@@ -2001,8 +2072,8 @@ max-width: 36px;
 }
 
 .social-media-footer .github2 {
-width: 2.8vw; 
-max-width: 33px; 
+width: 2.6vw; 
+max-width: 32px; 
 }
   
 }
@@ -2161,7 +2232,7 @@ max-width: 33px;
   
   .social-media .github {
     width: 2.5vw; 
-    max-width: 40px; 
+    max-width: 39px; 
 }
 
   #Skills article {
@@ -2301,7 +2372,8 @@ max-width: 33px;
   }
 
   form input {
-    width: 290px;
+    width: 74%;
+    max-width: 350px;
     height: 17px;
     font-size: 0.96rem;
   }
@@ -2376,8 +2448,8 @@ max-width: 33px;
 }
 
 .social-media-footer .github2 {
-  width: 2.3vw; 
-  max-width: 33px; 
+  width: 2.2vw; 
+  max-width: 32px; 
 }
   
   /* @media screen and (max-width: 1600px) {
