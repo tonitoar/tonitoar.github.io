@@ -1740,7 +1740,7 @@ display: none;
     
     /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
     .project-nav li {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     width: calc(180px * 0.92); 
     height: calc(35px * 0.9); 
     }
