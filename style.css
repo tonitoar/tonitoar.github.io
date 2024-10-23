@@ -952,17 +952,55 @@ opacity: 1;
   
   .CV {
     margin-top: 35px;
-    width: calc(184px * 0.82);
-    height: calc(60px * 0.82);
+    width: calc(184px * 0.75);
+    height: calc(60px * 0.80);
   }
   
   .CV a {
-    font-size: 0.93rem;
-    padding: calc(17px * 0.78) calc(29px * 0.78);
+    font-size: 0.9rem;
+    padding: calc(17px * 0.67) calc(29px * 0.65);
   }
 
   .CV:hover {
     transform: scale(1.06);
+  }
+
+  @media screen and (max-width: 597px) {
+  
+    .CV {
+      margin-top: 30px;
+      width: calc(184px * 0.71);
+      height: calc(60px * 0.77);
+    }
+    
+    .CV a {
+      font-size: 0.85rem;
+      padding: calc(17px * 0.62) calc(29px * 0.60);
+    }
+  
+    .CV:hover {
+      transform: none;
+    }
+
+  }
+
+  @media screen and (max-width: 512px) {
+  
+    .CV {
+      margin-top: 30px;
+      width: calc(184px * 0.68);
+      height: calc(60px * 0.73);
+    }
+    
+    .CV a {
+      font-size: 0.8rem;
+      padding: calc(17px * 0.58) calc(29px * 0.60);
+    }
+  
+    .CV:hover {
+      transform: none;
+    }
+
   }
 
   nav {
@@ -1004,7 +1042,7 @@ opacity: 1;
     width: 95%;
     padding: 15px 0px 40px;
     margin-bottom: 25px;
-    height: 120vh;
+    height: 113vh;
     margin-top: 20px;
     padding: 15px 0px;
     gap: 30px;
@@ -1015,14 +1053,12 @@ opacity: 1;
   
   
   .border-container {
-    width: 45%; 
-    height: 33%;
-    max-width: 280px;     
+    width: 270px;
+    height: 270px;
   }
   
   .photo {
-    width: 118%;
-    max-width: 400px;
+    width: 315px;
     height: auto;
     position: relative;
     top: 15px;
@@ -1034,9 +1070,15 @@ opacity: 1;
     height: auto;
     gap: 50px ; 
   }
-  
+
+  @media screen and (max-width: 668px) {
+    .info {
+      width: 75%;
+    }
+  }
+
   .info-text {
-    width: 90%;
+    width: 95%;
     height: auto;
   }
   
@@ -1048,21 +1090,20 @@ opacity: 1;
     font-size: 1.1rem;
   }
 
-
-
   .social-media {
     width: 35%;
+    min-width: 118px;
     height: auto;
 }
 
 .social-media .linkedin {
-  width: 5vw; 
-  max-width: 43px; 
+  width: 8vw; 
+  max-width: 38px;
 }
 
 .social-media .github {
-  width: 4.5vw; 
-  max-width: 38px; 
+  width: 7.5vw; 
+  max-width: 33px;
 }
 
 /*! to make the :hover image disable */
@@ -1080,6 +1121,42 @@ opacity: 1;
 display: none;
 }
 
+
+@media screen and (max-width: 597px) {
+
+  #About article {
+    margin: 50px 15px 40px;
+  }
+
+  .intro {
+    height: 110vh;
+    gap: 20px;
+  }
+
+  .info {
+    width: 75%;
+  }
+
+  .border-container {
+    width: 44vw;
+    height: 35vh; 
+    
+  }
+  
+  .photo {
+    width: 118%;
+    max-width: 345px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 10px;
+  }
+
+  .info-text p {
+    font-size: 1.05rem;
+  }
+
+}
 
 #Skills article {
   width: 95%;
