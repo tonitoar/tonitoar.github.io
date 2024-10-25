@@ -1,5 +1,5 @@
 * {
-border: 1px solid blue; 
+/* border: 1px solid blue;  */
 margin:0;
 padding:0; 
 }
@@ -815,7 +815,7 @@ align-items: baseline;
   display: flex;
   justify-content: space-between;
   width: 50%;
-  height: 250px;
+  height: 240px;
 }
 
 .footer-left {
@@ -1504,7 +1504,7 @@ display: none;
   }
     
   .footer-right {
-    height: 120px;
+    height: 100px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -1546,13 +1546,13 @@ display: none;
   }
    
   .social-media-footer .linkedin2 {
-  width: 4vw; 
-  max-width: 32px; 
+  width: 6.5vw; 
+  max-width: 30px; 
 }
 
 .social-media-footer .github2 {
-  width: 3.6vw; 
-  max-width: 29.5px; 
+  width: 6.1vw; 
+  max-width: 27.5px; 
 }
   
 
@@ -2164,9 +2164,8 @@ display: none;
   }
 
   @media screen and (max-width: 823px) {
-    .footer-content {
-      width: 100%;
-      padding: 30px 0px;
+   .footer-info {
+      width: 47%;
     }
   }
   
