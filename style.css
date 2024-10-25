@@ -1138,14 +1138,15 @@ display: none;
   }
 
   .border-container {
-    width: 44vw;
+    width: 50vw;
+    max-width: 270px;
     height: 35vh; 
     
   }
   
   .photo {
-    width: 118%;
-    max-width: 345px;
+    width: 135%;
+    max-width: 315px;
     height: auto;
     position: relative;
     top: 15px;
@@ -1156,6 +1157,42 @@ display: none;
     font-size: 1.05rem;
   }
 
+}
+
+@media screen and (max-width: 547px) {
+  .intro {
+    height: 115vh;
+    gap: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    height: 120vh;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .intro {
+    height: 125vh;
+  }
+
+  .border-container {
+    transform: none; 
+    width: 55vw;
+    height: 30vh; 
+  }
+  
+  .photo {
+    width: 125%;
+    max-width: 285px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 11.5px;
+    transform: none;
+  }
 }
 
 #Skills article {
