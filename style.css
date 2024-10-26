@@ -960,10 +960,151 @@ opacity: 1;
     padding: calc(17px * 0.49) calc(29px * 0.47);
   }
 
+  @media screen and (max-width: 675px) {
+    nav {
+      display: none;
+    }
+  }
 
 
+  h2 {
+    color: var(--h2-color); 
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  #About article {
+    width: 95%;
+    height: auto;
+    margin: 50px 15px 40px;
+  }
+  
+  .intro {
+    margin: 50px 0px 25px;
+    padding: 15px 0px;
+    width: 95%;
+    height: auto;
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .border-container {
+    transform: none; 
+    width: 55vw;
+    height: 30vh; 
+  }
+
+  .photo {
+    width: 140%;
+    max-width: 285px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 11.5px;
+    transform: none;
+  }
+
+  .info {
+    width: 90%;
+    height: auto;
+    gap: 50px ; 
+  }
+
+  .info-text {
+    width: 95%;
+    height: auto;
+  }
+  
+  .info-text p {
+    text-align: justify;
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    font-size: 1.05rem;
+  }
+
+  .social-media {
+    width: 35%;
+    min-width: 118px;
+    height: auto;
+}
+
+.social-media .linkedin {
+  width: 9.5vw; 
+  max-width: 37px;
+}
+
+.social-media .github {
+  width: 8.8vw; 
+  max-width: 34px;
+}
+
+/*! to make the :hover image disable */
+.social-media a:hover img {
+opacity: 1; 
+}
+
+/*! to make the :hover image disable */
+.social-media a::after {
+  display: none;
+}
+
+/*! to make the :hover image disable */
+.social-media a:nth-child(2)::after {
+display: none;
+}
+
+
+#Skills article {
+  width: 95%;
+  height: auto;
+  margin: 50px 15px 40px;
+}
+
+.cards {
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  justify-items: center;
+  margin: 25px 0px;
+  width: 80%; 
+}
+
+.javascript, .html, 
+.css, .react, .node,
+.express, .mongodb, .git {
+  width: auto;
+  height: 195px;
+  padding: 10px 30px 15px;
+}
+
+.card-opacity::before {
+  bottom: 0px; 
+  right: -9.7px;
+  width: 107.8%;
+  height: 90%;
+}
+
+.cards img {
+  width: 68px;
+  height: auto;
+}
+
+.cards p {
+  font-size: 1.05rem;
+}
+
+.cards h3 {
+  font-size: 1rem;
+}
 
 }
+
+
+
+
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   
@@ -1079,11 +1220,11 @@ opacity: 1;
   }
   
   .intro {
-    margin: 20px 0px 25px;
+    margin: 50px 0px 25px;
     padding: 15px 0px;
     width: 95%;
-    height: 113vh;
-    gap: 30px;
+    height: auto;
+    gap: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1135,13 +1276,13 @@ opacity: 1;
 }
 
 .social-media .linkedin {
-  width: 8vw; 
+  width: 8.5vw; 
   max-width: 38px;
 }
 
 .social-media .github {
-  width: 7.5vw; 
-  max-width: 33px;
+  width: 8vw; 
+  max-width: 34px;
 }
 
 /*! to make the :hover image disable */
@@ -1164,11 +1305,6 @@ display: none;
 
   #About article {
     margin: 50px 15px 40px;
-  }
-
-  .intro {
-    height: 110vh;
-    gap: 20px;
   }
 
   .info {
@@ -1197,7 +1333,7 @@ display: none;
 
 }
 
-@media screen and (max-width: 547px) {
+/* @media screen and (max-width: 547px) {
   .intro {
     height: 115vh;
     gap: 25px;
@@ -1209,11 +1345,12 @@ display: none;
     height: 120vh;
     gap: 30px;
   }
-}
+} */
 
 @media screen and (max-width: 449px) {
   .intro {
-    height: 115vh;
+    height: auto;
+    gap: 80px;
   }
 
   .info {
@@ -1289,7 +1426,7 @@ display: none;
   .cards {
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     justify-items: center;
-    margin: 20px 0px 25px;
+    margin: 25px 0px;
     width: 80%; 
   }
 }
@@ -1785,10 +1922,10 @@ display: none;
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 120vh;
-      margin-top: 20px;
+      height: auto;
+      gap: 120px;
+      margin: 50px 0px 25px;
       padding: 15px 0px;
-      gap: 30px
     }
 
     .info {
@@ -1813,9 +1950,8 @@ display: none;
     }
 
     .border-container {
-      width: 45%; 
-      height: 33%;
-      max-width: 280px;     
+      width: 290px;
+      height: 290px;
     }
     
     .photo {
