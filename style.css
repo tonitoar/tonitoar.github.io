@@ -1168,6 +1168,108 @@ display: none;
 
 
 
+
+#Contact article {
+  width: 95%;
+  height: auto;
+  margin: 50px 15px 40px;
+}
+
+
+.contact-text {
+  margin: 25px 0px 15px 0px;
+  width: 75%;
+  max-width: 540px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact-text span {
+  font-weight: 800;
+}
+
+.contact-text p {
+  padding: 20px 25px;
+  height: auto;
+  font-size: 1.05rem;
+}
+
+.contact-form {
+  width: 85%;
+  height: auto;
+  padding: 20px 10px;
+  margin: 50px 0px;
+}
+
+form {
+  width: 80%;
+  height: auto;
+  padding: 25px 20px;
+  margin: 2.5px 10px;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.group-vertical {
+  height: 250px;
+}
+
+.textarea-container {
+  width: 85%;
+  margin: 20px 0px;
+  height: auto;
+}
+
+form label {
+  font-size: 0.95rem;
+  margin-left: 5px;
+}
+
+.message-label {
+  margin-top: 9px;
+}
+
+form input {
+  width: 57%;
+  height: 17px;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+
+form select {
+  height: 30px;
+  margin-left: 10px;
+  font-size: 0.50rem;
+}
+
+/*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
+/*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
+form textarea {
+  width: 100%;
+  resize: none; 
+  height: 500px;
+  padding: 15px 10px;
+  font-size: 0.925rem;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+button[type="submit"] {
+  width: calc(135px * 0.88);
+  height: calc(45px * 0.89);
+  font-size: 0.8rem;
+  font-weight: 550;
+  margin: 15px auto;
+  padding: 10px;
+  transition: none; /*! DISABLE ANIMATION */
+}
+
+button[type="submit"]:hover {
+  animation: none; /*! DISABLE ANIMATION */
+}
+
 }
 
 
@@ -1577,7 +1679,7 @@ display: none;
   
   .contact-text {
     margin: 25px 0px 15px 0px;
-    width: 90%;
+    width: 75%;
     max-width: 540px;
     height: auto;
     border-radius: 10px;
@@ -1594,8 +1696,8 @@ display: none;
   }
   
   .contact-form {
-    width: 80%;
-    max-width: 470px;
+    width: 85%;
+    max-width: 415px;
     height: auto;
     padding: 20px 10px;
     margin: 50px 0px;
@@ -1675,9 +1777,9 @@ display: none;
       margin: 50px 15px 40px;
     }
 
-    .contact-form {
+    /* .contact-form {
       width: 82.5%;
-    }
+    } */
 
     form input {
       width: 60%;
@@ -1687,12 +1789,11 @@ display: none;
   }
 
   @media screen and (max-width: 480px) {
-    .contact-form {
-      width: 85%;
-    }
 
     form {
-      width: 70%;
+      width: 80%;
+      padding: 25px 20px;
+      margin: 2.5px 10px;
     }
 
     form label {
