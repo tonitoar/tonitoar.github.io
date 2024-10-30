@@ -1534,6 +1534,8 @@ display: none;
 
   nav a {
    margin: 10px;
+   background: none;
+   border-color: var(--light-red1);
   }
   }
     
