@@ -108,7 +108,7 @@ nav {
   color: var(--light-text);
   border-radius: 15px;
   padding: 8px; 
-  width: 145px;
+  width: 135px;
   font-size: 0.85rem;
   cursor: pointer;
   text-align: center;
@@ -1002,10 +1002,44 @@ opacity: 1;
 
  
   nav {
-    display: none;
+    width: 160px;
+    height: 60px;
+    margin: 85px auto 0px; 
+    border-radius: 15px;
   }
+  
+ /* NAVBAR MOBILE SHOW */
+ .nav-dropdown-toggle {
+  display: block; 
+  font-size: 0.8rem;
+  width: 125px;
+}
 
+/* NAVBAR DESKTOP HIDE */
+.nav-dropdown-menu {
+  display: none !important;
+  background-color: var(--nav-bar-color);
+  width: 150px;
+  position: absolute;
+  height: auto;
+  top: 100%;
+  z-index: 10;
+  padding: 10px 0px;
+}
+.nav-dropdown-menu.show {
+  display: flex !important;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 5px;
+}
 
+  nav a {
+    font-size: 1rem;
+    padding: calc(7px * 0.6) calc(32px * 0.65);
+    margin: 10px;
+    background: none;
+    border-color: var(--light-red1);
+  }
 
   h2 {
     color: var(--h2-color); 
@@ -1143,8 +1177,6 @@ display: none;
 
 
 
-
-
 #Projects article {
   width: 95%;
   height: auto;
@@ -1153,22 +1185,46 @@ display: none;
 
 .project-nav {
   margin: 50px 0px 20px 0px;
-  width: 95%; 
   height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAVBAR MOBILE SHOW */
+.project-nav-dropdown-toggle {
+display: block; 
+}
+
+/* NAVBAR DESKTOP HIDE */
+.project-nav-dropdown-menu {
+display: none !important;
+background-color: var(--nav-bar-color);
+width: 185px;
+position: absolute;
+top: 100%;
+z-index: 10;
+padding: 10px 0px;
+}
+.project-nav-dropdown-menu.show {
+display: flex !important;
+flex-direction: column;
+margin-top: 10px;
+border-radius: 5px;
 }
 
 /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
 .project-nav li {
-  font-size: 1rem;
-  width: calc(180px * 0.8); 
-  height: calc(35px * 0.85); 
+  font-size: 0.9rem;
+  width: calc(180px * 0.75); 
+  height: calc(35px * 0.8); 
+  margin: 5px 0px;
 }
   
 .project-container {
   width: 80%;
   height: auto;
   margin: 20px;
-  padding: 45px 25px;
+  padding: 25px;
   grid-template-columns: repeat(auto-fit,minmax(211px, 0.25fr));
 }
 
@@ -1507,7 +1563,8 @@ display: none;
   @media screen and (max-width: 675px) {
 
     nav {
-      width: 200px;
+      width: 170px;
+      border-radius: 15px;
     }
 
   /* NAVBAR MOBILE SHOW */
@@ -1770,50 +1827,53 @@ display: none;
     height: auto;
   }
   
-/*! MAKE NAVBAR MOBILE SHOW AND NAVBAR DESKTOP HIDE */
-
-  @media screen and (max-width: 675px) {
-
-    .project-nav {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* NAVBAR MOBILE SHOW */
-    .project-nav-dropdown-toggle {
-      display: block; 
-    }
-  
-    /* NAVBAR DESKTOP HIDE */
-    .project-nav-dropdown-menu {
-      display: none !important;
-      background-color: var(--nav-bar-color);
-      width: 200px;
-      position: absolute;
-      top: 100%;
-      z-index: 10;
-      padding: 10px 0px;
-  }
-    .project-nav-dropdown-menu.show {
-      display: flex !important;
-      flex-direction: column;
-      margin-top: 10px;
-      border-radius: 5px;
-    }
-
-    .project-nav li {
-      margin: 5px 0px;
-    }
-  }
-  
-/*! MAKE NAVBAR MOBILE SHOW AND NAVBAR DESKTOP HIDE */
-
   /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
     font-size: 1rem;
     width: calc(180px * 0.8); 
     height: calc(35px * 0.85); 
   }
+
+  /*! MAKE NAVBAR MOBILE SHOW AND NAVBAR DESKTOP HIDE */
+  
+    @media screen and (max-width: 675px) {
+  
+      .project-nav {
+          display: flex;
+          justify-content: center;
+      }
+  
+      /* NAVBAR MOBILE SHOW */
+      .project-nav-dropdown-toggle {
+        display: block; 
+      }
+    
+      /* NAVBAR DESKTOP HIDE */
+      .project-nav-dropdown-menu {
+        display: none !important;
+        background-color: var(--nav-bar-color);
+        width: 185px;
+        position: absolute;
+        top: 100%;
+        z-index: 10;
+        padding: 10px 0px;
+    }
+      .project-nav-dropdown-menu.show {
+        display: flex !important;
+        flex-direction: column;
+        margin-top: 10px;
+        border-radius: 5px;
+      }
+  
+      .project-nav li {
+        margin: 5px 0px;
+        font-size: 0.9rem;
+        width: calc(180px * 0.75); 
+        height: calc(35px * 0.8); 
+      }
+    }
+    
+  /*! MAKE NAVBAR MOBILE SHOW AND NAVBAR DESKTOP HIDE */
     
 .project-container {
     width: 80%;
