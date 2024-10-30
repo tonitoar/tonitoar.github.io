@@ -270,6 +270,38 @@ window.onload = function () {
 
 //! WORD ANIMATED
 
+//! NAV-BAR MOBILE VERSION
+
+const navBarMobile = document.querySelector(".nav-dropdown-toggle"); 
+const navBarMobileButtons = document.querySelector(".nav-dropdown-menu"); 
+
+navBarMobile.addEventListener("click", () => {
+  navBarMobileButtons.classList.toggle("show"); 
+}); 
+
+navBarMobileButtons.addEventListener("click", () => {
+  navBarMobileButtons.classList.remove("show"); 
+})
+
+//! NAV-BAR MOBILE VERSION
+
+
+
+//! PROJECT NAV-BAR MOBILE VERSION
+
+const projectNavBarMobile = document.querySelector(".project-nav-dropdown-toggle"); 
+const projectNavBarMobileButtons = document.querySelector(".project-nav-dropdown-menu"); 
+
+projectNavBarMobile.addEventListener("click", () => {
+  projectNavBarMobileButtons.classList.toggle("show"); 
+}); 
+
+projectNavBarMobileButtons.addEventListener("click", () => {
+  projectNavBarMobileButtons.classList.remove("show"); 
+})
+
+//! PROJECT NAV-BAR MOBILE VERSION
+
 
 //! PROJECT NAV-BAR SELECTOR "FILTER"
 

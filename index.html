@@ -30,7 +30,8 @@
         </section>
     </header>
     <nav>
-        <ul>
+        <button class="nav-dropdown-toggle">MENU ▼</button>
+        <ul class="nav-dropdown-menu">
             <li><a href="#About">About me</a></li>
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#Projects">Projects</a></li>
@@ -132,7 +133,9 @@
             <article>
                 <h2>PROJECTS</h2>
                 <div class="project-nav">
-                    <ul>
+                    <!-- ! DROPDOWN serveix per versio mobil-->
+                    <button class="project-nav-dropdown-toggle">Filter Projects ▼</button>
+                    <ul class="project-nav-dropdown-menu">
                         <!-- ! data-filter serveix per filtrar amb relacio al valor de data-category -->
                         <!-- ! class="active" per tenir activat per default -->
                         <li data-filter="all" class="active">All</li>
