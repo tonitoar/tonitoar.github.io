@@ -1,5 +1,5 @@
 * {
-border: 1px solid blue; 
+/* border: 1px solid blue;  */
 margin:0;
 padding:0; 
 }
@@ -92,10 +92,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 15px;
   position: -webkit-sticky; /* For Safari */
   position: sticky;
-  top: 5px; /* When scrolled to this point, the nav will stick */
+  top: 0px; /* When scrolled to this point, the nav will stick => STICKY AT TOP */
   z-index: 100; /* Ensure it stays on top */
 }
 
@@ -1012,12 +1012,17 @@ opacity: 1;
 }
 
   nav {
-    width: 160px;
+    width: 100%;
     height: 60px;
     margin: 45px auto 0px; 
-    border-radius: 15px;
+    border-radius: 0px;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
   }
   
+.nav-sticky-shadow {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
+}
+
  /* NAVBAR MOBILE SHOW */
  .nav-dropdown-toggle {
   display: block; 
@@ -1053,6 +1058,13 @@ opacity: 1;
 
   #About {
     width: 95%;
+    margin: 65px 0px 50px 0px;
+  }
+
+  @media screen and (max-width: 348px) {
+    #About {
+      width: 97.5%;
+    }
   }
 
   h2 {
@@ -1063,7 +1075,9 @@ opacity: 1;
   }
 
   #About h2::before {
-    width: 155px;
+    width: 153px;
+    top: 21.5px;
+    height: 11px; 
   }
 
   #About article {
@@ -1107,15 +1121,21 @@ opacity: 1;
     gap: 50px ; 
   }
 
+  @media screen and (max-width: 348px) {
+    .info {
+      width: 87.8%;
+    }
+  }
+
   .info-text {
     width: 95%;
     height: auto;
   }
   
   .info-text p {
-    text-align: justify;
+    text-align: center;
     width: 100%;
-    padding: 20px;
+    padding: 20px 15px;
     height: auto;
     font-size: 1rem;
   }
@@ -1127,13 +1147,13 @@ opacity: 1;
 }
 
 .social-media .linkedin {
-  width: 9vw; 
-  max-width: 35.5px;
+  width: 10vw; 
+  max-width: 33.5px;
 }
 
 .social-media .github {
-  width: 8.3vw; 
-  max-width: 32.5px;
+  width: 9.3vw; 
+  max-width: 30.5px;
 }
 
 /*! to make the :hover image disable */
@@ -1152,6 +1172,23 @@ display: none;
 }
 
 
+#Skills {
+  width: 95%;
+  margin: 50px 0px;
+}
+
+@media screen and (max-width: 348px) {
+  #Skills {
+    width: 97.5%;
+  }
+}
+
+#Skills h2::before {
+  width: 105px;
+  top: 21.5px;
+  height: 11px; 
+}
+
 #Skills article {
   width: 95%;
   height: auto;
@@ -1169,30 +1206,48 @@ display: none;
 .css, .react, .node,
 .express, .mongodb, .git {
   width: auto;
-  height: 195px;
-  padding: 10px 30px 15px;
+  height: 190px;
+  padding: 10px 25px 15px;
 }
 
 .card-opacity::before {
   bottom: 0px; 
-  right: -9.7px;
-  width: 107.8%;
-  height: 90%;
+  right: -5px;
+  width: 101.1%;
+  height: 89.05%;
 }
 
 .cards img {
-  width: 68px;
+  width: 64px;
   height: auto;
 }
 
 .cards p {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
 }
 
 .cards h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
+
+
+#Projects {
+  width: 95%;
+  margin: 50px 0px;
+}
+
+@media screen and (max-width: 348px) {
+  #Projects {
+    width: 97.5%;
+  }
+}
+
+#Projects h2::before {
+  top: 21.5px;
+  width: 152px;
+  height: 11px; 
+}
 
 
 #Projects article {
@@ -1211,13 +1266,15 @@ display: none;
 /* NAVBAR MOBILE SHOW */
 .project-nav-dropdown-toggle {
 display: block; 
+font-size: 0.825rem;
+width: 135px;
 }
 
 /* NAVBAR DESKTOP HIDE */
 .project-nav-dropdown-menu {
 display: none !important;
 background-color: var(--nav-bar-color);
-width: 185px;
+width: 160px;
 position: absolute;
 top: 100%;
 z-index: 10;
@@ -1232,8 +1289,8 @@ border-radius: 5px;
 
 /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
 .project-nav li {
-  font-size: 0.9rem;
-  width: calc(180px * 0.75); 
+  font-size: 0.85rem;
+  width: calc(180px * 0.725); 
   height: calc(35px * 0.8); 
   margin: 5px 0px;
 }
@@ -1281,10 +1338,25 @@ border-radius: 5px;
   margin-top: 10px; 
 }
 
-/* 
+
+
 #Contact {
   width: 95%;
-} */
+  margin: 50px 0px;
+}
+
+@media screen and (max-width: 348px) {
+  #Contact {
+    width: 97.5%;
+  }
+}
+
+#Contact h2::before {
+  top: 21.5px;
+  width: 152px;
+  height: 11px; 
+}
+
 
 #Contact article {
   width: 95%;
@@ -1306,9 +1378,10 @@ border-radius: 5px;
 }
 
 .contact-text p {
-  padding: 20px 25px;
+  padding: 20px 15px;
   height: auto;
   font-size: 1rem;
+  text-align: center;
 }
 
 .contact-form {
@@ -1328,6 +1401,12 @@ form {
   z-index: 2;
 }
 
+@media screen and (max-width: 348px) {
+  .contact-form {
+    width: 89%;
+  }
+}
+
 .group-vertical {
   height: 250px;
 }
@@ -1339,8 +1418,9 @@ form {
 }
 
 form label {
-  font-size: 0.925rem;
+  font-size: 0.9rem;
   margin-left: 5px;
+  
 }
 
 .message-label {
@@ -1358,7 +1438,7 @@ form input {
 form select {
   height: 30px;
   margin-left: 10px;
-  font-size: 0.75rem;
+  font-size: 0.725rem;
 }
 
 /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
@@ -1374,9 +1454,9 @@ form textarea {
 }
 
 button[type="submit"] {
-  width: calc(135px * 0.88);
+  width: calc(135px * 0.85);
   height: calc(45px * 0.89);
-  font-size: 0.8rem;
+  font-size: 0.775rem;
   font-weight: 550;
   margin: 15px auto;
   padding: 10px;
@@ -1393,6 +1473,7 @@ button[type="submit"]:hover {
 footer {
   width: 100%;
   height: auto;
+  margin: 100px 0px 0px;
 }
 
 .footer-content {
@@ -1439,27 +1520,27 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .footer-left p, 
 .footer-center p{
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .footer-right p,
 .footer-center a {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
  
 .social-media-footer .linkedin2 {
-width: 7.5vw; 
-max-width: 30px; 
+width: 8vw; 
+max-width: 27px; 
 }
 
 .social-media-footer .github2 {
-width: 7vw; 
-max-width: 27.5px; 
+width: 7.5vw; 
+max-width: 24.5px; 
 }
 
 
@@ -1709,7 +1790,7 @@ display: block;
 .project-nav-dropdown-menu {
 display: none !important;
 background-color: var(--nav-bar-color);
-width: 185px;
+width: 175px;
 position: absolute;
 top: 100%;
 z-index: 10;
@@ -1773,10 +1854,6 @@ border-radius: 5px;
   margin-top: 10px; 
 }
 
-/* 
-#Contact {
-  width: 95%;
-} */
 
 #Contact article {
   width: 95%;
@@ -2073,8 +2150,8 @@ display: none;
   @media screen and (max-width: 675px) {
 
     nav {
-      width: 170px;
-      border-radius: 15px;
+      width: 100%;
+      border-radius: 0px;
       margin: 45px auto 0px; 
     }
 
@@ -3917,7 +3994,7 @@ max-width: 32px;
     
   h2 {
     color: var(--h2-color); 
-    font-size: 2rem;
+    font-size: 2.25rem;
     position: relative;
     margin-bottom: 20px;
   }

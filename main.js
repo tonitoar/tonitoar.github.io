@@ -287,6 +287,24 @@ navBarMobileButtons.addEventListener("click", () => {
 
 
 
+//! NAV-BAR MOBILE VERSION DETECT STICKY POSITION => ADD SHADOW
+
+const navBarMobileSticky = document.getElementById("navBar"); 
+
+window.addEventListener("scroll", () => {
+  const isSticky = navBarMobileSticky.getBoundingClientRect().top <= 0; 
+
+  if (isSticky) {
+    navBarMobileSticky.classList.add("nav-sticky-shadow"); // Add shadow when sticky
+  } else {
+    navBarMobileSticky.classList.remove("nav-sticky-shadow"); // Remove shadow when not sticky
+  }
+})
+
+//! NAV-BAR MOBILE VERSION DETECT STICKY POSITION => ADD SHADOW
+
+
+
 //! PROJECT NAV-BAR MOBILE VERSION
 
 const projectNavBarMobile = document.querySelector(".project-nav-dropdown-toggle"); 
