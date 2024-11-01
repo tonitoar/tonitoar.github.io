@@ -2148,7 +2148,12 @@ display: none;
     height: 60px;
     margin: 45px auto 0px; 
     border-radius: 0px;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
   }
+  
+.nav-sticky-shadow {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
+}
   
  /* NAVBAR MOBILE SHOW */
  .nav-dropdown-toggle {
@@ -2192,7 +2197,7 @@ display: none;
   
 
   #About {
-    width: 95%;
+    width: 100%;
   }
 
   #About article {
@@ -2282,7 +2287,7 @@ display: none;
 
 
 #Skills {
-  width: 97.5%;
+  width: 100%;
 }
 
 #Skills article {
@@ -2327,6 +2332,9 @@ display: none;
 }
 
 
+#Projects {
+  width: 100%;
+}
 
 #Projects article {
   width: 95%;
@@ -2415,12 +2423,15 @@ border-radius: 5px;
 }
 
 
+#Contact {
+  width: 100%;
+}
+
 #Contact article {
   width: 95%;
   height: auto;
   margin: 50px 0px 40px;
 }
-
 
 .contact-text {
   margin: 25px 0px 15px 0px;
