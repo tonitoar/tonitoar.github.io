@@ -775,6 +775,7 @@ label[for="message"] {
 form select {
   height: 30px;
   padding: 5px;
+  /* padding: 5px 2.5px; */
   margin-left: 10px;
   /*! eliminar border blue per default */
   border: 1px solid #ccc;
@@ -954,6 +955,7 @@ opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 15px 0px 0px 5px;
 }
 
 
@@ -968,7 +970,556 @@ opacity: 1;
 }
 
 
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+
+  header {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #inicio {
+    width: 90%;
+    height: auto;
+  }
+  
+  h1 {
+    font-size: clamp(1.6rem, 10vw, 8.5rem);
+  }
+
+  .CV {
+    margin-top: 30px;
+    width: calc(184px * 0.58);
+    height: calc(60px * 0.63);
+    border: solid 3px var(--light-red1);
+  }
+  
+  .CV a {
+    font-size: 0.75rem;
+    padding: calc(17px * 0.43) calc(29px * 0.40);
+  }
+
+  nav {
+    width: 100%;
+    height: 60px;
+    margin: 45px auto 0px; 
+    border-radius: 0px;
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+  }
+  
+.nav-sticky-shadow {
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
+}
+
+ /* NAVBAR MOBILE SHOW */
+ .nav-dropdown-toggle {
+  display: block; 
+  font-size: 0.8rem;
+  width: 125px;
+}
+
+/* NAVBAR DESKTOP HIDE */
+.nav-dropdown-menu {
+  display: none !important;
+  background-color: var(--nav-bar-color);
+  width: 150px;
+  position: absolute;
+  height: auto;
+  top: 100%;
+  z-index: 10;
+  padding: 10px 0px;
+}
+.nav-dropdown-menu.show {
+  display: flex !important;
+  flex-direction: column;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+  nav a {
+    font-size: 1rem;
+    padding: calc(7px * 0.6) calc(32px * 0.65);
+    margin: 10px;
+    background: none;
+    border-color: var(--light-red1);
+  }
+
+  #About {
+    width: 97.5%;
+    margin: 65px 0px 50px 0px;
+  }
+
+  h2 {
+    color: var(--h2-color); 
+    font-size: 1.87rem;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  #About h2::before {
+    width: 153px;
+    top: 21.5px;
+    height: 11px; 
+  }
+
+  #About article {
+    width: 95%;
+    height: auto;
+    margin: 50px 0px 40px;
+  }
+  
+  .intro {
+    margin: 50px 0px 25px;
+    padding: 15px 0px;
+    width: 95%;
+    height: auto;
+    gap: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .border-container {
+    transform: none; 
+    width: 65vw;
+    max-width: 230px;
+    height: 28vh; 
+  }
+
+  .photo {
+    width: 85vw;
+    /* max-width: 270px; */
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 11.5px;
+    transform: none;
+  }
+
+  .info {
+    width: 87.8%;
+    height: auto;
+    gap: 50px ; 
+  }
+
+  .info-text {
+    width: 95%;
+    height: auto;
+  }
+  
+  .info-text p {
+    text-align: center;
+    width: 100%;
+    padding: 20px 15px;
+    height: auto;
+    font-size: 1rem;
+  }
+
+  .social-media {
+    width: 35%;
+    min-width: 118px;
+    height: auto;
+}
+
+.social-media .linkedin {
+  width: 10.5vw; 
+}
+
+.social-media .github {
+  width: 9.8vw; 
+}
+
+/*! to make the :hover image disable */
+.social-media a:hover img {
+opacity: 1; 
+}
+
+/*! to make the :hover image disable */
+.social-media a::after {
+  display: none;
+}
+
+/*! to make the :hover image disable */
+.social-media a:nth-child(2)::after {
+display: none;
+}
+
+
+#Skills {
+  width: 97.5%;
+  margin: 50px 0px;
+}
+
+#Skills h2::before {
+  width: 105px;
+  top: 21.5px;
+  height: 11px; 
+}
+
+#Skills article {
+  width: 95%;
+  height: auto;
+  margin: 50px 0px 40px;
+}
+
+.cards {
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  justify-items: center;
+  margin: 25px 0px;
+  width: 80%; 
+}
+
+.javascript, .html, 
+.css, .react, .node,
+.express, .mongodb, .git {
+  width: auto;
+  height: 195px;
+  padding: 10px 30px 15px;
+}
+
+.card-opacity::before {
+  bottom: 0px; 
+  right: -9.7px;
+  width: 107.8%;
+  height: 90%;
+}
+
+.cards img {
+  width: 68px;
+  height: auto;
+}
+
+.cards p {
+  font-size: 1.05rem;
+}
+
+.cards h3 {
+  font-size: 1rem;
+}
+
+
+
+#Projects {
+  width: 97.5%;
+  margin: 50px 0px;
+}
+
+#Projects h2::before {
+  top: 21.5px;
+  width: 152px;
+  height: 11px; 
+}
+
+
+#Projects article {
+  width: 95%;
+  height: auto;
+  margin: 50px 0px 40px;
+}
+
+.project-nav {
+  margin: 50px 0px 20px 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* NAVBAR MOBILE SHOW */
+.project-nav-dropdown-toggle {
+display: block; 
+font-size: 0.825rem;
+width: 135px;
+}
+
+/* NAVBAR DESKTOP HIDE */
+.project-nav-dropdown-menu {
+display: none !important;
+background-color: var(--nav-bar-color);
+width: 160px;
+position: absolute;
+top: 100%;
+z-index: 10;
+padding: 10px 0px;
+}
+.project-nav-dropdown-menu.show {
+display: flex !important;
+flex-direction: column;
+margin-top: 10px;
+border-radius: 5px;
+}
+
+/*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
+.project-nav li {
+  font-size: 0.85rem;
+  width: calc(180px * 0.725); 
+  height: calc(35px * 0.8); 
+  margin: 5px 0px;
+}
+  
+.project-container {
+  width: 80%;
+  height: auto;
+  margin: 20px;
+  padding: 25px;
+  grid-template-columns: repeat(auto-fit,minmax(211px, 0.25fr));
+}
+
+/*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
+.project-item {
+  width: 210px;
+  height: 210px;
+  position: relative;
+}
+
+/* TODO div class="hover-description" creat per JS */
+.hover-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.hover-description h3 {
+  font-size: 1.25rem;
+}
+
+.hover-description p {
+  font-size: 1.01rem;
+}
+
+.hover-description h4 {
+  font-size: 1.06rem;
+}
+
+.hover-description button {
+  padding: 5.5px 11px;
+  font-size: 0.75rem;
+  margin-top: 10px; 
+}
+
+
+
+#Contact {
+  width: 97.5%;
+  margin: 50px 0px;
+}
+
+#Contact h2::before {
+  top: 21.5px;
+  width: 152px;
+  height: 11px; 
+}
+
+
+#Contact article {
+  width: 95%;
+  height: auto;
+  margin: 50px 0px 40px;
+}
+
+
+.contact-text {
+  margin: 25px 0px 15px 0px;
+  width: 75%;
+  max-width: 540px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact-text span {
+  font-weight: 800;
+}
+
+.contact-text p {
+  padding: 20px 15px;
+  height: auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-form {
+  width: 89%;
+  height: auto;
+  padding: 18px 10px;
+  margin: 50px 0px;
+}
+
+form {
+  width: 80%;
+  height: auto;
+  padding: 25px 20px;
+  margin: 2.5px 8px;
+  gap: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+/* .group-horizontal::before {
+  left: 0px;
+  width: 107%;
+}
+
+.group-horizontal {
+  position: relative;
+  left: -10px;
+} */
+
+.group-vertical {
+  height: 250px;
+}
+
+.textarea-container {
+  width: 85%;
+  margin: 20px 0px;
+  height: auto;
+}
+
+form label {
+  font-size: 0.9rem;
+  margin-left: 5px;
+  
+}
+
+.message-label {
+  margin-top: 9px;
+}
+
+form input {
+  width: 57%;
+  height: 17px;
+  padding: 5px;
+  margin-left: 10px;
+  font-size: 0.8rem;
+}
+
+form select {
+  height: 30px;
+  margin-left: 10px;
+  font-size: 0.725rem;
+  /* padding: 5px 2.5px; */
+}
+
+/*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
+/*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
+form textarea {
+  width: 100%;
+  resize: none; 
+  height: 500px;
+  padding: 15px 10px;
+  font-size: 0.85rem;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+button[type="submit"] {
+  width: calc(135px * 0.86);
+  height: calc(45px * 0.92);
+  font-size: 0.8rem;
+  font-weight: 550;
+  margin: 15px auto;
+  padding: 10px;
+  transition: none; /*! DISABLE ANIMATION */
+}
+
+button[type="submit"]:hover {
+  animation: none; /*! DISABLE ANIMATION */
+}
+
+
+
+
+footer {
+  width: 100%;
+  height: auto;
+  margin: 100px 0px 0px;
+}
+
+.footer-content {
+width: 100%; 
+height: auto;
+padding: 30px 0px;
+flex-direction: column;
+align-items: center;
+}
+
+.footer-info {
+  width: 85%;
+}
+  
+.footer-right {
+  height: 100px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  top: 0px;
+}
+
+ .footer-left {
+  height: 120px;
+  padding: 10px;
+}
+
+.footer-center {
+  position: relative;
+  top: 10px; 
+  height: 200px;
+  width: auto;
+  padding: 10px;
+}
+
+.footer-center ul {
+  height: 150px;
+  width: 67px;
+}
+
+blockquote {
+  border-left: 4px solid #fff;
+  padding: 10px 0px 10px 10px; 
+  font-size: 0.8rem;
+}
+
+.footer-left p, 
+.footer-center p{
+  font-size: 0.8rem;
+}
+
+.footer-right p,
+.footer-center a {
+  font-size: 0.75rem;
+}
+ 
+.social-media-footer .linkedin2 {
+width: 8vw; 
+}
+
+.social-media-footer .github2 {
+width: 7.5vw; 
+}
+
+
+/*! to make the :hover image disable */
+.social-media-footer a:hover img {
+opacity: 1; 
+}
+
+/*! to make the :hover image disable */
+.social-media-footer a::after {
+  display: none;
+}
+
+/*! to make the :hover image disable */
+.social-media-footer a:nth-child(2)::after {
+display: none;
+}
+
+
+}
+
+
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
 
@@ -1206,28 +1757,28 @@ display: none;
 .css, .react, .node,
 .express, .mongodb, .git {
   width: auto;
-  height: 190px;
-  padding: 10px 25px 15px;
+  height: 195px;
+  padding: 10px 30px 15px;
 }
 
 .card-opacity::before {
   bottom: 0px; 
-  right: -5px;
-  width: 101.1%;
-  height: 89.05%;
+  right: -9.7px;
+  width: 107.8%;
+  height: 90%;
 }
 
 .cards img {
-  width: 64px;
+  width: 68px;
   height: auto;
 }
 
 .cards p {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
 }
 
 .cards h3 {
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 
@@ -1454,9 +2005,9 @@ form textarea {
 }
 
 button[type="submit"] {
-  width: calc(135px * 0.85);
-  height: calc(45px * 0.89);
-  font-size: 0.775rem;
+  width: calc(135px * 0.86);
+  height: calc(45px * 0.92);
+  font-size: 0.8rem;
   font-weight: 550;
   margin: 15px auto;
   padding: 10px;
@@ -1943,8 +2494,8 @@ form textarea {
 }
 
 button[type="submit"] {
-  width: calc(135px * 0.88);
-  height: calc(45px * 0.89);
+  width: calc(135px * 0.86);
+  height: calc(45px * 0.92);
   font-size: 0.8rem;
   font-weight: 550;
   margin: 15px auto;
@@ -2602,7 +3153,7 @@ display: none;
   
   button[type="submit"] {
     width: calc(135px * 0.90);
-    height: calc(45px * 0.91);
+    height: calc(45px * 0.96);
     font-size: 0.83rem;
     font-weight: 550;
     margin: 15px auto;
@@ -2655,8 +3206,8 @@ display: none;
     }
 
     button[type="submit"] {
-      width: calc(135px * 0.88);
-      height: calc(45px * 0.89);
+      width: calc(135px * 0.86);
+      height: calc(45px * 0.92);
       font-size: 0.8rem;
     }
   }
@@ -3256,7 +3807,7 @@ display: none;
   
   button[type="submit"] {
     width: calc(135px * 0.94);
-    height: calc(45px * 0.95);
+    height: calc(45px * 1);
     font-size: 0.88rem;
     font-weight: 550;
     margin: 15px auto;
@@ -3791,8 +4342,8 @@ display: none;
 }
 
   button[type="submit"] {
-    width: calc(135px * 0.98);
-    height: calc(45px * 0.99);
+    width: calc(135px * 1);
+    height: calc(45px * 1);
     font-size: 0.9rem;
     font-weight: 550;
     margin: 15px auto;
@@ -4315,12 +4866,11 @@ max-width: 32px;
   } */
   
   .footer-center ul {
-    margin: 15px 0px 0px 5px;
     height: 150px;
     width: 68px;
   }
 
-  @media screen and ( min-width: 2100px ) {
+  /* @media screen and ( min-width: 2100px ) {
     .CV {
       width: 205px;
       height: 63px;
@@ -4611,6 +5161,6 @@ max-width: 32px;
     .footer-center a {
       font-size: 1.05rem;
     }
-  }
+  } */
   
 }
