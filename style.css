@@ -2144,10 +2144,10 @@ display: none;
 
  
   nav {
-    width: 160px;
+    width: 90%;
     height: 60px;
     margin: 45px auto 0px; 
-    border-radius: 15px;
+    border-radius: 0px;
   }
   
  /* NAVBAR MOBILE SHOW */
@@ -2237,7 +2237,7 @@ display: none;
   }
   
   .info-text p {
-    text-align: justify;
+    text-align: center;
     width: 100%;
     padding: 20px;
     height: auto;
