@@ -1108,9 +1108,9 @@ opacity: 1;
   }
   
   .info-text p {
-    text-align: center;
+    text-align: justify;
     width: 100%;
-    padding: 20px 15px;
+    padding: 15px;
     height: auto;
     font-size: 1rem;
   }
@@ -1333,10 +1333,10 @@ border-radius: 5px;
 }
 
 .contact-text p {
-  padding: 20px 15px;
+  padding: 15px;
   height: auto;
   font-size: 1rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .contact-form {
@@ -1684,9 +1684,9 @@ display: none;
   }
   
   .info-text p {
-    text-align: center;
+    text-align: justify;
     width: 100%;
-    padding: 20px 15px;
+    padding: 15px;
     height: auto;
     font-size: 1rem;
   }
@@ -1929,10 +1929,10 @@ border-radius: 5px;
 }
 
 .contact-text p {
-  padding: 20px 15px;
+  padding: 15px;
   height: auto;
   font-size: 1rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .contact-form {
@@ -2237,9 +2237,9 @@ display: none;
   }
   
   .info-text p {
-    text-align: center;
+    text-align: justify;
     width: 100%;
-    padding: 20px;
+    padding: 15px;
     height: auto;
     font-size: 1rem;
   }
@@ -2426,9 +2426,10 @@ border-radius: 5px;
 }
 
 .contact-text p {
-  padding: 20px 25px;
+  padding: 15px;
   height: auto;
   font-size: 1rem;
+  text-align: justify;
 }
 
 .contact-form {
