@@ -2144,7 +2144,7 @@ display: none;
 
  
   nav {
-    width: 90%;
+    width: 100%;
     height: 60px;
     margin: 45px auto 0px; 
     border-radius: 0px;
@@ -2190,6 +2190,11 @@ display: none;
     margin-bottom: 20px;
   }
   
+
+  #About {
+    width: 95%;
+  }
+
   #About article {
     width: 95%;
     height: auto;
@@ -2275,6 +2280,10 @@ opacity: 1;
 display: none;
 }
 
+
+#Skills {
+  width: 97.5%;
+}
 
 #Skills article {
   width: 95%;
