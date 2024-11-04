@@ -2585,7 +2585,7 @@ align-items: center;
 
 .footer-center {
   position: relative;
-  top: 10px; 
+  top: 15px; 
   height: 200px;
   width: auto;
   padding: 10px;
@@ -2600,7 +2600,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.88rem;
+  font-size: 0.89rem;
 }
 
 .footer-left p, 
