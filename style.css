@@ -2294,6 +2294,7 @@ display: none;
 
 #Skills {
   width: 100%;
+  scroll-margin-top: 90px;
 }
 
 #Skills article {
@@ -2353,6 +2354,7 @@ display: none;
 
 #Projects {
   width: 100%;
+  scroll-margin-top: 90px;
 }
 
 #Projects article {
@@ -2444,6 +2446,7 @@ border-radius: 5px;
 
 #Contact {
   width: 100%;
+  scroll-margin-top: 80px;
 }
 
 #Contact article {
@@ -2600,7 +2603,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.85rem;
+  font-size: 0.86rem;
 }
 
 .footer-left p, 
@@ -2614,6 +2617,10 @@ blockquote {
 
 .footer-right p {
   font-size: 0.75rem;
+}
+
+.footer-center ul li a:hover {
+  text-decoration: none; 
 }
  
 .social-media-footer .linkedin2 {
