@@ -2294,7 +2294,7 @@ display: none;
 
 #Skills {
   width: 100%;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 80px;
 }
 
 #Skills article {
@@ -2354,7 +2354,7 @@ display: none;
 
 #Projects {
   width: 100%;
-  scroll-margin-top: 90px;
+  scroll-margin-top: 80px;
 }
 
 #Projects article {
@@ -2588,7 +2588,7 @@ align-items: center;
 
 .footer-center {
   position: relative;
-  top: 15px; 
+  top: 13px; 
   height: 200px;
   width: auto;
   padding: 10px;
