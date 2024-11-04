@@ -1004,6 +1004,7 @@ opacity: 1;
     margin: 45px auto 0px; 
     border-radius: 0px;
     transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    background-color: green;
   }
   
 .nav-sticky-shadow {
@@ -1568,6 +1569,7 @@ display: none;
     margin: 45px auto 0px; 
     border-radius: 0px;
     transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    background-color: yellow;
   }
   
 .nav-sticky-shadow {
@@ -2590,7 +2592,7 @@ align-items: center;
 }
 
 .footer-center ul {
-  margin: 15px 0px 0px 5px;
+  margin: 15px 0px 0px 10px;
   height: 150px;
   width: 67px;
 }
@@ -2598,7 +2600,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.88rem;
+  font-size: 0.85rem;
 }
 
 .footer-left p, 
