@@ -2298,7 +2298,8 @@ display: none;
 
 #Skills {
   width: 100%;
-  scroll-margin-top: 85px;
+  scroll-margin-top: 90px;
+  margin: 50px 0px;
 }
 
 #Skills article {
@@ -2358,7 +2359,8 @@ display: none;
 
 #Projects {
   width: 100%;
-  scroll-margin-top: 85px;
+  scroll-margin-top: 90px;
+  margin: 50px 0px;
 }
 
 #Projects article {
@@ -2450,7 +2452,8 @@ border-radius: 5px;
 
 #Contact {
   width: 100%;
-  scroll-margin-top: 85px;
+  scroll-margin-top: 90px;
+  margin: 50px 0px;
 }
 
 #Contact article {
@@ -2561,6 +2564,7 @@ button[type="submit"]:hover {
 footer {
   width: 100%;
   height: auto;
+  margin-top: 100px;
 }
 
 .footer-content {
