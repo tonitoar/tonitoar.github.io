@@ -2149,6 +2149,7 @@ display: none;
     margin: 45px auto 0px; 
     border-radius: 0px;
     transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    background-color: blue;
   }
   
 .nav-sticky-shadow {
@@ -2181,11 +2182,11 @@ display: none;
 }
 
   nav a {
-    font-size: 1rem;
+    font-size: 1.05rem;
     padding: calc(7px * 0.6) calc(32px * 0.65);
-    margin: 10px;
+    margin: 8px;
     background: none;
-    border-color: var(--light-red1);
+    border: none;
   }
 
   h2 {
@@ -2224,6 +2225,7 @@ display: none;
     width: 58vw;
     /* max-width: 256px; */
     height: 33vh; 
+    box-shadow: none;
   }
 
   .photo {
@@ -2237,20 +2239,21 @@ display: none;
   }
 
   .info {
-    width: 90%;
+    width: 100%;
     height: auto;
     gap: 50px ; 
   }
 
   .info-text {
-    width: 95%;
+    width: 100%;
     height: auto;
+    box-shadow: none;
   }
   
   .info-text p {
     text-align: justify;
     width: 100%;
-    padding: 15px;
+    padding: 20px;
     height: auto;
     font-size: 1rem;
   }
@@ -2310,6 +2313,19 @@ display: none;
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
+}
+
+
+.javascript::after, .html::after, 
+.css::after, .react::after, .node::after,
+.express::after, .mongodb::after, .git::after{
+  display: none;
+}
+
+.javascript:hover, .html:hover, 
+.css:hover, .react:hover, .node:hover,
+.express:hover, .mongodb:hover, .git:hover {
+  box-shadow: none;
 }
 
 .card-opacity::before {
@@ -2436,10 +2452,11 @@ border-radius: 5px;
 
 .contact-text {
   margin: 25px 0px 15px 0px;
-  width: 75%;
+  width: 90%;
   max-width: 540px;
   height: auto;
   border-radius: 10px;
+  box-shadow: none;
 }
 
 .contact-text span {
@@ -2447,7 +2464,7 @@ border-radius: 5px;
 }
 
 .contact-text p {
-  padding: 15px;
+  padding: 20px;
   height: auto;
   font-size: 1rem;
   text-align: justify;
