@@ -2212,6 +2212,13 @@ display: none;
     margin: 25px 0px 50px 0px;
   }
 
+  #About h2::before {
+    width: 163px;
+    top: 23px;
+    left: 28px; 
+    height: 12px; 
+  }
+
   #About article {
     width: 95%;
     height: auto;
@@ -2305,6 +2312,13 @@ display: none;
   margin: 50px 0px;
 }
 
+#Skills h2::before {
+  width: 110px;
+  top: 23px;
+  left: 24px; 
+  height: 12px; 
+}
+
 #Skills article {
   width: 95%;
   height: auto;
@@ -2364,6 +2378,13 @@ display: none;
   width: 100%;
   scroll-margin-top: 90px;
   margin: 50px 0px;
+}
+
+#Projects h2::before {
+  width: 160px;
+  top: 23px;
+  left: 25px; 
+  height: 12px; 
 }
 
 #Projects article {
@@ -2454,6 +2475,13 @@ border-radius: 5px;
   width: 100%;
   scroll-margin-top: 90px;
   margin: 50px 0px;
+}
+
+#Contact h2::before {
+  width: 147px;
+  top: 23px;
+  left: 27px; 
+  height: 12px; 
 }
 
 #Contact article {
@@ -2800,6 +2828,13 @@ display: none;
     position: relative;
     margin-bottom: 20px;
   }
+
+  #About h2::before {
+    width: 163px;
+    top: 23px;
+    left: 28px; 
+    height: 12px; 
+  }
   
   #About article {
     width: 95%;
@@ -3017,6 +3052,12 @@ display: none;
   }
 }
 
+#Projects h2::before {
+  width: 160px;
+  top: 23px;
+  left: 25px; 
+  height: 12px; 
+}
 
   #Projects article {
     width: 95%;
@@ -3133,13 +3174,19 @@ display: none;
     margin-top: 10px; 
   }
   
+  #Contact h2::before {
+    width: 147px;
+    top: 23px;
+    left: 27px; 
+    height: 12px; 
+  }
+
   #Contact article {
     width: 95%;
     height: auto;
     margin: 50px 30px 40px;
   }
 
-  
   .contact-text {
     margin: 25px 0px 15px 0px;
     width: 75%;
@@ -3472,6 +3519,13 @@ display: none;
     position: relative;
     margin-bottom: 20px;
   }
+
+  #About h2::before {
+    width: 163px;
+    top: 23px;
+    left: 28px; 
+    height: 12px; 
+  }
   
   #About article {
     width: 95%;
@@ -3619,6 +3673,12 @@ display: none;
     }
   }
 
+  #Skills h2::before {
+    width: 110px;
+    top: 23px;
+    left: 24px; 
+    height: 12px; 
+  }
 
   #Skills article {
     width: 95%;
@@ -3684,6 +3744,13 @@ display: none;
       width: 85%; 
     }
 
+  }
+
+  #Projects h2::before {
+    width: 160px;
+    top: 23px;
+    left: 25px; 
+    height: 12px; 
   }
 
   #Projects article {
@@ -3795,6 +3862,13 @@ display: none;
       margin-top: 10px; 
     }
   
+  }
+
+  #Contact h2::before {
+    width: 147px;
+    top: 23px;
+    left: 27px; 
+    height: 12px; 
   }
     
   #Contact article {
@@ -4123,7 +4197,6 @@ display: none;
     position: relative;
     margin-bottom: 20px;
   }
-  
   
   #About h2::before {
     width: 163px;
