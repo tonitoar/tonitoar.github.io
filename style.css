@@ -1,5 +1,5 @@
 * {
-/* border: 1px solid blue;  */
+border: 1px solid blue; 
 margin:0;
 padding:0; 
 }
@@ -1037,7 +1037,7 @@ opacity: 1;
 }
 
   nav a {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: calc(7px * 0.6) calc(32px * 0.65);
     margin: 10px;
     background: none;
@@ -1436,9 +1436,6 @@ button[type="submit"]:hover {
   animation: none; /*! DISABLE ANIMATION */
 }
 
-
-
-
 footer {
   width: 100%;
   height: auto;
@@ -1454,7 +1451,6 @@ align-items: center;
 }
 
 .footer-info {
-  /* width: 85%; */
   width: 90%;
 }
   
@@ -1490,7 +1486,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.8rem;
+  font-size: 0.77rem;
 }
 
 .footer-left p, 
@@ -1567,13 +1563,13 @@ display: none;
 
 @media screen and (max-width: 348px) {
   .CV {
-    width: calc(184px * 0.58);
-    height: calc(60px * 0.63);
+    width: calc(184px * 0.61);
+    height: calc(60px * 0.62);
   }
   
   .CV a {
     font-size: 0.75rem;
-    padding: calc(17px * 0.43) calc(29px * 0.40);
+    padding: calc(17px * 0.47) calc(29px * 0.45);
   }
 }
 
@@ -2012,7 +2008,7 @@ form textarea {
 }
 
 button[type="submit"] {
-  width: calc(135px * 0.86);
+  width: calc(135px * 0.87);
   height: calc(45px * 0.92);
   font-size: 0.8rem;
   font-weight: 550;
@@ -2711,40 +2707,48 @@ display: none;
   }
 
   #inicio {
-    width: 80%;
+    width: 85%;
     height: auto;
   }
   
   h1 {
-    font-size: clamp(2.35rem, 8.8vw, 8.5rem);
+    font-size: clamp(2.7rem, 5.9vw, 4rem);
   }
   
   .CV {
     margin-top: 35px;
-    width: calc(184px * 0.75);
-    height: calc(60px * 0.80);
+    width: calc(184px * 0.7);
+    height: calc(60px * 0.7);
     border: solid 4px var(--light-red1);
   }
   
   .CV a {
-    font-size: 0.9rem;
-    padding: calc(17px * 0.67) calc(29px * 0.65);
+    font-size: 0.85rem;
+    padding: calc(17px * 0.6) calc(29px * 0.6);
   }
 
   .CV:hover {
-    transform: scale(1.06);
+    transform: none;
   }
+
+
+  
 
   @media screen and (max-width: 597px) {
+
+    h1 {
+      font-size: clamp(2.6rem, 7.3vw, 4rem);
+    }
   
     .CV {
-      width: calc(184px * 0.71);
-      height: calc(60px * 0.77);
+      margin-top: 30px;
+      width: calc(184px * 0.63);
+      height: calc(60px * 0.64);
     }
     
     .CV a {
-      font-size: 0.88rem;
-      padding: calc(17px * 0.62) calc(29px * 0.60);
+      font-size: 0.8rem;
+      padding: calc(17px * 0.49) calc(29px * 0.47);
     }
   
     .CV:hover {
@@ -2753,23 +2757,6 @@ display: none;
 
   }
 
-  @media screen and (max-width: 512px) {
-  
-    .CV {
-      width: calc(184px * 0.69);
-      height: calc(60px * 0.70);
-    }
-    
-    .CV a {
-      font-size: 0.85rem;
-      padding: calc(17px * 0.60) calc(29px * 0.58);
-    }
-  
-    .CV:hover {
-      transform: none;
-    }
-
-  }
 
   @media  screen and (max-width: 470px) {
     #inicio {
@@ -3418,24 +3405,24 @@ display: none;
   }
   
   h1 {
-    font-size: clamp(2.7rem, 5.5vw, 6.8rem);
+    font-size: clamp(2.6rem, 5.5vw, 6.8rem);
   }
   
 
   
   .CV {
     margin-top: 40px;
-    width: calc(184px * 0.91);
-    height: calc(60px * 0.91);
+    width: calc(184px * 0.78);
+    height: calc(60px * 0.78);
     border: solid 4px var(--light-red1);
   }
   
   .CV a {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    padding: calc(17px * 0.90) calc(29px * 0.90);
+    padding: calc(17px * 0.7) calc(29px * 0.7);
   }
 
   .CV:hover {
@@ -3445,13 +3432,13 @@ display: none;
   @media screen and (max-width: 962px) {
  
     .CV {
-      width: calc(184px * 0.86);
-      height: calc(60px * 0.86);
+      width: calc(184px * 0.75);
+      height: calc(60px * 0.75);
     }
     
     .CV a {
-      font-size: 0.95rem;
-      padding: calc(17px * 0.83) calc(29px * 0.83);
+      font-size: 0.875rem;
+      padding: calc(17px * 0.65) calc(29px * 0.65);
     }
 
     .CV:hover {
@@ -3462,14 +3449,13 @@ display: none;
   @media screen and (max-width: 850px) {
  
     .CV {
-      margin-top: 35px;
-      width: calc(184px * 0.84);
-      height: calc(60px * 0.84);
+      width: calc(184px * 0.72);
+      height: calc(60px * 0.72);
     }
     
     .CV a {
-      font-size: 0.93rem;
-      padding: calc(17px * 0.80) calc(29px * 0.80);
+      font-size: 0.85rem;
+      padding: calc(17px * 0.65) calc(29px * 0.6);
     }
 
     .CV:hover {
@@ -3480,7 +3466,6 @@ display: none;
 
   
   nav {
-    /* min-width: 600px; */
     width: 80%;
     max-width: 750px;
     height: 60px;
