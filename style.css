@@ -2619,7 +2619,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 
 .footer-left p, 
@@ -4126,7 +4126,7 @@ display: none;
   
   
   #About h2::before {
-    width: 153px;
+    width: 163px;
     top: 23px;
     left: 28px; 
     height: 12px; 
@@ -4213,6 +4213,13 @@ display: none;
     max-width: 39px; 
 }
   
+  #Skills h2::before {
+    width: 110px;
+    top: 23px;
+    left: 24px; 
+    height: 12px; 
+  }
+
   #Skills article {
     width: 95%;
     height: auto;
@@ -4251,6 +4258,13 @@ display: none;
   
   .cards h3 {
     font-size: 1.1rem;
+  }
+
+  #Projects h2::before {
+    width: 160px;
+    top: 23px;
+    left: 25px; 
+    height: 12px; 
   }
 
   #Projects article {
@@ -4317,6 +4331,13 @@ display: none;
     margin-top: 10px; 
   }
     
+  #Contact h2::before {
+    width: 147px;
+    top: 23px;
+    left: 27px; 
+    height: 12px; 
+  }
+
   #Contact article {
     width: 95%;
     height: auto;
