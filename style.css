@@ -2619,7 +2619,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: clamp(0.9rem, 3vw, 5rem);
+  font-size: 0.95rem;
 }
 
 .footer-left p, 
@@ -4124,6 +4124,14 @@ display: none;
     margin-bottom: 20px;
   }
   
+  
+  #About h2::before {
+    width: 153px;
+    top: 23px;
+    left: 28px; 
+    height: 12px; 
+  }
+
   #About article {
     width: 95%;
     height: auto;
