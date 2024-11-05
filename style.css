@@ -201,9 +201,9 @@ h2 {
 #About h2::before {
   content: "";
   position: absolute;
-  left: 27px; 
-  top: 23px;
-  width: 165px;
+  left: 32px; 
+  top: 26px;
+  width: 180px;
   height: 12px; 
   background-color: var(--light-red1); 
   opacity: 0.25;
@@ -355,9 +355,9 @@ opacity: 1; /* Show hover image on hover */
 #Skills h2::before {
   content: "";
   position: absolute;
-  left: 22px; 
-  top: 23px;
-  width: 115px;
+  left: 27px; 
+  top: 27px;
+  width: 121px;
   height: 12px; 
   background-color: var(--light-red1); 
   opacity: 0.25;
@@ -499,9 +499,9 @@ height: 90.96%;
 #Projects h2::before {
   content: "";
   position: absolute;
-  left: 23px; 
-  top: 23px;
-  width: 165px;
+  left: 29px; 
+  top: 27px;
+  width: 178px;
   height: 12px; 
   background-color: var(--light-red1); 
   opacity: 0.25;
@@ -649,9 +649,9 @@ color: white;
 #Contact h2::before {
   content: "";
   position: absolute;
-  left: 25px; 
-  top: 23px;
-  width: 152px;
+  left: 30px; 
+  top: 27px;
+  width: 165px;
   height: 12px; 
   background-color: var(--light-red1); 
   opacity: 0.25;
