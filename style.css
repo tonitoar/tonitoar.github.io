@@ -2619,7 +2619,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: clamp(0.9rem, 3.5vw, 5rem);
+  font-size: clamp(0.9rem, 3vw, 5rem);
 }
 
 .footer-left p, 
