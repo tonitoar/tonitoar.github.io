@@ -2647,7 +2647,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.9rem;
+  font-size: 0.88rem;
 }
 
 .footer-left p, 
@@ -4137,26 +4137,28 @@ display: none;
   }
   
 /*! REDUCCÍO PROPROCIONAL*/
-  .CV {
-    margin-top: 40px;
-    width: calc(184px * 0.96);
-    height: calc(60px * 0.96);
-  }
-  
-  .CV a {
-    font-size: 1.05rem;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    padding: calc(17px * 0.96) calc(29px * 0.96);
-  }
+.CV {
+  margin-top: 40px;
+  width: calc(156px * 0.95);
+  height: calc(55px * 0.89);
+  border: solid 4.5px var(--light-red1);
+}
 
-  .CV:hover {
-    transform: scale(1.09);
-  }
+.CV a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  text-align: center;
+  padding: calc(15px * 0.7) calc(20px * 0.7);
+  /* padding: 15px 20px; */
+}
+
+.CV:hover {
+  transform: scale(1.08);
+}
 
 
-  @media screen and (max-width: 1190px) {
+  /* @media screen and (max-width: 1190px) {
 
     .CV {
       width: calc(184px * 0.91);
@@ -4171,10 +4173,9 @@ display: none;
     .CV:hover {
       transform: scale(1.08);
     }
-  }
+  } */
 
   nav {
-    /* min-width: 750px; */
     width: 74%;
     max-width: 885px;
     height: 70px;
@@ -4668,39 +4669,22 @@ max-width: 32px;
   
   .CV {
     margin-top: 50px;
-    width: 184px;
-    height: 60px;
+    width: 156px;
+    height: 55px;
   }
   
   .CV a {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    padding: 17px 29px;
+    padding: 15px 20px;
   }
 
-  @media screen and (max-width: 1700px) {
-
-    .CV {
-      margin-top: 50px;
-      width: calc(184px * 0.96);
-      height: calc(60px * 0.96);
-    }
-    
-    .CV a {
-      font-size: 1.05rem;
-      font-weight: 600;
-      text-decoration: none;
-      text-align: center;
-      padding: calc(17px * 0.96) calc(29px * 0.96);
-    }
-
-      .CV:hover {
-        transform: scale(1.09);
-      }
+  .CV:hover {
+    transform: scale(1.09);
   }
-  
+
   nav {
     min-width: 930px;
     width: 60%;
