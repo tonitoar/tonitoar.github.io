@@ -287,21 +287,25 @@ navBarMobileButtons.addEventListener("click", () => {
 
 
 
-//! NAV-BAR MOBILE VERSION DETECT STICKY POSITION => ADD SHADOW
+//! NAV-BAR MOBILE VERSION DETECT STICKY POSITION => ADD SHADOW (425px to 320px)
 
 const navBarMobileSticky = document.getElementById("navBar"); 
 
 window.addEventListener("scroll", () => {
   const isSticky = navBarMobileSticky.getBoundingClientRect().top <= 0; 
 
-  if (isSticky) {
+  const is425to376 = window.matchMedia("(min-width: 376px) and (max-width: 425px)").matches; 
+  const is375to321 = window.matchMedia("(min-width: 321px) and (max-width: 375px)").matches; 
+  const isMax320 = window.matchMedia("(max-width: 320px)").matches; 
+
+  if (isSticky && (is425to376 || is375to321 || isMax320)) {
     navBarMobileSticky.classList.add("nav-sticky-shadow"); // Add shadow when sticky
   } else {
     navBarMobileSticky.classList.remove("nav-sticky-shadow"); // Remove shadow when not sticky
   }
 })
 
-//! NAV-BAR MOBILE VERSION DETECT STICKY POSITION => ADD SHADOW
+//! NAV-BAR MOBILE VERSION DETECT STICKY POSITION => ADD SHADOW (425px to 320px)
 
 
 
