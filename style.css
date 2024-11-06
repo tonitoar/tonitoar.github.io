@@ -2773,6 +2773,7 @@ display: none;
     width: 80%;
     height: 50px;
     margin: 85px auto 0px; 
+    background-color: purple;
   }
   
   nav ul {
@@ -3502,6 +3503,7 @@ display: none;
     max-width: 750px;
     height: 50px;
     margin: 85px auto 0px auto; 
+    background-color: orange;
   }
   
   nav ul {
