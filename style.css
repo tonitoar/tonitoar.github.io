@@ -261,6 +261,7 @@ h2 {
   color: var(--light-text); 
   height: auto;
   text-align: justify;
+  line-height: 20px;
 }
 
 
@@ -675,6 +676,7 @@ color: white;
   color: var(--light-text); 
   height: auto;
   text-align: justify;
+  line-height: 20px;
 }
 
 .contact-form {
@@ -684,7 +686,6 @@ color: white;
   background-color: var(--dark-red1);
   border: 3px solid var(--dark-red2);
   border-radius: 20px;
-  /* box-shadow: 13px 15px 18px rgba(0, 0, 0); */
 }
 
 form {
@@ -1051,6 +1052,7 @@ opacity: 1;
   #About {
     width: 100%;
     margin: 25px 0px 50px 0px;
+    scroll-margin: 90px;
   }
 
   h2 {
@@ -1625,6 +1627,7 @@ display: none;
   #About {
     width: 100%;
     margin: 25px 0px 50px 0px;
+    scroll-margin-top: 90px;
   }
 
   h2 {
@@ -2210,6 +2213,7 @@ display: none;
   #About {
     width: 100%;
     margin: 25px 0px 50px 0px;
+    scroll-margin-top: 90px;
   }
 
   #About h2::before {
@@ -2786,6 +2790,10 @@ display: none;
     padding: calc(7px * 0.66) calc(32px * 0.65);
   }
 
+  nav a:hover {
+    text-decoration: none;
+    }
+
   @media screen and (max-width: 675px) {
 
     nav {
@@ -2829,6 +2837,11 @@ display: none;
     font-size: 2rem;
     position: relative;
     margin-bottom: 20px;
+  }
+
+  #About {
+    scroll-margin-top: 90px;
+    margin: 50px 0px;
   }
 
   #About h2::before {
@@ -2985,6 +2998,11 @@ display: none;
   }
 }
 
+#Skills {
+  scroll-margin-top: 90px;
+  margin: 50px 0px;
+}
+
 #Skills article {
   width: 95%;
   height: auto;
@@ -3052,6 +3070,11 @@ display: none;
     margin: 25px 0px;
     width: 80%; 
   }
+}
+
+#Projects {
+  scroll-margin-top: 90px;
+  margin: 50px 0px;
 }
 
 #Projects h2::before {
@@ -3176,6 +3199,11 @@ display: none;
     margin-top: 10px; 
   }
   
+  #Contact {
+    scroll-margin-top: 90px;
+    margin: 50px 0px;
+  }
+
   #Contact h2::before {
     width: 147px;
     top: 23px;
@@ -3503,7 +3531,7 @@ display: none;
     max-width: 750px;
     height: 50px;
     margin: 85px auto 0px auto; 
-    background-color: orange;
+    background-color: yellow;
   }
   
   nav ul {
@@ -3514,6 +3542,12 @@ display: none;
   nav a {
     font-size: 1.05rem;
     padding: calc(7px * 0.65) calc(32px * 0.7);
+  }
+
+  @media screen and (max-width: 962px) {
+    nav a:hover {
+      text-decoration: none;
+      }
   }
     
   h2 {
@@ -3600,6 +3634,11 @@ display: none;
 
 
   @media screen and (max-width: 962px) {
+
+    #About {
+      scroll-margin-top: 90px;
+      margin: 50px 0px;
+    }
 
   #About article {
     margin: 50px 30px 40px;
@@ -3738,6 +3777,11 @@ display: none;
 
   @media screen and (max-width: 962px) {
 
+    #Skills {
+      scroll-margin-top: 90px;
+      margin: 50px 0px;
+    }
+
     #Skills article {
       margin: 50px 30px 40px;
     }
@@ -3820,6 +3864,11 @@ display: none;
   }
 
   @media screen and (max-width: 962px) {
+
+    #Projects {
+      scroll-margin-top: 90px;
+      margin: 50px 0px;
+    }
 
     #Projects article {
       margin: 50px 30px 40px;
@@ -3988,6 +4037,11 @@ display: none;
 
     @media screen and (max-width: 962px) {
 
+    #Contact {
+        scroll-margin-top: 90px;
+        margin: 50px 0px;
+      }
+
     #Contact article {
     margin: 50px 30px 40px;
   }
@@ -4053,7 +4107,7 @@ display: none;
 
   @media screen and (max-width: 823px) {
    .footer-info {
-      width: 45%;
+      width: 40%;
     }
   }
   
@@ -4084,16 +4138,16 @@ display: none;
   blockquote {
     border-left: 4px solid #fff;
     padding: 10px 0px 10px 10px; 
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   
   .footer-left p, 
   .footer-center p{
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .footer-center a {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .footer-right p {
