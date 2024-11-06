@@ -521,8 +521,11 @@ height: 90.96%;
   color: var(--light-text);
   border-radius: 15px;
   padding: 8px; 
-  width: 145px;
-  font-size: 0.85rem;
+  /* width: 145px; */
+  width: 135px;
+  height: auto;
+  /* font-size: 0.85rem; */
+  font-size: 0.9rem;
   cursor: pointer;
   text-align: center;
   margin: 0 auto;
@@ -2167,7 +2170,7 @@ display: none;
  /* NAVBAR MOBILE SHOW */
  .nav-dropdown-toggle {
   display: block; 
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   width: 125px;
 }
 
@@ -2426,9 +2429,9 @@ border-radius: 5px;
 }
 
 .project-nav li {
-  font-size: 0.9rem;
-  width: calc(180px * 0.75); 
-  height: calc(35px * 0.8); 
+  font-size: 0.85rem;
+  width: calc(180px * 0.7); 
+  height: calc(35px * 0.85); 
   margin: 5px 0px;
 }
   
@@ -2541,7 +2544,7 @@ form {
 }
 
 form label {
-  font-size: 0.925rem;
+  font-size: 0.9rem;
   margin-left: 5px;
 }
 
@@ -2643,7 +2646,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
 
 .footer-left p, 
