@@ -520,9 +520,9 @@ height: 90.96%;
   border: 3px solid var(--light-red1);
   color: var(--light-text);
   border-radius: 15px;
-  padding: 8px; 
+  padding: 7px 8px; 
   /* width: 145px; */
-  width: 135px;
+  width: 140px;
   height: auto;
   /* font-size: 0.85rem; */
   font-size: 0.9rem;
@@ -2178,7 +2178,7 @@ display: none;
 .nav-dropdown-menu {
   display: none !important;
   background-color: var(--nav-bar-color);
-  width: 150px;
+  width: 140px;
   position: absolute;
   height: auto;
   top: 100%;
@@ -2193,7 +2193,7 @@ display: none;
 }
 
   nav a {
-    font-size: 1.05rem;
+    font-size: 0.875rem;
     padding: calc(7px * 0.6) calc(32px * 0.65);
     margin: 8px;
     background: none;
@@ -2430,7 +2430,7 @@ border-radius: 5px;
 
 .project-nav li {
   font-size: 0.85rem;
-  width: calc(180px * 0.7); 
+  width: calc(180px * 0.75); 
   height: calc(35px * 0.85); 
   margin: 5px 0px;
 }

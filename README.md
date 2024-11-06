@@ -1,6 +1,6 @@
 # Web Portfolio 
 
-Welcome to my Web Development Portfolio! This project is an interactive display of my skills, experiences, and past projects in web development, designed to give potential clients or requiters a comprehensive view of my abilities and passion for creating polished, responsive, and user-friendly websites.ç
+Welcome to my Web Development Portfolio! This project is an interactive display of my skills, experiences, and past projects in web development, designed to give potential clients or company recruiters a comprehensive view of my abilities and passion for creating polished, responsive, and user-friendly websites.
 
 > [!WARNING]
 > If your are not a code understanding, please go to **[Web Portfolio](https://tonitoar.github.io)** to see the website.
@@ -13,7 +13,7 @@ Welcome to my Web Development Portfolio! This project is an interactive display 
 5. [Usage](#usage)
 6. [Contact](#contact)
 
-## Description
+## 1. Description
 This portfolio serves as a personal showcase and interactive resume, allowing visitors to:
 - Learn more about me and my approach to web development,
 - See my skill set at a glance,
@@ -22,7 +22,7 @@ This portfolio serves as a personal showcase and interactive resume, allowing vi
 
 It is designed to be both visually appealing and informative, with animated visuals, an intuitive layout, and responsive design elements to ensure a seamless user experience on any device.
 
-## Features
+## 2. Features
 - **3D Background Animation**: A dynamic, canvas-based animated background adds visual depth to the website, enhancing the aesthetic.
 - **Downloadable CV**: Visitors can easily download my CV in PDF format.
 - **Responsive Navigation**: A collapsible navigation bar for smaller screens.
@@ -32,7 +32,7 @@ It is designed to be both visually appealing and informative, with animated visu
 - **Project Filtering**: A dropdown filter for projects enhance the mobile experience.
 - **Contact Form**: A contact form enables users to send me a direct message, complete with name, email, subject, and message fields. Messages are sent using EmailJS.
 
-## Technologies Used
+## 3. Technologies Used
 - **HTML5**: Markup language for structuring the website.
 - **CSS3**: For layout, styling, and responsive design.
 - **JavaScript**: Adds interactivity, animations, and handles form submissions.
@@ -41,7 +41,7 @@ It is designed to be both visually appealing and informative, with animated visu
 - **Canvas API**: Renders the animated background in the **3D Background** section.
 - **GitHub Pages**: Hosts the portfolio online, making it accessible from anywhere.
 
-## Installation
+## 4. Installation
 To run this project locally, follow these steps:
 
 1. **Clone the repository**:
@@ -58,11 +58,11 @@ To run this project locally, follow these steps:
    ```
    *(Ensure you have [Yarn](https://yarnpkg.com/) installed beforehand)*.
 
-## Usage
+## 5. Usage
 1. Open the `index.html` file in your web browser to view the portfolio.
 2. To make edits to content or styling, modify the corresponding HTML, CSS, or JavaScript files.
 
-## Contact
+## 6. Contact
 Feel free to reach out via the contact form on the website, or connect with me on:
 - **[LinkedIn](https://www.linkedin.com/in/toni-torredemer-argilés-61b444151/)**
 - **[GitHub](https://github.com/tonitoar)**
