@@ -2193,7 +2193,7 @@ display: none;
 }
 
   nav a {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     padding: calc(7px * 0.6) calc(32px * 0.65);
     margin: 8px;
     background: none;
@@ -2443,7 +2443,7 @@ border-radius: 5px;
   grid-template-columns: repeat(auto-fit,minmax(211px, 0.25fr));
 }
 
-.project-item {
+/* .project-item {
   width: 210px;
   height: 210px;
   position: relative;
@@ -2474,7 +2474,41 @@ border-radius: 5px;
   padding: 5.5px 11px;
   font-size: 0.75rem;
   margin-top: 10px; 
+} */
+
+.project-item {
+  width: 230px;
+  height: 230px;
+  position: relative;
 }
+
+.hover-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+}
+
+.hover-description h3 {
+  font-size: 1.3rem;
+}
+
+.hover-description p {
+  font-size: 1.03rem;
+}
+
+.hover-description h4 {
+  font-size: 1.08rem;
+}
+
+.hover-description button {
+  padding: 5.5px 11px;
+  font-size: 0.75rem;
+  margin-top: 10px; 
+}
+
 
 
 #Contact {
@@ -2544,7 +2578,7 @@ form {
 }
 
 form label {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   margin-left: 5px;
 }
 
@@ -2592,9 +2626,6 @@ button[type="submit"]:hover {
   animation: none; /*! DISABLE ANIMATION */
 }
 
-
-
-
 footer {
   width: 100%;
   height: auto;
@@ -2610,7 +2641,6 @@ align-items: center;
 }
 
 .footer-info {
-  /* width: 85%; */
   width: 90%;
 }
   
@@ -2631,7 +2661,7 @@ align-items: center;
 
 .footer-center {
   position: relative;
-  top: 14px; 
+  top: 13px; 
   height: 180px;
   width: auto;
   padding: 10px;
@@ -2646,12 +2676,12 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.875rem;
+  font-size: 0.86rem;
 }
 
 .footer-left p, 
 .footer-center p{
-  font-size: 0.9rem;
+  font-size: 0.875rem;
 }
 
 .footer-center a {

@@ -15,10 +15,10 @@ Welcome to my Web Development Portfolio! This project is an interactive display 
 
 ## 1. Description
 This portfolio serves as a personal showcase and interactive resume, allowing visitors to:
-- Learn more about me and my approach to web development,
-- See my skill set at a glance,
-- Explore my completed projects, and
-- Contact me directly.
+- Learn more about me and my approach to web development
+- See my skill set at a glance
+- Explore my completed projects
+- Contact me directly
 
 It is designed to be both visually appealing and informative, with animated visuals, an intuitive layout, and responsive design elements to ensure a seamless user experience on any device.
 
@@ -52,11 +52,6 @@ To run this project locally, follow these steps:
    ```bash
    cd tonitoar.github.io
    ```
-3. **Install dependencies**:
-   ```bash
-   yarn install
-   ```
-   *(Ensure you have [Yarn](https://yarnpkg.com/) installed beforehand)*.
 
 ## 5. Usage
 1. Open the `index.html` file in your web browser to view the portfolio.
