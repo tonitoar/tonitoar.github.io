@@ -2771,7 +2771,7 @@ display: none;
 
   nav {
     width: 80%;
-    height: 60px;
+    height: 50px;
     margin: 85px auto 0px; 
   }
   
@@ -3500,7 +3500,7 @@ display: none;
   nav {
     width: 80%;
     max-width: 750px;
-    height: 60px;
+    height: 50px;
     margin: 85px auto 0px auto; 
   }
   
@@ -3510,8 +3510,8 @@ display: none;
   }
   
   nav a {
-    font-size: 1.1rem;
-    padding: calc(7px * 0.7) calc(32px * 0.75);
+    font-size: 1.05rem;
+    padding: calc(7px * 0.65) calc(32px * 0.7);
   }
     
   h2 {
@@ -3563,12 +3563,7 @@ display: none;
     top: 30px; 
   }
   
-  @media screen and (max-width: 970px) {
-    .info {
-      height: 92%;
-    }
-  }
-
+  
   .info-text {
     width: 95%;
     height: auto;
@@ -3581,6 +3576,12 @@ display: none;
     font-size: 1.05rem;
   }
   
+  @media screen and (max-width: 970px) {
+    .info {
+      height: 92%;
+    }
+  }
+
   .social-media {
     width: 35%;
     height: auto;
@@ -3631,7 +3632,7 @@ display: none;
       width: 100%;
       padding: 20px;
       height: auto;
-      font-size: 1.1rem;
+      font-size: 1.05rem;
     }
 
     .border-container {
@@ -3769,9 +3770,9 @@ display: none;
   
   /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
-  font-size: 1.1rem;
-  width: calc(180px * 0.95); 
-  height: calc(35px * 0.95); 
+  font-size: 1.05rem;
+  width: calc(180px * 0.90); 
+  height: calc(35px * 0.90); 
   }
     
 .project-container {
@@ -3829,11 +3830,11 @@ display: none;
     }
     
     /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
-    .project-nav li {
+    /* .project-nav li {
     font-size: 1.1rem;
     width: calc(180px * 0.92); 
     height: calc(35px * 0.9); 
-    }
+    } */
       
   .project-container {
       grid-template-columns: repeat(auto-fit,minmax(231px, 0.25fr));
@@ -3859,7 +3860,7 @@ display: none;
     
     .hover-description button {
       padding: 5.5px 11px;
-      font-size: 0.75rem;
+      font-size: 0.8rem;
       margin-top: 10px; 
     }
   
@@ -3996,7 +3997,7 @@ display: none;
   }
   
   .contact-text p {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
   
   .contact-form {
