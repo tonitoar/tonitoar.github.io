@@ -296,9 +296,9 @@ window.addEventListener("scroll", () => {
 
   const is425to376 = window.matchMedia("(min-width: 376px) and (max-width: 425px)").matches; 
   const is375to321 = window.matchMedia("(min-width: 321px) and (max-width: 375px)").matches; 
-  const isMax320 = window.matchMedia("(max-width: 320px)").matches; 
+  const is320 = window.matchMedia("(max-width: 320px)").matches; 
 
-  if (isSticky && (is425to376 || is375to321 || isMax320)) {
+  if (isSticky && (is425to376 || is375to321 || is320)) {
     navBarMobileSticky.classList.add("nav-sticky-shadow"); // Add shadow when sticky
   } else {
     navBarMobileSticky.classList.remove("nav-sticky-shadow"); // Remove shadow when not sticky
