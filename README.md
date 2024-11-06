@@ -1,9 +1,9 @@
-# Portfolio 1.0
+# Web Portfolio 
 
 Welcome to my Web Development Portfolio! This project is an interactive display of my skills, experiences, and past projects in web development, designed to give potential clients or requiters a comprehensive view of my abilities and passion for creating polished, responsive, and user-friendly websites.ç
 
 > [!WARNING]
-> If your are not a code understanding, please go to <ins>**[Web Portfolio](https://tonitoar.github.io)**</ins> to see the website and stop scrolling.
+> If your are not a code understanding, please go to **[Web Portfolio](https://tonitoar.github.io)** to see the website.
 
 ## Table of Contents
 1. [Description](#description)
