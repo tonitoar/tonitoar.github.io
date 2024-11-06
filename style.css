@@ -25,8 +25,8 @@ padding:0;
 html{
     margin:0;
     padding:0;
-    background-color: var(--dark-background);
-
+    background-color: var(--dark-background); 
+    text-size-adjust: 100%; /* Android and iOS, ensuring text doesn’t automatically scale */
 }
 
 #canvas{
@@ -2647,7 +2647,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.88rem;
+  font-size: 0.95rem;
 }
 
 .footer-left p, 
