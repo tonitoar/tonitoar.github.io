@@ -1,5 +1,5 @@
 * {
-border: 1px solid blue; 
+/* border: 1px solid blue;  */
 margin:0;
 padding:0; 
 }
@@ -3503,7 +3503,7 @@ display: none;
     max-width: 750px;
     height: 50px;
     margin: 85px auto 0px auto; 
-    background-color: yellow;
+    background-color: orange;
   }
   
   nav ul {
@@ -3832,7 +3832,7 @@ display: none;
     
     /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
     .project-nav li {
-    font-size: 1rem;
+    font-size: 0.95rem;
     width: calc(180px * 0.85); 
     height: calc(35px * 0.85); 
     }
@@ -4011,7 +4011,7 @@ display: none;
   }
 
   form label {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
    
   form input {
@@ -4053,7 +4053,7 @@ display: none;
 
   @media screen and (max-width: 823px) {
    .footer-info {
-      width: 40%;
+      width: 45%;
     }
   }
   
@@ -4084,16 +4084,16 @@ display: none;
   blockquote {
     border-left: 4px solid #fff;
     padding: 10px 0px 10px 10px; 
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   
   .footer-left p, 
   .footer-center p{
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .footer-center a {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .footer-right p {
