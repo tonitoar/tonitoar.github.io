@@ -290,7 +290,7 @@ h2 {
 /* Using ::after to display the hover image */
 .social-media a::after {
   content: '';
-  background-image: url(/images/icons8-linkedin-64\ \(1\).png); /* Hover image for LinkedIn */
+  background-image: url(/images/icons8-linkedin-64\ \(1\).webp); /* Hover image for LinkedIn */
   background-size: cover; /* Make background cover the area */
   position: absolute; /* Position it absolutely */
   top: 0; /* Align to the top */
@@ -308,7 +308,7 @@ h2 {
 
 /* Repeat for GitHub with another class [(nth-child(2) del <a> significa el seguent -->]*/
 .social-media a:nth-child(2)::after {
-background-image: url(/images/icons8-github-64\ \(1\).png);
+background-image: url(/images/icons8-github-64\ \(1\).webp);
 transform: scale(1.15);
 position: absolute; 
 top: 1px; 
@@ -923,7 +923,7 @@ blockquote {
 
 .social-media-footer a::after {
   content: '';
-  background-image: url(/images/icons8-linkedin-64\ \(1\).png); 
+  background-image: url(/images/icons8-linkedin-64\ \(1\).webp); 
   background-size: cover; 
   position: absolute; 
   top: 0; 
@@ -939,7 +939,7 @@ blockquote {
 }
 
 .social-media-footer a:nth-child(2)::after {
-background-image: url(/images/icons8-github-64\ \(1\).png);
+background-image: url(/images/icons8-github-64\ \(1\).webp);
 transform: scale(1.15);
 position: absolute; 
 top: 1px; 
@@ -2609,6 +2609,7 @@ align-items: center;
 }
   
 .footer-right {
+  width: auto;
   height: 100px;
   padding: 10px;
   display: flex;
@@ -5102,7 +5103,7 @@ max-width: 32px;
     }
  
     .github:hover {
-      content: url(/images/icons8-github-64\ \(1\).png);
+      content: url(/images/icons8-github-64\ \(1\).webp);
       width: 2.3vw;
       height: auto;
       position: relative;
