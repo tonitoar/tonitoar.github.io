@@ -3519,7 +3519,7 @@ display: none;
     max-width: 750px;
     height: 50px;
     margin: 85px auto 0px auto; 
-    background-color: orange;
+    background-color: yellow;
   }
   
   nav ul {
@@ -4117,10 +4117,11 @@ display: none;
   }
 
   .footer-right {
-    height: 120px;
-    padding: 10px;
+    height: 90px;
+    /* height: 120px; */
+    /* padding: 10px; */
     position: relative;
-    top: 100px; 
+    top: 120px; 
   }
   
   blockquote {
