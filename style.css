@@ -1,5 +1,5 @@
 * {
-/* border: 1px solid blue;  */
+border: 1px solid blue; 
 margin:0;
 padding:0; 
 }
@@ -3202,7 +3202,7 @@ display: none;
   }
   
   .contact-text p {
-    padding: 20px 25px;
+     padding: 20px;
     height: auto;
     font-size: 1.05rem;
   }
@@ -3503,7 +3503,7 @@ display: none;
     max-width: 750px;
     height: 50px;
     margin: 85px auto 0px auto; 
-    background-color: orange;
+    background-color: yellow;
   }
   
   nav ul {
@@ -3565,7 +3565,6 @@ display: none;
     top: 30px; 
   }
   
-  
   .info-text {
     width: 95%;
     height: auto;
@@ -3573,7 +3572,7 @@ display: none;
   
   .info-text p {
     width: 100%;
-    padding: 20px 25px;
+    padding: 20px;
     height: auto;
     font-size: 1.05rem;
   }
@@ -3634,7 +3633,7 @@ display: none;
       width: 100%;
       padding: 20px;
       height: auto;
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
 
     .border-container {
@@ -3832,11 +3831,11 @@ display: none;
     }
     
     /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
-    /* .project-nav li {
-    font-size: 1.1rem;
-    width: calc(180px * 0.92); 
-    height: calc(35px * 0.9); 
-    } */
+    .project-nav li {
+    font-size: 1rem;
+    width: calc(180px * 0.85); 
+    height: calc(35px * 0.85); 
+    }
       
   .project-container {
       grid-template-columns: repeat(auto-fit,minmax(231px, 0.25fr));
@@ -3862,7 +3861,7 @@ display: none;
     
     .hover-description button {
       padding: 5.5px 11px;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       margin-top: 10px; 
     }
   
@@ -3895,7 +3894,7 @@ display: none;
   
   .contact-text p {
     width: 100%;
-    padding: 20px 25px;
+    padding: 20px;
     height: auto;
     font-size: 1.05rem;
   }
@@ -3999,7 +3998,7 @@ display: none;
   }
   
   .contact-text p {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
   
   .contact-form {
@@ -4012,7 +4011,7 @@ display: none;
   }
 
   form label {
-    font-size: 1.025rem;
+    font-size: 0.95rem;
   }
    
   form input {
@@ -4052,11 +4051,11 @@ display: none;
   padding: 30px 15px;
   }
 
-  /* @media screen and (max-width: 823px) {
+  @media screen and (max-width: 823px) {
    .footer-info {
       width: 40%;
     }
-  } */
+  }
   
   .footer-left {
     height: 120px;
@@ -4089,13 +4088,16 @@ display: none;
   }
   
   .footer-left p, 
-  .footer-center p,
-  .footer-right p{
-    font-size: 0.88rem;
+  .footer-center p{
+    font-size: 0.9rem;
   }
 
   .footer-center a {
     font-size: 0.85rem;
+  }
+
+  .footer-right p {
+    font-size: 0.8rem;
   }
    
   .social-media-footer .linkedin2 {
@@ -4264,7 +4266,7 @@ display: none;
   
   .info-text p {
     width: 100%;
-    padding: 20px 25px;
+    padding: 20px;
     height: auto;
     font-size: 1.1rem;
   }
@@ -4436,7 +4438,7 @@ display: none;
   
   .contact-text p {
     width: 100%;
-    padding: 20px 25px;
+    padding: 20px;
     height: auto;
     font-size: 1.1rem;
   }
@@ -4767,7 +4769,7 @@ max-width: 32px;
   
   .info-text p {
     width: 100%;
-    padding: 20px 25px;
+     padding: 20px;
     height: auto;
     font-size: 1.2rem;
   }
@@ -4888,7 +4890,7 @@ max-width: 32px;
   
   .contact-text p {
     width: 100%;
-    padding: 20px 25px;
+     padding: 20px;
     height: auto;
     font-size: 1.2rem;
   }
