@@ -60,4 +60,4 @@ To run this project locally, follow these steps:
 ## Contact
 Feel free to reach out via the contact form on the website, or connect with me on:
 - **[LinkedIn](https://www.linkedin.com/in/toni-torredemer-argilés-61b444151/)**
-- **Gmail**: toni.torredemer.argiles@gmail.com
+- **[Gmail](toni.torredemer.argiles@gmail.com)**
