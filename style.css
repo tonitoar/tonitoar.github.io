@@ -2591,7 +2591,7 @@ form input {
   height: 17px;
   padding: 5px;
   margin-left: 10px;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 }
 
 form select {
@@ -2607,7 +2607,7 @@ form textarea {
   resize: none; 
   height: 500px;
   padding: 15px 10px;
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   box-sizing: border-box;
   overflow: auto;
   position: relative;
