@@ -2277,7 +2277,7 @@ display: none;
     width: 100%;
     padding: 20px;
     height: auto;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .social-media {
@@ -2546,7 +2546,7 @@ border-radius: 5px;
 .contact-text p {
   padding: 20px;
   height: auto;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-align: justify;
 }
 
