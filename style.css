@@ -2676,7 +2676,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.86rem;
+  font-size: 90%;
 }
 
 .footer-left p, 
@@ -4148,7 +4148,7 @@ display: none;
   blockquote {
     border-left: 4px solid #fff;
     padding: 10px 0px 10px 10px; 
-    font-size: 0.9rem;
+    font-size: 0.87rem;
   }
   
   .footer-left p, 
