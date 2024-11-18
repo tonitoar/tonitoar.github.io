@@ -2591,7 +2591,7 @@ form input {
   height: 17px;
   padding: 5px;
   margin-left: 10px;
-  font-size: 0.85rem;
+  font-size: 0.875rem;
 }
 
 form select {
@@ -2677,7 +2677,7 @@ align-items: center;
 
 blockquote {
   border-left: 4px solid #fff;
-  padding: 8px 0px 8px 8px; 
+  padding: 7.5px 0px 7.5px 7.5px; 
   font-size: 0.8rem;
 }
 
