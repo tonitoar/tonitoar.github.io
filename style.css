@@ -1,5 +1,5 @@
 * {
-border: 1px solid blue; 
+/* border: 1px solid blue;  */
 margin:0;
 padding:0; 
 }
@@ -2277,7 +2277,7 @@ display: none;
     width: 100%;
     padding: 20px;
     height: auto;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .social-media {
@@ -2546,7 +2546,7 @@ border-radius: 5px;
 .contact-text p {
   padding: 20px;
   height: auto;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   text-align: justify;
 }
 
@@ -2676,7 +2676,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.8rem;
+  font-size: 0.775rem;
 }
 
 .footer-left p, 
