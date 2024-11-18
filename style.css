@@ -261,7 +261,7 @@ h2 {
   color: var(--light-text); 
   height: auto;
   text-align: justify;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 
@@ -679,7 +679,7 @@ color: white;
   color: var(--light-text); 
   height: auto;
   text-align: justify;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 .contact-form {
@@ -2578,7 +2578,7 @@ form {
 }
 
 form label {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   margin-left: 5px;
 }
 
@@ -2676,7 +2676,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 8px 0px 8px 10px; 
-  font-size: 0.85rem;
+  font-size: 0.825rem;
 }
 
 .footer-left p, 
@@ -4147,7 +4147,7 @@ display: none;
   
   blockquote {
     border-left: 4px solid #fff;
-    padding: 10px 0px 10px 10px; 
+    padding: 8px 0px 8px 10px; 
     font-size: 0.85rem;
   }
   
