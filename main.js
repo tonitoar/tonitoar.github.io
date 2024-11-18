@@ -401,7 +401,7 @@ projectNavBarMobileButtons.addEventListener("click", () => {
   ];
 
   const projectUrls = [
-    "https://www.bufetargiles.com",
+    "https://github.com/tonitoar/Bufet-Argiles-Advocats",
     "https://github.com/tonitoar/tonitoar.github.io",
     "https://github.com/tonitoar/Phantom-Runner",
   ];
