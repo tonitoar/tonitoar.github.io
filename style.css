@@ -261,7 +261,7 @@ h2 {
   color: var(--light-text); 
   height: auto;
   text-align: justify;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 
@@ -679,7 +679,7 @@ color: white;
   color: var(--light-text); 
   height: auto;
   text-align: justify;
-  line-height: 22px;
+  line-height: 21px;
 }
 
 .contact-form {
@@ -2578,7 +2578,7 @@ form {
 }
 
 form label {
-  font-size: 0.85rem;
+  font-size: 0.825rem;
   margin-left: 5px;
 }
 
@@ -2597,7 +2597,7 @@ form input {
 form select {
   height: 30px;
   margin-left: 10px;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
