@@ -2591,7 +2591,7 @@ form input {
   height: 17px;
   padding: 5px;
   margin-left: 10px;
-  font-size: 0.8rem;
+  font-size: 0.825rem;
 }
 
 form select {
@@ -2610,6 +2610,8 @@ form textarea {
   font-size: 0.85rem;
   box-sizing: border-box;
   overflow: auto;
+  position: relative;
+  right: 3px; 
 }
 
 button[type="submit"] {
@@ -2676,7 +2678,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 7px 0px 7px 8px; 
-  font-size: 0.825rem;
+  font-size: 0.8rem;
 }
 
 .footer-left p, 
