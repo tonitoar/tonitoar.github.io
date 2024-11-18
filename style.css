@@ -2607,7 +2607,7 @@ form textarea {
   resize: none; 
   height: 500px;
   padding: 15px 10px;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   box-sizing: border-box;
   overflow: auto;
   position: relative;
@@ -2691,7 +2691,7 @@ blockquote {
 }
 
 .footer-right p {
-  font-size: 0.688rem;
+  font-size: 0.675rem;
 }
 
 .footer-center ul li a:hover {
