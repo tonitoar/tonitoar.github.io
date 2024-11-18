@@ -2676,7 +2676,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 75%;
+  font-size: 0.85rem;
 }
 
 .footer-left p, 
@@ -4148,20 +4148,20 @@ display: none;
   blockquote {
     border-left: 4px solid #fff;
     padding: 10px 0px 10px 10px; 
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   
   .footer-left p, 
   .footer-center p{
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   .footer-center a {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 
   .footer-right p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
    
   .social-media-footer .linkedin2 {
