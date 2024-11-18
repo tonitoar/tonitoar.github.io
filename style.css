@@ -1,5 +1,5 @@
 * {
-/* border: 1px solid blue;  */
+border: 1px solid blue; 
 margin:0;
 padding:0; 
 }
@@ -2676,7 +2676,7 @@ align-items: center;
 blockquote {
   border-left: 4px solid #fff;
   padding: 10px 0px 10px 10px; 
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .footer-left p, 
@@ -2685,7 +2685,7 @@ blockquote {
 }
 
 .footer-center a {
-  font-size: 0.75rem;
+  font-size: 0.825rem;
 }
 
 .footer-right p {
@@ -4161,7 +4161,7 @@ display: none;
   }
 
   .footer-right p {
-    font-size: 0.8rem;
+    font-size: 0.775rem;
   }
    
   .social-media-footer .linkedin2 {
