@@ -1,5 +1,5 @@
 * {
-border: 1px solid blue; 
+/* border: 1px solid blue;  */
 margin:0;
 padding:0; 
 }
@@ -3525,14 +3525,14 @@ display: none;
     .CV {
       /* width: calc(184px * 0.75);
       height: calc(60px * 0.75); */
-      width: calc(184px * 0.69);
-      height: calc(60px * 0.7);
+      width: calc(184px * 0.67);
+      height: calc(60px * 0.68);
     }
     
     .CV a {
       font-size: 0.85rem;
       /* padding: calc(17px * 0.65) calc(29px * 0.65); */
-      padding: calc(17px * 0.5) calc(29px * 0.5);
+      padding: calc(17px * 0.47) calc(29px * 0.47);
     }
 
     .CV:hover {
