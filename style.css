@@ -17,7 +17,11 @@ padding:0;
 --h2-color: #e20000;
 --dark-red3: #3D0000; 
 /* --nav-bar-color: #1C1C1C ; */
---nav-bar-color: #242424 ;
+/* --nav-bar-color: #202020 ; */
+--nav-bar-color: #1d1d1d   ;
+/* --nav-bar-color: #1e1e1e   ; */
+/* --nav-bar-color: #1f1f1f   ; */
+/* --nav-bar-color: #212121   ; */
 --context-background: #141414  ; 
 }
 
