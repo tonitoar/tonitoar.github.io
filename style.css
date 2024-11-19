@@ -3416,6 +3416,7 @@ display: none;
 
    .footer-left {
     height: 120px;
+    width: auto;
     padding: 10px;
   }
   
@@ -3435,7 +3436,7 @@ display: none;
   
   blockquote {
     border-left: 4px solid #fff;
-    padding: 10px 0px 10px 10px; 
+    padding: 9px 0px 9px 9px; 
     font-size: 0.9rem;
   }
   
@@ -3637,9 +3638,10 @@ display: none;
     width: 100%;
     padding: 20px;
     height: auto;
-    font-size: 1.05rem;
+    font-size: 1rem;
+    text-align: justify;
   }
-  
+
   @media screen and (max-width: 970px) {
     .info {
       height: 92%;
@@ -3696,14 +3698,6 @@ display: none;
       height: auto;
     }
     
-    .info-text p {
-      text-align: justify;
-      width: 100%;
-      padding: 20px;
-      height: auto;
-      font-size: 1rem;
-    }
-
     .border-container {
       width: 290px;
       height: 290px;
@@ -3974,7 +3968,7 @@ display: none;
     width: 100%;
     padding: 20px;
     height: auto;
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
   
   .contact-form {
@@ -4006,7 +4000,7 @@ display: none;
   }
   
   form label {
-    font-size: 1rem;
+    font-size: 0.95rem;
     margin-left: 5px;
   }
   
@@ -4079,11 +4073,7 @@ display: none;
     width: 80%;
     min-width: 520px;
   }
-  
-  .contact-text p {
-    font-size: 1rem;
-  }
-  
+
   .contact-form {
     width: 45%;
     min-width: 460px;
@@ -4094,12 +4084,12 @@ display: none;
   }
 
   form label {
-    font-size: 0.9rem;
+    font-size: 0.875rem;
   }
    
   form input {
     width: 70%;
-    font-size: 0.88rem;
+    font-size: 0.9rem;
   }
   
   form select {
