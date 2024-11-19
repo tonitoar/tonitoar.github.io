@@ -17,11 +17,6 @@ padding:0;
 --h2-color: #e20000;
 --dark-red3: #3D0000; 
 --nav-bar-color: #1C1C1C ;
-/* --nav-bar-color: #202020 ; */
-/* --nav-bar-color: #1d1d1d   ; */
-/* --nav-bar-color: #1e1e1e   ; */
-/* --nav-bar-color: #1f1f1f   ; */
-/* --nav-bar-color: #212121   ; */
 --context-background: #141414  ; 
 }
 
@@ -31,7 +26,7 @@ html{
     margin:0;
     padding:0;
     background-color: var(--dark-background); 
-    text-size-adjust: 100%; /* Android and iOS, ensuring text doesn’t automatically scale */
+    -webkit-text-size-adjust: 100%; /* iOS, ensuring text doesn’t automatically scale */
 }
 
 #canvas{
@@ -361,9 +356,9 @@ opacity: 1; /* Show hover image on hover */
 #Skills h2::before {
   content: "";
   position: absolute;
-  left: 27px; 
-  top: 27px;
-  width: 121px;
+  left: 22.5px; 
+  top: 24px;
+  width: 110px;
   height: 12px; 
   background-color: var(--light-red1); 
   opacity: 0.25;
@@ -1127,7 +1122,7 @@ opacity: 1;
     width: 100%;
     padding: 20px;
     height: auto;
-    font-size: 1rem;
+    font-size: 0.95rem;
     box-shadow: none;
   }
 
@@ -1365,7 +1360,7 @@ border-radius: 5px;
 .contact-text p {
   padding: 20px;
   height: auto;
-  font-size: 1rem;
+    font-size: 0.95rem;
   text-align: justify;
 }
 
@@ -1397,7 +1392,7 @@ form {
 }
 
 form label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-left: 5px;
   
 }
@@ -1411,13 +1406,13 @@ form input {
   height: 17px;
   padding: 5px;
   margin-left: 10px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 form select {
   height: 30px;
   margin-left: 10px;
-  font-size: 0.725rem;
+  font-size: 0.77rem;
 }
 
 /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
@@ -1430,6 +1425,8 @@ form textarea {
   font-size: 0.85rem;
   box-sizing: border-box;
   overflow: auto;
+  position: relative;
+  right: 3px; 
 }
 
 button[type="submit"] {
@@ -1455,7 +1452,7 @@ footer {
 .footer-content {
 width: 100%; 
 height: auto;
-padding: 30px 0px;
+padding: 30px 0px 0px;
 flex-direction: column;
 align-items: center;
 }
@@ -1494,18 +1491,21 @@ align-items: center;
 
 blockquote {
   border-left: 4px solid #fff;
-  padding: 10px 0px 10px 10px; 
-  font-size: 0.77rem;
+  padding: 7.5px 0px 7.5px 9px; 
+  font-size: 0.8rem;
 }
 
 .footer-left p, 
-.footer-center p,
-.footer-center a{
-  font-size: 0.75rem;
+.footer-center p{
+  font-size: 0.85rem;
+}
+
+.footer-center a {
+  font-size: 0.825rem;
 }
 
 .footer-right p {
-  font-size: 0.7rem;
+  font-size: 0.675rem;
 }
  
 .footer-center ul li a:hover {
@@ -1704,7 +1704,7 @@ display: none;
     width: 100%;
     padding: 20px;
     height: auto;
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .social-media {
@@ -1948,7 +1948,7 @@ border-radius: 5px;
 .contact-text p {
   padding: 20px;
   height: auto;
-  font-size: 1rem;
+    font-size: 0.95rem;
   text-align: justify;
 }
 
@@ -1980,8 +1980,7 @@ form {
 }
 
 form label {
-  /* font-size: 0.9rem; */
-  font-size: 0.925rem;
+  font-size: 0.85rem;
   margin-left: 5px;
   
 }
@@ -1995,13 +1994,13 @@ form input {
   height: 17px;
   padding: 5px;
   margin-left: 10px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 form select {
   height: 30px;
   margin-left: 10px;
-  font-size: 0.725rem;
+  font-size: 0.75rem;
 }
 
 
@@ -2012,9 +2011,11 @@ form textarea {
   resize: none; 
   height: 500px;
   padding: 15px 10px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   box-sizing: border-box;
   overflow: auto;
+  position: relative;
+  right: 3px; 
 }
 
 button[type="submit"] {
@@ -2031,9 +2032,6 @@ button[type="submit"]:hover {
   animation: none; /*! DISABLE ANIMATION */
 }
 
-
-
-
 footer {
   width: 100%;
   height: auto;
@@ -2049,7 +2047,6 @@ align-items: center;
 }
 
 .footer-info {
-  /* width: 85%; */
   width: 90%;
 }
   
@@ -2083,18 +2080,21 @@ align-items: center;
 
 blockquote {
   border-left: 4px solid #fff;
-  padding: 10px 0px 10px 10px; 
-  font-size: 0.9rem;
+  padding: 7.5px 0px 7.5px 8px; 
+  font-size: 0.8rem;
 }
 
 .footer-left p, 
-.footer-center p,
-.footer-center a{
+.footer-center p{
   font-size: 0.85rem;
 }
 
+.footer-center a {
+  font-size: 0.825rem;
+}
+
 .footer-right p {
-  font-size: 0.8rem;
+  font-size: 0.675rem;
 }
 
 .footer-center ul li a:hover {
@@ -2392,7 +2392,7 @@ display: none;
 }
 
 #Projects h2::before {
-  width: 160px;
+  width: 158px;
   top: 23px;
   left: 25px; 
   height: 12px; 
@@ -2997,7 +2997,7 @@ display: none;
   }
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 480px) {
   .intro {
     height: auto;
     gap: 80px;
@@ -3007,11 +3007,15 @@ display: none;
     width: 85%;
   }
 
+  .info-text p {
+    font-size: 0.95rem;
+  }
+
   .border-container {
     transform: none; 
-    width: 60vw;
+    width: 55vw;
     max-width: 245px;
-    height: 34vh; 
+    height: 33vh; 
   }
   
   .photo {
@@ -3303,13 +3307,13 @@ display: none;
     height: 17px;
     padding: 5px;
     margin-left: 10px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   
   form select {
     height: 30px;
     margin-left: 10px;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
   }
 
   /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
@@ -3322,6 +3326,8 @@ display: none;
     font-size: 0.95rem;
     box-sizing: border-box;
     overflow: auto;
+    position: relative; 
+    right: 1.5px;
   }
   
   button[type="submit"] {
@@ -3345,7 +3351,6 @@ display: none;
 
     form input {
       width: 60%;
-      font-size: 0.8rem;
     }
 
   }
@@ -3358,15 +3363,21 @@ display: none;
       margin: 2.5px 10px;
     }
 
+    .contact-text p {
+     font-size: 0.95rem;
+   }
+
+    form label {
+      font-size: 0.85rem;
+      margin-left: 5px;
+    }
+
     form input {
       width: 57%;
     }
 
     form select {
-      height: 30px;
-      margin-left: 10px;
-      margin-right: 30px;
-      font-size: 0.75rem;
+      font-size: 0.8rem;
     }
 
     button[type="submit"] {
