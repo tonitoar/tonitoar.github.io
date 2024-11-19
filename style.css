@@ -3503,8 +3503,8 @@ display: none;
   
   .CV {
     margin-top: 40px;
-    width: calc(184px * 0.68);
-    height: calc(60px * 0.7);
+    width: calc(184px * 0.67);
+    height: calc(60px * 0.67);
     border: solid 4px var(--light-red1);
   }
   
