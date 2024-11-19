@@ -16,7 +16,8 @@ padding:0;
 --light-red2: #b70101; 
 --h2-color: #e20000;
 --dark-red3: #3D0000; 
---nav-bar-color: #1C1C1C ;
+/* --nav-bar-color: #1C1C1C ; */
+--nav-bar-color: #242424 ;
 --context-background: #141414  ; 
 }
 
@@ -2677,7 +2678,7 @@ align-items: center;
 
 blockquote {
   border-left: 4px solid #fff;
-  padding: 7.5px 0px 7.5px 10px; 
+  padding: 7.5px 0px 7.5px 9px; 
   font-size: 0.8rem;
 }
 
