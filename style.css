@@ -4032,6 +4032,8 @@ display: none;
     font-size: 0.95rem;
     box-sizing: border-box;
     overflow: auto;
+    position: relative;
+    right: 3px;
   }
   
   button[type="submit"] {
@@ -4084,7 +4086,7 @@ display: none;
   }
 
   form label {
-    font-size: 0.85rem;
+    font-size: 0.875rem;
   }
    
   form input {
