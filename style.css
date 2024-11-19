@@ -2677,7 +2677,7 @@ align-items: center;
 
 blockquote {
   border-left: 4px solid #fff;
-  padding: 7.5px 0px 7.5px 7.5px; 
+  padding: 7.5px 0px 7.5px 10px; 
   font-size: 0.8rem;
 }
 
