@@ -4084,12 +4084,12 @@ display: none;
   }
 
   form label {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
   }
    
   form input {
     width: 70%;
-    font-size: 0.9rem;
+    font-size: 0.925rem;
   }
   
   form select {
