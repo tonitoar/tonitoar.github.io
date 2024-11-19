@@ -2160,7 +2160,7 @@ display: none;
     margin: 45px auto 0px; 
     border-radius: 0px;
     transition: box-shadow 0.3s ease; /* Smooth shadow transition */
-    background-color: blue;
+    background-color: var(--nav-bar-color);
   }
   
 .nav-sticky-shadow {
