@@ -3546,14 +3546,9 @@ display: none;
 
   @media screen and (max-width: 962px) {
 
-    nav {
-      width: 75%;
-      /* max-width: 675px; */
-    }
-
     nav a {
-      font-size: 1rem;
-      padding: calc(7px * 0.65) calc(32px * 0.6);
+      font-size: 1.025rem;
+      padding: calc(7px * 0.6) calc(32px * 0.65);
     }
 
     nav a:hover {
