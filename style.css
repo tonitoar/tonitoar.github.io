@@ -3549,11 +3549,10 @@ display: none;
     nav {
       width: 75%;
       /* max-width: 675px; */
-      height: 45px;
     }
 
     nav a {
-      font-size: 0.95rem;
+      font-size: 1rem;
       padding: calc(7px * 0.65) calc(32px * 0.6);
     }
 
