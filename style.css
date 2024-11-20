@@ -310,7 +310,7 @@ h2 {
 /* Repeat for GitHub with another class [(nth-child(2) del <a> significa el seguent -->]*/
 .social-media a:nth-child(2)::after {
 background-image: url(/images/icons8-github-64\ \(1\).webp);
-transform: scale(1.15);
+transform: scale(1.2);
 position: absolute; 
 top: 1px; 
 left: -1.2px;
@@ -3545,6 +3545,17 @@ display: none;
   }
 
   @media screen and (max-width: 962px) {
+
+    nav {
+      width: 75%;
+      /* max-width: 675px; */
+    }
+
+    nav a {
+      font-size: 1rem;
+      padding: calc(7px * 0.65) calc(32px * 0.6);
+    }
+
     nav a:hover {
       text-decoration: none;
       }
@@ -3608,7 +3619,7 @@ display: none;
     width: 100%;
     padding: 20px;
     height: auto;
-    font-size: 1rem;
+    font-size: 1.05rem;
     text-align: justify;
   }
 
@@ -3666,6 +3677,10 @@ display: none;
     .info-text {
       width: 90%;
       height: auto;
+    }
+
+    .info-text p {
+      font-size: 1rem;
     }
     
     .border-container {
@@ -3808,7 +3823,7 @@ display: none;
   
   /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
-  font-size: 1.05rem;
+  font-size: 1rem;
   width: calc(180px * 0.90); 
   height: calc(35px * 0.90); 
   }
@@ -3938,7 +3953,7 @@ display: none;
     width: 100%;
     padding: 20px;
     height: auto;
-    font-size: 1rem;
+    font-size: 1.05rem;
   }
   
   .contact-form {
@@ -4044,6 +4059,10 @@ display: none;
   .contact-text {
     width: 80%;
     min-width: 520px;
+  }
+
+  .contact-text p {
+    font-size: 1rem;
   }
 
   .contact-form {
@@ -4189,13 +4208,13 @@ display: none;
 /*! REDUCCÍO PROPROCIONAL*/
 .CV {
   margin-top: 40px;
-  width: calc(184px * 0.76);
-  height: calc(60px * 0.78);
+  width: calc(184px * 0.72);
+  height: calc(60px * 0.76);
   border: solid 4.5px var(--light-red1);
 }
 
 .CV a {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
   text-align: center;
@@ -4245,7 +4264,7 @@ display: none;
   
   .intro {
     width: 95%;
-    height: 400px;
+    height: 450px;
     padding: 15px 0px 40px;
     margin-bottom: 25px;
   }
@@ -4253,11 +4272,11 @@ display: none;
   .border-container {
     width: 32%; 
     max-width: 290px;
-    height: 70%;
+    height: 65%;
   }
   
   .photo {
-    width: 119%;
+    width: 130%;
     max-width: 336px;
     height: auto;
     position: relative;
@@ -4267,20 +4286,21 @@ display: none;
   
   .info {
     width: 50%;
-    height: 90%;
+    height: 70%;
     position: relative;
-    top: 30px; 
+    top: 25px; 
+    gap: 45px; 
   }
 
   @media screen and (max-width: 1233px) {
     .info {
-      height: 95%;
+      height: 80%;
     }
   }
 
   @media screen and (max-width: 1165px){
     .info {
-      height: 100%;
+      height: 85%;
     }
   }
   
@@ -4310,12 +4330,12 @@ display: none;
   
   .social-media .linkedin {
     width: 3.9vw; 
-    max-width: 45px; 
+    max-width: 42px; 
   }
   
   .social-media .github {
     width: 3.5vw; 
-    max-width: 39px; 
+    max-width: 36.5px; 
 }
   
   #Skills h2::before {
@@ -4699,19 +4719,16 @@ max-width: 32px;
 
   
   .CV {
-    margin-top: 50px;
-    /* width: 145px;
-    height: 48px; */
-    width: calc(184px * 0.8);
-    height: calc(60px * 0.82);
+    margin-top: 45px;
+    width: calc(184px * 0.76);
+    height: calc(60px * 0.8);
   }
   
   .CV a {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-    /* padding: 10px 15px; */
     padding: calc(17px * 0.49) calc(29px * 0.47);
   }
 
