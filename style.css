@@ -4223,7 +4223,7 @@ display: none;
   nav {
     width: 74%;
     max-width: 885px;
-    height: 70px;
+    height: 60px;
     margin: 85px auto 0px auto; 
   }
   
@@ -4290,12 +4290,14 @@ display: none;
   @media screen and (max-width: 1233px) {
     .info {
       height: 80%;
+      top: 30px; 
     }
   }
 
   @media screen and (max-width: 1165px){
     .info {
       height: 85%;
+      top: 35px; 
     }
   }
   
@@ -4402,7 +4404,7 @@ display: none;
   
   /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   width: 180px;
   height: 35px; 
   }
@@ -4518,7 +4520,7 @@ display: none;
   }
   
   form label {
-    font-size: 1.03rem;
+    font-size: 1rem;
     margin-left: 5px;
   }
   
@@ -4531,7 +4533,7 @@ display: none;
     height: 17px;
     padding: 5px;
     margin-left: 10px;
-    font-size: 0.93rem;
+    font-size: 0.95rem;
   }
   
   form select {
@@ -4619,11 +4621,11 @@ display: none;
   .footer-content {
   width: 85%; 
   height: auto;
-  padding: 30px;
+  padding: 30px 30px 0px;
   }
   
   .footer-left {
-    height: 120px;
+    height: 100px;
     padding: 10px;
   }
   
@@ -4634,36 +4636,38 @@ display: none;
   }
   
   .footer-center ul {
-    margin: 15px 0px 0px 2px;
+    margin: 15px 0px 0px 10px;
     height: 150px;
     width: 67px;
   }
 
   .footer-right {
-    height: 120px;
+    height: 90px;
     padding: 10px;
     position: relative;
-    top: 100px; 
+    top: 130px; 
   }
   
   blockquote {
     border-left: 4px solid #fff;
-    padding: 10px 0px 10px 10px; 
-    font-size: 1rem;
+    padding: 8px 0px 8px 8px; 
+    font-size: 0.95rem;
   }
   
   .footer-left p, 
-  .footer-center p,
-  .footer-right p{
+  .footer-center p{
     font-size: 0.95rem;
   }
 
-  
   .footer-center a {
-    font-size: 0.925rem;
+    font-size: 0.9rem;
   }
 
-  @media screen and (max-width: 1114px) {
+  .footer-right p {
+    font-size: 0.8rem;
+  }
+
+  /* @media screen and (max-width: 1114px) {
   .footer-left p, 
   .footer-center p,
   .footer-right p{
@@ -4677,16 +4681,16 @@ display: none;
   blockquote {
     font-size: 0.97rem;
   }
-}
+} */
   
 .social-media-footer .linkedin2 {
 width: 3vw; 
-max-width: 36px; 
+max-width: 32px; 
 }
 
 .social-media-footer .github2 {
 width: 2.6vw; 
-max-width: 32px; 
+max-width: 29px; 
 }
   
 }
