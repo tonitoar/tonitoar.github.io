@@ -152,7 +152,7 @@ main {
 }
 
 #About {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 110px;
   margin: 85px 0px 100px 0px;
   width: 90%;
   height: auto;
@@ -322,7 +322,7 @@ opacity: 1; /* Show hover image on hover */
 
 
 #Skills {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,7 +404,7 @@ opacity: 1; /* Show hover image on hover */
   left: -1;
   width: 110%;
   height: 110%;
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));
+  background: linear-gradient(rgba(0, 0, 0, 0.975), rgba(0, 0, 0, 0.975));
   z-index: 2; 
   opacity: 1;
   pointer-events: none; 
@@ -466,7 +466,7 @@ height: 90.96%;
 }
 
 #Projects {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -619,7 +619,7 @@ color: white;
 }
 
 #Contact {
-  scroll-margin-top: 140px;
+  scroll-margin-top: 110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2810,7 +2810,7 @@ display: none;
     width: 80%;
     height: 50px;
     margin: 85px auto 0px; 
-    background-color: purple;
+    background-color: var(--nav-bar-color);
   }
   
   nav ul {
@@ -4247,6 +4247,17 @@ display: none;
     font-size: 1.2rem;
     padding: calc(7px * 0.75) calc(32px * 0.85);
   }
+
+  @media screen and (max-width: 1114px) {
+    nav {
+      height: 55px;
+    }
+
+    nav a {
+      font-size: 1.15rem;
+      padding: calc(7px * 0.7) calc(32px * 0.7);
+    }
+  }
    
   h2 {
     color: var(--h2-color); 
@@ -4544,7 +4555,7 @@ display: none;
     height: 17px;
     padding: 5px;
     margin-left: 10px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
   
   form select {
@@ -4564,24 +4575,6 @@ display: none;
     box-sizing: border-box;
     overflow: auto;
   }
-  
-  @media screen and (max-width: 1114px) {
-    form label {
-      font-size: 1.02rem;
-    }
-
-    form input {
-      font-size: 0.9rem;
-    }
-
-    form select {
-      font-size: 0.85rem;
-    }
-
-    form textarea {
-      font-size: 1rem;
-    }
-}
 
   button[type="submit"] {
     width: calc(135px * 0.92);
@@ -4719,7 +4712,7 @@ max-width: 29px;
     min-width: 930px;
     width: 60%;
     max-width: 1000px; 
-    height: 60px;
+    height: 55px;
     margin: 85px auto 0px auto; 
   }
   
@@ -4730,7 +4723,7 @@ max-width: 29px;
    
   nav a {
     font-size: 1.25rem;
-    padding: 7px 27.5px;
+    padding: 6px 25px;
   }
 
   #About article {
@@ -4772,20 +4765,8 @@ max-width: 29px;
     height: 90%;
     gap: 50px; 
     position: relative;
-    top: 40px; 
+    top: 45px; 
   }
-
-  /* @media screen and (max-width:1695px) {
-    .info {
-      height: 95%;
-    }
-  }
-
-  @media screen and (max-width:1475px) {
-    .info {
-      height: 100%;
-    }
-  } */
   
   .info-text {
     width: 90%;
@@ -4949,7 +4930,7 @@ max-width: 29px;
   }
   
   form label {
-    font-size: 1.05rem;
+    font-size: 1.025em;
     margin-left: 5px;
   }
   
@@ -4961,11 +4942,11 @@ max-width: 29px;
     width: 74%;
     max-width: 350px;
     height: 17px;
-    font-size: 0.975rem;
+    font-size: 0.95rem;
   }
   
   form select {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
  
   form textarea {
@@ -4975,7 +4956,7 @@ max-width: 29px;
     box-sizing: border-box;
     overflow: auto;
     padding: 30px 20px 0px 20px;
-    font-size: 1.05rem;
+    font-size: 1.025rem;
   }
 
   button[type="submit"] {
