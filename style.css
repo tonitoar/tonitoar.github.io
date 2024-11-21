@@ -356,9 +356,9 @@ opacity: 1; /* Show hover image on hover */
 #Skills h2::before {
   content: "";
   position: absolute;
-  left: 22.5px; 
-  top: 24px;
-  width: 110px;
+  left: 27px; 
+  top: 27px;
+  width: 120px;
   height: 12px; 
   background-color: var(--light-red1); 
   opacity: 0.25;
@@ -1165,6 +1165,7 @@ display: none;
 #Skills h2::before {
   width: 105px;
   top: 21.5px;
+  left: 22.5px; 
   height: 11px; 
 }
 
@@ -1748,6 +1749,7 @@ display: none;
 #Skills h2::before {
   width: 105px;
   top: 21.5px;
+  left: 22.5px; 
   height: 11px; 
 }
 
@@ -3037,6 +3039,13 @@ display: none;
   width: 95%;
   height: auto;
   margin: 50px 30px 40px;
+}
+
+#Skills h2::before {
+  left: 24px; 
+  top: 24px;
+  width: 110px;
+  height: 12px; 
 }
 
 .cards {
