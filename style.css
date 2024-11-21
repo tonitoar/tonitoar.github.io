@@ -313,7 +313,7 @@ background-image: url(/images/icons8-github-64\ \(1\).webp);
 transform: scale(1.2);
 position: absolute; 
 top: 1px; 
-left: -0.9px;
+left: -1.2px;
 }
 
 .social-media a:nth-child(2):hover::after {
@@ -4831,6 +4831,11 @@ max-width: 29px;
   .social-media .github {
     width: 2.5vw; 
     max-width: 38px; 
+}
+@media screen and (min-width: 1600px) {
+  .social-media a:nth-child(2)::after {
+    left: -0.9px;
+    }
 }
 
   #Skills article {
