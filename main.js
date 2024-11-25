@@ -6,9 +6,7 @@
  */
 const TWO_PI = Math.PI * 2;
 
-// const redBubble = "#5C0000";
 const redBubble = "#4E0000";
-// const redBubble = "#4C0000";
 
 /**
  * Application Class
