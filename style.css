@@ -2896,7 +2896,7 @@ display: none;
     padding: 15px 0px;
     width: 95%;
     height: auto;
-    gap: 100px;
+    gap: 80px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2904,12 +2904,12 @@ display: none;
   
   
   .border-container {
-    width: 270px;
-    height: 270px;
+    width: 240px;
+    height: 260px;
   }
   
   .photo {
-    width: 315px;
+    width: 300px;
     height: auto;
     position: relative;
     top: 15px;
@@ -2985,14 +2985,13 @@ display: none;
 
   .border-container {
     width: 52.5vw;
-    max-width: 270px;
-    height: 35vh; 
+    max-width: 240px;
+    height: 40vh; 
     
   }
   
   .photo {
-    width: 135%;
-    max-width: 315px;
+    width: 127%;
     height: auto;
     position: relative;
     top: 15px;
@@ -3017,8 +3016,8 @@ display: none;
   .border-container {
     transform: none; 
     width: 55vw;
-    max-width: 245px;
-    height: 33vh; 
+    max-width: 230px;
+    height: 37vh; 
   }
   
   .photo {
@@ -3689,12 +3688,12 @@ display: none;
     }
     
     .border-container {
-      width: 290px;
-      height: 290px;
+      width: 260px;
+      height: 280px;
     }
     
     .photo {
-      width: 118%;
+      width: 125%;
       max-width: 400px;
       height: auto;
       position: relative;
@@ -4295,7 +4294,7 @@ display: none;
   
   .photo {
     width: 130%;
-    max-width: 336px;
+    max-width: 350px;
     height: auto;
     position: relative;
     top: 15px;
