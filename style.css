@@ -2149,7 +2149,7 @@ display: none;
 
   #About h2::before {
     width: 163px;
-    top: 23px;
+    top: 24px;
     left: 28px; 
     height: 12px; 
   }
@@ -2247,7 +2247,7 @@ display: none;
 
 #Skills h2::before {
   width: 110px;
-  top: 23px;
+  top: 24px;
   left: 24px; 
   height: 12px; 
 }
@@ -2317,7 +2317,7 @@ display: none;
 
 #Projects h2::before {
   width: 158px;
-  top: 23px;
+  top: 24px;
   left: 25px; 
   height: 12px; 
 }
@@ -2411,7 +2411,7 @@ border-radius: 5px;
 
 #Contact h2::before {
   width: 147px;
-  top: 23px;
+  top: 24px;
   left: 27px; 
   height: 12px; 
 }
