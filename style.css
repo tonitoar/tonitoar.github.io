@@ -1,10 +1,7 @@
 * {
-/* border: 1px solid blue;  */
 margin:0;
 padding:0; 
 }
-
-/* ? CUSTOM VARIABLES */
 
 :root {
 --dark-background: black;  
@@ -20,13 +17,11 @@ padding:0;
 --context-background: #141414  ; 
 }
 
-/* ? CUSTOM VARIABLES */
-
 html{
     margin:0;
     padding:0;
     background-color: var(--dark-background); 
-    -webkit-text-size-adjust: 100%; /* iOS, ensuring text doesn’t automatically scale */
+    -webkit-text-size-adjust: 100%; 
 }
 
 #canvas{
@@ -93,13 +88,11 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  position: -webkit-sticky; /* For Safari */
+  position: -webkit-sticky; 
   position: sticky;
-  top: 0px; /* When scrolled to this point, the nav will stick => STICKY AT TOP */
-  z-index: 100; /* Ensure it stays on top */
+  top: 0px;
+  z-index: 100;
 }
-
-/*! NAVBAR MOBILE */
 
 .nav-dropdown-toggle {
   display: none;
@@ -114,9 +107,6 @@ nav {
   text-align: center;
   margin: 0 auto;
 }
-/*! NAVBAR MOBILE */
-
-
 
 nav ul {
   display: flex;
@@ -159,23 +149,17 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* TODO background opacity + Z-INDEX */
-  /* ! SEMPRE AQUESTES PROPIETATS */
   position: relative;
-  /* ! SEMPRE AQUESTES PROPIETATS */
 }
 
-/* TODO background opacity + Z-INDEX */
 
 #About::before {
   content: "";
-  /* ! SEMPRE AQUESTES PROPIETATS */
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  /* ! SEMPRE AQUESTES PROPIETATS */
   background-color: var(--context-background);
   border-radius: 10px;
   opacity: 0.985;
@@ -279,35 +263,30 @@ h2 {
 }
 
 .social-media img {
-  height: auto; /* Adjust the height as needed */
-  /* display: block;  */
+  height: auto;
 }
 
-/* Hide the original image on hover */
 .social-media a:hover img {
-  opacity: 0; /* Hide original image on hover */
+  opacity: 0;
 }
 
-/* Using ::after to display the hover image */
 .social-media a::after {
   content: '';
-  background-image: url(/images/linkedin2.webp); /* Hover image for LinkedIn */
-  background-size: cover; /* Make background cover the area */
-  position: absolute; /* Position it absolutely */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  opacity: 0; /* Start hidden */
-  transition: opacity 0.3s ease; /* Smooth transition */
+  background-image: url(/images/linkedin2.webp);
+  background-size: cover; 
+  position: absolute; 
+  top: 0;
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
 }
 
-/* Hover effect for LinkedIn */
 .social-media a:hover::after {
-  opacity: 1; /* Show hover image on hover */
+  opacity: 1; 
 }
 
-/* Repeat for GitHub with another class [(nth-child(2) del <a> significa el seguent -->]*/
 .social-media a:nth-child(2)::after {
 background-image: url(/images/github2.webp);
 transform: scale(1.2);
@@ -317,7 +296,7 @@ left: -1.2px;
 }
 
 .social-media a:nth-child(2):hover::after {
-opacity: 1; /* Show hover image on hover */
+opacity: 1;
 }
 
 
@@ -395,7 +374,6 @@ opacity: 1; /* Show hover image on hover */
   padding: 10px 35px 15px;
 }
 
-/* TODO  ::after per que esta la imatge i per sobre la sombra (img > sombra) (*/
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
 .express::after, .mongodb::after, .git::after,
@@ -512,8 +490,6 @@ height: 90.96%;
   opacity: 0.25;
 }
 
-
-/*! NAVBAR MOBILE */
 .project-nav {
   position: relative;
 } 
@@ -525,16 +501,13 @@ height: 90.96%;
   color: var(--light-text);
   border-radius: 15px;
   padding: 7px 8px; 
-  /* width: 145px; */
   width: 140px;
   height: auto;
-  /* font-size: 0.85rem; */
   font-size: 0.9rem;
   cursor: pointer;
   text-align: center;
   margin: 0 auto;
 }
-/*! NAVBAR MOBILE */
 
 .project-nav ul {
   list-style: none;
@@ -543,7 +516,6 @@ height: 90.96%;
   align-items: center;
 }
 
-/*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
 .project-nav li {
 color: var(--light-text); 
 border: 3px solid transparent;
@@ -555,7 +527,6 @@ cursor: pointer;
 transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s ease;
 }
 
-/*TODO  class .active ve donat per Javascript. NO HTML! */
 .project-nav li:hover,
 .project-nav li.active {
   background-color: var(--light-red2);
@@ -570,7 +541,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   align-items: center;
 }
 
-/*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
 .project-item {
   position: relative;
   cursor: pointer;
@@ -583,7 +553,6 @@ transition: background-color 0.3s ease, border 0.3s ease, border-radius 0.3s eas
   object-fit: cover;
 }
 
-/* TODO div class="hover-description" creat per JS */
 .hover-description {
   position: absolute;
   top: 0;
@@ -783,9 +752,7 @@ label[for="message"] {
 form select {
   height: 30px;
   padding: 5px;
-  /* padding: 5px 2.5px; */
   margin-left: 10px;
-  /*! eliminar border blue per default */
   border: 1px solid #ccc;
 }
 
@@ -793,7 +760,6 @@ form select {
 form input {
   padding: 5px 5px 5px 7px;
   margin-left: 10px;
-  /*! eliminar border blue per default */
   border: 1px solid #ccc;
 }
 
@@ -802,11 +768,9 @@ form textarea {
   box-sizing: border-box;
   overflow: auto;
   resize: none; 
-  /*! eliminar border blau per default */
   border: 1px solid #ccc;
 }
 
-/*! eliminar default border quan escrius*/
 form textarea:focus,
 form input:focus
 {
@@ -821,15 +785,13 @@ button[type="submit"] {
   cursor: pointer;
   border-radius: 10px;
   text-align: center;
-  transition: transform 0.3s ease-in-out; /*! instead of "all" => "transform" because qe have 2 differents animations */
+  transition: transform 0.3s ease-in-out; 
 }
 
 button[type="submit"]:hover {
-  animation: shake 0.75s steps(5) 2; /*! Shake animation on hover */
+  animation: shake 0.75s steps(5) 2; 
 }
 
-
-/*! Keyframes for the shake animation (X,Y) and scale*/
 @keyframes shake {
   0%, 100% {
     transform: translate(0, 0) scale(1.04); 
@@ -1011,7 +973,7 @@ opacity: 1;
     height: 60px;
     margin: 45px auto 0px; 
     border-radius: 0px;
-    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    transition: box-shadow 0.3s ease;
     background-color: var(--nav-bar-color);
   }
   
@@ -1019,14 +981,12 @@ opacity: 1;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
 }
 
- /* NAVBAR MOBILE SHOW */
  .nav-dropdown-toggle {
   display: block; 
   font-size: 0.8rem;
   width: 125px;
 }
 
-/* NAVBAR DESKTOP HIDE */
 .nav-dropdown-menu {
   display: none !important;
   background-color: var(--nav-bar-color);
@@ -1144,17 +1104,14 @@ opacity: 1;
   width: 9.8vw; 
 }
 
-/*! to make the :hover image disable */
 .social-media a:hover img {
 opacity: 1; 
 }
 
-/*! to make the :hover image disable */
 .social-media a::after {
   display: none;
 }
 
-/*! to make the :hover image disable */
 .social-media a:nth-child(2)::after {
 display: none;
 }
@@ -1188,7 +1145,8 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
@@ -1196,13 +1154,15 @@ display: none;
 
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -1254,14 +1214,12 @@ display: none;
   justify-content: center;
 }
 
-/* NAVBAR MOBILE SHOW */
 .project-nav-dropdown-toggle {
 display: block; 
 font-size: 0.825rem;
 width: 135px;
 }
 
-/* NAVBAR DESKTOP HIDE */
 .project-nav-dropdown-menu {
 display: none !important;
 background-color: var(--nav-bar-color);
@@ -1278,7 +1236,6 @@ margin-top: 10px;
 border-radius: 5px;
 }
 
-/*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
 .project-nav li {
   font-size: 0.85rem;
   width: calc(180px * 0.725); 
@@ -1294,14 +1251,12 @@ border-radius: 5px;
   grid-template-columns: repeat(auto-fit,minmax(211px, 0.25fr));
 }
 
-/*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
 .project-item {
   width: 210px;
   height: 210px;
   position: relative;
 }
 
-/* TODO div class="hover-description" creat per JS */
 .hover-description {
   position: absolute;
   top: 0;
@@ -1420,8 +1375,6 @@ form select {
   font-size: 0.77rem;
 }
 
-/*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
-/*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
 form textarea {
   width: 100%;
   resize: none; 
@@ -1441,11 +1394,11 @@ button[type="submit"] {
   font-weight: 550;
   margin: 15px auto;
   padding: 10px;
-  transition: none; /*! DISABLE ANIMATION */
+  transition: none;
 }
 
 button[type="submit"]:hover {
-  animation: none; /*! DISABLE ANIMATION */
+  animation: none;
 }
 
 footer {
@@ -1525,26 +1478,18 @@ width: 8vw;
 width: 7.5vw; 
 }
 
-
-/*! to make the :hover image disable */
 .social-media-footer a:hover img {
 opacity: 1; 
 }
 
-/*! to make the :hover image disable */
 .social-media-footer a::after {
   display: none;
 }
 
-/*! to make the :hover image disable */
 .social-media-footer a:nth-child(2)::after {
 display: none;
 }
-
-
 }
-
-
 
 @media screen and (min-width: 321px) and (max-width: 375px) {
 
@@ -1592,7 +1537,7 @@ display: none;
     height: 60px;
     margin: 45px auto 0px; 
     border-radius: 0px;
-    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    transition: box-shadow 0.3s ease; 
     background-color: var(--nav-bar-color);
   }
   
@@ -1600,14 +1545,12 @@ display: none;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
 }
 
- /* NAVBAR MOBILE SHOW */
  .nav-dropdown-toggle {
   display: block; 
   font-size: 0.8rem;
   width: 125px;
 }
 
-/* NAVBAR DESKTOP HIDE */
 .nav-dropdown-menu {
   display: none !important;
   background-color: var(--nav-bar-color);
@@ -1728,17 +1671,14 @@ display: none;
   max-width: 30.5px;
 }
 
-/*! to make the :hover image disable */
 .social-media a:hover img {
 opacity: 1; 
 }
 
-/*! to make the :hover image disable */
 .social-media a::after {
   display: none;
 }
 
-/*! to make the :hover image disable */
 .social-media a:nth-child(2)::after {
 display: none;
 }
@@ -1772,7 +1712,8 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
@@ -1780,13 +1721,15 @@ display: none;
 
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -1837,18 +1780,13 @@ display: none;
   justify-content: center;
 }
 
-/* NAVBAR MOBILE SHOW */
 .project-nav-dropdown-toggle {
 display: block; 
-/* font-size: 0.825rem; */
-/* width: 135px; */
 }
 
-/* NAVBAR DESKTOP HIDE */
 .project-nav-dropdown-menu {
 display: none !important;
 background-color: var(--nav-bar-color);
-/* width: 160px; */
 width: 170px;
 position: absolute;
 top: 100%;
@@ -1862,13 +1800,7 @@ margin-top: 10px;
 border-radius: 5px;
 }
 
-
-
-/*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
 .project-nav li {
-  /* font-size: 0.85rem;
-  width: calc(180px * 0.725); 
-  height: calc(35px * 0.8);  */
   margin: 5px 0px;
   font-size: 0.9rem;
   width: calc(180px * 0.75); 
@@ -1883,14 +1815,12 @@ border-radius: 5px;
   grid-template-columns: repeat(auto-fit,minmax(211px, 0.25fr));
 }
 
-/*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
 .project-item {
   width: 210px;
   height: 210px;
   position: relative;
 }
 
-/* TODO div class="hover-description" creat per JS */
 .hover-description {
   position: absolute;
   top: 0;
@@ -1918,13 +1848,11 @@ border-radius: 5px;
   margin-top: 10px; 
 }
 
-
 #Contact {
   width: 100%;
   scroll-margin-top: 90px;
   margin: 50px 0px;
 }
-
 
 #Contact h2::before {
   top: 21.5px;
@@ -2009,9 +1937,6 @@ form select {
   font-size: 0.75rem;
 }
 
-
-/*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
-/*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
 form textarea {
   width: 100%;
   resize: none; 
@@ -2031,11 +1956,11 @@ button[type="submit"] {
   font-weight: 550;
   margin: 15px auto;
   padding: 10px;
-  transition: none; /*! DISABLE ANIMATION */
+  transition: none;
 }
 
 button[type="submit"]:hover {
-  animation: none; /*! DISABLE ANIMATION */
+  animation: none; 
 }
 
 footer {
@@ -2117,23 +2042,17 @@ width: 7.5vw;
 max-width: 24.5px; 
 }
 
-/*! to make the :hover image disable */
 .social-media-footer a:hover img {
 opacity: 1; 
 }
 
-/*! to make the :hover image disable */
 .social-media-footer a::after {
   display: none;
 }
 
-/*! to make the :hover image disable */
 .social-media-footer a:nth-child(2)::after {
 display: none;
 }
-
-
-
 }
 
 @media screen and (min-width: 376px) and (max-width: 425px) {
@@ -2170,7 +2089,7 @@ display: none;
     height: 60px;
     margin: 45px auto 0px; 
     border-radius: 0px;
-    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+    transition: box-shadow 0.3s ease;
     background-color: var(--nav-bar-color);
   }
   
@@ -2178,14 +2097,13 @@ display: none;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
 }
   
- /* NAVBAR MOBILE SHOW */
  .nav-dropdown-toggle {
   display: block; 
   font-size: 0.9rem;
   width: 125px;
 }
 
-/* NAVBAR DESKTOP HIDE */
+
 .nav-dropdown-menu {
   display: none !important;
   background-color: var(--nav-bar-color);
@@ -2308,17 +2226,14 @@ display: none;
   max-width: 32.5px;
 }
 
-/*! to make the :hover image disable */
 .social-media a:hover img {
 opacity: 1; 
 }
 
-/*! to make the :hover image disable */
 .social-media a::after {
   display: none;
 }
 
-/*! to make the :hover image disable */
 .social-media a:nth-child(2)::after {
 display: none;
 }
@@ -2352,22 +2267,24 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
 }
 
-
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -2418,12 +2335,10 @@ display: none;
   justify-content: center;
 }
 
-/* NAVBAR MOBILE SHOW */
 .project-nav-dropdown-toggle {
 display: block; 
 }
 
-/* NAVBAR DESKTOP HIDE */
 .project-nav-dropdown-menu {
 display: none !important;
 background-color: var(--nav-bar-color);
@@ -2454,39 +2369,6 @@ border-radius: 5px;
   padding: 25px;
   grid-template-columns: repeat(auto-fit,minmax(211px, 0.25fr));
 }
-
-/* .project-item {
-  width: 210px;
-  height: 210px;
-  position: relative;
-}
-
-.hover-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-}
-
-.hover-description h3 {
-  font-size: 1.25rem;
-}
-
-.hover-description p {
-  font-size: 1.01rem;
-}
-
-.hover-description h4 {
-  font-size: 1.06rem;
-}
-
-.hover-description button {
-  padding: 5.5px 11px;
-  font-size: 0.75rem;
-  margin-top: 10px; 
-} */
 
 .project-item {
   width: 230px;
@@ -2520,8 +2402,6 @@ border-radius: 5px;
   font-size: 0.75rem;
   margin-top: 10px; 
 }
-
-
 
 #Contact {
   width: 100%;
@@ -2612,8 +2492,6 @@ form select {
   font-size: 0.8rem;
 }
 
-/*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
-/*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
 form textarea {
   width: 100%;
   resize: none; 
@@ -2633,11 +2511,11 @@ button[type="submit"] {
   font-weight: 550;
   margin: 15px auto;
   padding: 10px;
-  transition: none; /*! DISABLE ANIMATION */
+  transition: none;
 }
 
 button[type="submit"]:hover {
-  animation: none; /*! DISABLE ANIMATION */
+  animation: none;
 }
 
 footer {
@@ -2720,27 +2598,18 @@ width: 7vw;
 max-width: 27.5px; 
 }
 
-
-/*! to make the :hover image disable */
 .social-media-footer a:hover img {
 opacity: 1; 
 }
 
-/*! to make the :hover image disable */
 .social-media-footer a::after {
   display: none;
 }
 
-/*! to make the :hover image disable */
 .social-media-footer a:nth-child(2)::after {
 display: none;
 }
-
 }
-
-
-
-
 
 @media screen and (min-width: 426px) and (max-width: 768px) {
   
@@ -2774,9 +2643,6 @@ display: none;
     transform: none;
   }
 
-
-  
-
   @media screen and (max-width: 597px) {
 
     h1 {
@@ -2797,9 +2663,7 @@ display: none;
     .CV:hover {
       transform: none;
     }
-
   }
-
 
   @media  screen and (max-width: 470px) {
     #inicio {
@@ -2840,12 +2704,10 @@ display: none;
       margin: 45px auto 0px; 
     }
 
-  /* NAVBAR MOBILE SHOW */
  .nav-dropdown-toggle {
     display: block; 
   }
 
-  /* NAVBAR DESKTOP HIDE */
  .nav-dropdown-menu {
     display: none !important;
     background-color: var(--nav-bar-color);
@@ -2961,17 +2823,14 @@ display: none;
   max-width: 34px;
 }
 
-/*! to make the :hover image disable */
 .social-media a:hover img {
 opacity: 1; 
 }
 
-/*! to make the :hover image disable */
 .social-media a::after {
   display: none;
 }
 
-/*! to make the :hover image disable */
 .social-media a:nth-child(2)::after {
 display: none;
 }
@@ -3061,7 +2920,8 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
@@ -3069,13 +2929,15 @@ display: none;
 
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -3145,15 +3007,12 @@ display: none;
     height: auto;
   }
   
-  /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
     font-size: 0.95rem;
     width: calc(180px * 0.8); 
     height: calc(35px * 0.8); 
   }
 
-  /*! MAKE NAVBAR MOBILE SHOW AND NAVBAR DESKTOP HIDE */
-  
     @media screen and (max-width: 675px) {
   
       .project-nav {
@@ -3161,12 +3020,10 @@ display: none;
           justify-content: center;
       }
   
-      /* NAVBAR MOBILE SHOW */
       .project-nav-dropdown-toggle {
         display: block; 
       }
     
-      /* NAVBAR DESKTOP HIDE */
       .project-nav-dropdown-menu {
         display: none !important;
         background-color: var(--nav-bar-color);
@@ -3190,9 +3047,7 @@ display: none;
         height: calc(35px * 0.8); 
       }
     }
-    
-  /*! MAKE NAVBAR MOBILE SHOW AND NAVBAR DESKTOP HIDE */
-    
+       
 .project-container {
     width: 80%;
     height: auto;
@@ -3207,14 +3062,12 @@ display: none;
     }
   }
   
-  /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
   .project-item {
     width: 210px;
     height: 210px;
     position: relative;
   }
   
-  /* TODO div class="hover-description" creat per JS */
   .hover-description {
     position: absolute;
     top: 0;
@@ -3329,8 +3182,6 @@ display: none;
     font-size: 0.8rem;
   }
 
-  /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
-  /*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
   form textarea {
     width: 100%;
     resize: none; 
@@ -3350,11 +3201,11 @@ display: none;
     font-weight: 550;
     margin: 15px auto;
     padding: 10px;
-    transition: none; /*! DISABLE ANIMATION */
+    transition: none;
   }
   
   button[type="submit"]:hover {
-    animation: none; /*! DISABLE ANIMATION */
+    animation: none;
   }
   
   @media screen and (max-width: 597px) {
@@ -3365,7 +3216,6 @@ display: none;
     form input {
       width: 60%;
     }
-
   }
 
   @media screen and (max-width: 480px) {
@@ -3476,30 +3326,18 @@ display: none;
   max-width: 27.5px; 
 }
   
-
- /*! to make the :hover image disable */
  .social-media-footer a:hover img {
   opacity: 1; 
   }
 
-  /*! to make the :hover image disable */
   .social-media-footer a::after {
     display: none;
   }
   
-  /*! to make the :hover image disable */
   .social-media-footer a:nth-child(2)::after {
   display: none;
   }
-
 }
-
-
-
-
-
-
-
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
@@ -3511,8 +3349,6 @@ display: none;
   h1 {
     font-size: clamp(2.6rem, 5.5vw, 6.8rem);
   }
-  
-
   
   .CV {
     margin-top: 40px;
@@ -3715,17 +3551,14 @@ display: none;
       max-width: 38px; 
     }
  
-    /*! to make the :hover image disable */
     .social-media a:hover img {
     opacity: 1; 
     }
 
-    /*! to make the :hover image disable */
     .social-media a::after {
       display: none;
     }
     
-    /*! to make the :hover image disable */
     .social-media a:nth-child(2)::after {
     display: none;
     }
@@ -3753,7 +3586,8 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 200px;
   padding: 10px 30px 15px;
@@ -3761,13 +3595,15 @@ display: none;
 
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -3829,7 +3665,6 @@ display: none;
     height: auto;
   }
   
-  /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
   font-size: 1rem;
   width: calc(180px * 0.90); 
@@ -3844,14 +3679,12 @@ display: none;
     grid-template-columns: repeat(auto-fit,minmax(241.2px, 0.25fr));
   }
   
-  /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
   .project-item {
     width: 240px;
     height: 240px;
     position: relative;
   }
   
-  /* TODO div class="hover-description" creat per JS */
   .hover-description {
     position: absolute;
     top: 0;
@@ -3895,7 +3728,6 @@ display: none;
       width: 80%; 
     }
     
-    /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
     .project-nav li {
     font-size: 0.9rem;
     width: calc(180px * 0.85); 
@@ -3906,7 +3738,6 @@ display: none;
       grid-template-columns: repeat(auto-fit,minmax(231px, 0.25fr));
     }
     
-    /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
     .project-item {
       width: 230px;
       height: 230px;
@@ -3929,7 +3760,6 @@ display: none;
       font-size: 0.75rem;
       margin-top: 10px; 
     }
-  
   }
 
   #Contact h2::before {
@@ -4015,8 +3845,6 @@ display: none;
     font-size: 0.83rem;
   }
 
-  /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
-  /*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
   form textarea {
     width: 100%;
     resize: none; 
@@ -4103,13 +3931,12 @@ display: none;
     width: calc(135px * 0.90);
     height: calc(45px * 0.93);
     font-size: 0.825rem;
-    transition: none; /*! DISABLE ANIMATION */
+    transition: none;
   }
 
   button[type="submit"]:hover {
-    animation: none; /*! DISABLE ANIMATION */
+    animation: none; 
   }
-  
 }
   
   footer {
@@ -4183,26 +4010,18 @@ display: none;
   max-width: 29.5px; 
 }
   
-
- /*! to make the :hover image disable */
  .social-media-footer a:hover img {
   opacity: 1; 
   }
 
-  /*! to make the :hover image disable */
   .social-media-footer a::after {
     display: none;
   }
   
-  /*! to make the :hover image disable */
   .social-media-footer a:nth-child(2)::after {
   display: none;
   }
-
 }
-
-
-
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
 
@@ -4215,7 +4034,6 @@ display: none;
     font-size: clamp(3rem, 4.5vw, 6.8rem);
   }
   
-/*! REDUCCÍO PROPROCIONAL*/
 .CV {
   margin-top: 40px;
   width: calc(184px * 0.72);
@@ -4382,7 +4200,8 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 225px;
   padding: 10px 30px 15px;
@@ -4428,14 +4247,12 @@ display: none;
     height: auto;
   }
   
-  /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
   font-size: 1.1rem;
   width: 180px;
   height: 35px; 
   }
   
-
 .project-container {
     width: 80%;
     height: auto;
@@ -4444,14 +4261,12 @@ display: none;
     grid-template-columns: repeat(auto-fit,minmax(251.2px, 0.25fr));
   }
   
-  /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
   .project-item {
     width: 250px;
     height: 250px;
     position: relative;
   }
   
-  /* TODO div class="hover-description" creat per JS */
   .hover-description {
     position: absolute;
     top: 0;
@@ -4568,8 +4383,6 @@ display: none;
     font-size: 0.85rem;
   }
 
-  /*TODO width:100% xk ocupi el espai max del pare + box-sizing:border-box xk el contenidor es fixi amb el del pare */
-  /*! UTIL PER CONTENIDORS FILLS QUE EXCEDEIXIN EL CONTENIDOR PARE I VOLS QUE SIGUI FILL = PARE*/
   form textarea {
     width: 100%;
     resize: none; 
@@ -4668,18 +4481,8 @@ max-width: 32px;
 .social-media-footer .github2 {
 width: 2.6vw; 
 max-width: 29px; 
+} 
 }
-  
-}
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 1441px) {
 
@@ -4691,8 +4494,6 @@ max-width: 29px;
   h1 {
     font-size: clamp(3rem, 4.5vw, 6.8rem);
   }
-  
-
   
   .CV {
     margin-top: 45px;
@@ -4837,7 +4638,6 @@ max-width: 29px;
     height: auto;
   }
   
-  /*TODO border color transparent per no veure el grow quan fas hover, "l'amages per despres veure'l"*/
   .project-nav li {
   font-size: 1.15rem;
   width: 180px;
@@ -4851,14 +4651,12 @@ max-width: 29px;
     padding: 50px;
   }
   
-  /*TODO  IMPORTANT position: relative PER FICAR CONTINGUT A SOBRE DEL MATEIX */
   .project-item {
     width: 270px;
     height: 270px;
     position: relative;
   }
   
-  /* TODO div class="hover-description" creat per JS */
   .hover-description {
     position: absolute;
     top: 0;

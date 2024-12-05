@@ -3,15 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <!--* METADATA FOR GOOGLE -->
     <meta name="title" property="og:title" content="Web Dev Portfolio">
     <meta name="image" property="og:image" content="/images/PORTFOLIO.webp">
     <meta name="author" content="Toni Torredemer Argilés">
-    <!--* METADATA FOR GOOGLE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <!-- ! "defer" => carga 1er HTML i despres executa JS -->
     <script src="main.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="transition-style.css">
@@ -21,10 +18,7 @@
 </head>
 
 <body>
-    <!-- * 3D BACKGROUND -->
     <canvas id="canvas">Your browser doesn't support canvas</canvas>
-    <!-- * 3D BACKGROUND -->
-
     <header>
         <section id="inicio">
             <h1>WELCOME TO MY <span class="word-anime">WEB DEV</span> PORTFOLIO </h1>
@@ -51,16 +45,20 @@
                     </div>
                     <div class="info">
                         <div class="info-text">
-                            <p> 
-                                Hello, I'm Toni Torredemer Argilés, a freelance full-stack developer based in Matadepera, Barcelona, Spain.
+                            <p>
+                                Hello, I'm Toni Torredemer Argilés, a freelance full-stack developer based in
+                                Matadepera, Barcelona, Spain.
                                 <br><br>
-                                With a strong foundation in both front-end and back-end technologies, my passion for web development drives me to create exceptional websites that deliver seamless user experiences. As a perfectionist in everything I do, I pay meticulous attention to every detail, ensuring that the websites I craft are not only visually stunning but also optimized for performance, scalability, and user interaction.
+                                With a strong foundation in both front-end and back-end technologies, my passion for web
+                                development drives me to create exceptional websites that deliver seamless user
+                                experiences. As a perfectionist in everything I do, I pay meticulous attention to every
+                                detail, ensuring that the websites I craft are not only visually stunning but also
+                                optimized for performance, scalability, and user interaction.
                             </p>
                         </div>
                         <div class="social-media">
-                            <a href="https://www.linkedin.com/in/toni-torredemer-argilés-61b444151/"
-                                target="_blank" title="Linkedin"><img src="/images/linkedin1.webp" alt="Linkedin"
-                                    class="linkedin"></a>
+                            <a href="https://www.linkedin.com/in/toni-torredemer-argilés-61b444151/" target="_blank"
+                                title="Linkedin"><img src="/images/linkedin1.webp" alt="Linkedin" class="linkedin"></a>
                             <a href="https://github.com/tonitoar" target="_blank" title="Github"><img
                                     src="/images/github1.webp" alt="GitHub" class="github"></a>
                         </div>
@@ -74,7 +72,7 @@
                 <div class="cards">
                     <div class="javascript">
                         <div class="card-opacity">
-                            <img src="/images/js_5968292.webp" alt="javascript">
+                            <img src="/images/js.webp" alt="javascript">
                             <p>60%</p>
                         </div>
                         <h3>JAVASCRIPT</h3>
@@ -148,20 +146,15 @@
             <article>
                 <h2>PROJECTS</h2>
                 <div class="project-nav">
-                    <!-- ! DROPDOWN serveix per versio mobil-->
                     <button class="project-nav-dropdown-toggle">Filter Projects ▼</button>
                     <ul class="project-nav-dropdown-menu">
-                        <!-- ! data-filter serveix per filtrar amb relacio al valor de data-category -->
-                        <!-- ! class="active" per tenir activat per default -->
                         <li data-filter="all" class="active">All</li>
                         <li data-filter="real-life">Real-Life Project</li>
                         <li data-filter="practice">Practice Project</li>
                     </ul>
                 </div>
                 <div class="project-container">
-                    <!--! cada imatge amb el seu div personal per poder fer el hover-description individual sobre a cadascun -->
                     <div class="project-item">
-                        <!-- ! data-category serveix per filtrar amb relacio al valor de data-filter -->
                         <img src="/images/Bufet_Argiles_Bertran.webp" alt="Bufet Argilés Bertran"
                             data-category="real-life" class="project-img">
                     </div>
@@ -224,7 +217,8 @@
                 <div class="footer-left">
                     <p>Connect with me:</p>
                     <div class="social-media-footer">
-                        <a href="https://www.linkedin.com/in/toni-torredemer-argilés-61b444151/" target="_blank" title="Linkedin">
+                        <a href="https://www.linkedin.com/in/toni-torredemer-argilés-61b444151/" target="_blank"
+                            title="Linkedin">
                             <img src="/images/linkedin1.webp" alt="Linkedin" class="linkedin2">
                         </a>
                         <a href="https://github.com/tonitoar" target="_blank" title="Github">
@@ -254,8 +248,6 @@
             </div>
         </div>
     </footer>
-
-
 </body>
 
 </html>
