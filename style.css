@@ -1031,8 +1031,9 @@ opacity: 1;
 
   #About h2::before {
     width: 153px;
-    top: 21.5px;
-    height: 11px; 
+    top: 22px;
+    height: 10px; 
+    left: 27px; 
   }
 
   #About article {
@@ -1125,9 +1126,9 @@ display: none;
 
 #Skills h2::before {
   width: 105px;
-  top: 21.5px;
+  top: 22px;
   left: 22.5px; 
-  height: 11px; 
+  height: 10px; 
 }
 
 #Skills article {
@@ -1195,9 +1196,10 @@ display: none;
 }
 
 #Projects h2::before {
-  top: 21.5px;
+  top: 22px;
   width: 152px;
-  height: 11px; 
+  height: 10px;
+  left: 24px;  
 }
 
 
@@ -1293,9 +1295,10 @@ border-radius: 5px;
 }
 
 #Contact h2::before {
-  top: 21.5px;
+  top: 22px;
   width: 152px;
-  height: 11px; 
+  height: 10px;
+  left: 26px;  
 }
 
 #Contact article {
@@ -1595,8 +1598,9 @@ display: none;
 
   #About h2::before {
     width: 153px;
-    top: 21.5px;
-    height: 11px; 
+    top: 22px;
+    left: 27px; 
+    height: 10px; 
   }
 
   #About article {
@@ -1691,10 +1695,10 @@ display: none;
 }
 
 #Skills h2::before {
-  width: 105px;
-  top: 21.5px;
-  left: 22.5px; 
-  height: 11px; 
+  width: 103px;
+  top: 22px;
+  left: 22px; 
+  height: 10px; 
 }
 
 #Skills article {
@@ -1761,11 +1765,11 @@ display: none;
 }
 
 #Projects h2::before {
-  top: 21.5px;
+  top: 22px;
   width: 152px;
-  height: 11px; 
+  height: 10px; 
+  left: 24px; 
 }
-
 
 #Projects article {
   width: 95%;
@@ -1855,9 +1859,10 @@ border-radius: 5px;
 }
 
 #Contact h2::before {
-  top: 21.5px;
-  width: 152px;
-  height: 11px; 
+  top: 22px;
+  width: 138px;
+  height: 10px; 
+  left: 25px; 
 }
 
 #Contact article {
@@ -2149,7 +2154,7 @@ display: none;
 
   #About h2::before {
     width: 163px;
-    top: 24px;
+    top: 23.5px;
     left: 28px; 
     height: 12px; 
   }
@@ -2247,7 +2252,7 @@ display: none;
 
 #Skills h2::before {
   width: 110px;
-  top: 24px;
+  top: 23.5px;
   left: 24px; 
   height: 12px; 
 }
@@ -2317,7 +2322,7 @@ display: none;
 
 #Projects h2::before {
   width: 158px;
-  top: 24px;
+  top: 23.5px;
   left: 25px; 
   height: 12px; 
 }
@@ -2411,7 +2416,7 @@ border-radius: 5px;
 
 #Contact h2::before {
   width: 147px;
-  top: 24px;
+  top: 23.5px;
   left: 27px; 
   height: 12px; 
 }
