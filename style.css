@@ -1071,8 +1071,9 @@ opacity: 1;
 
   #About h2::before {
     width: 153px;
-    top: 21.5px;
-    height: 11px; 
+    top: 22px;
+    height: 10px; 
+    left: 27px; 
   }
 
   #About article {
@@ -1168,9 +1169,9 @@ display: none;
 
 #Skills h2::before {
   width: 105px;
-  top: 21.5px;
+  top: 22px;
   left: 22.5px; 
-  height: 11px; 
+  height: 10px; 
 }
 
 #Skills article {
@@ -1188,7 +1189,8 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
@@ -1196,13 +1198,15 @@ display: none;
 
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -1226,8 +1230,6 @@ display: none;
   font-size: 1rem;
 }
 
-
-
 #Projects {
   width: 100%;
   scroll-margin-top: 90px;
@@ -1235,11 +1237,11 @@ display: none;
 }
 
 #Projects h2::before {
-  top: 21.5px;
+  top: 22px;
   width: 152px;
-  height: 11px; 
+  height: 10px;
+  left: 24px;  
 }
-
 
 #Projects article {
   width: 95%;
@@ -1338,9 +1340,10 @@ border-radius: 5px;
 }
 
 #Contact h2::before {
-  top: 21.5px;
+  top: 22px;
   width: 152px;
-  height: 11px; 
+  height: 10px;
+  left: 26px;  
 }
 
 #Contact article {
@@ -1652,8 +1655,9 @@ display: none;
 
   #About h2::before {
     width: 153px;
-    top: 21.5px;
-    height: 11px; 
+    top: 22px;
+    left: 27px; 
+    height: 10px; 
   }
 
   #About article {
@@ -1751,10 +1755,10 @@ display: none;
 }
 
 #Skills h2::before {
-  width: 105px;
-  top: 21.5px;
-  left: 22.5px; 
-  height: 11px; 
+  width: 103px;
+  top: 22px;
+  left: 22px; 
+  height: 10px; 
 }
 
 #Skills article {
@@ -1772,7 +1776,8 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
@@ -1780,13 +1785,15 @@ display: none;
 
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -1818,11 +1825,11 @@ display: none;
 }
 
 #Projects h2::before {
-  top: 21.5px;
+  top: 22px;
   width: 152px;
-  height: 11px; 
+  height: 10px; 
+  left: 24px; 
 }
-
 
 #Projects article {
   width: 95%;
@@ -1927,9 +1934,10 @@ border-radius: 5px;
 
 
 #Contact h2::before {
-  top: 21.5px;
-  width: 152px;
-  height: 11px; 
+  top: 22px;
+  width: 138px;
+  height: 10px; 
+  left: 25px; 
 }
 
 #Contact article {
@@ -2231,7 +2239,7 @@ display: none;
 
   #About h2::before {
     width: 163px;
-    top: 23px;
+    top: 23.5px;
     left: 28px; 
     height: 12px; 
   }
@@ -2332,7 +2340,7 @@ display: none;
 
 #Skills h2::before {
   width: 110px;
-  top: 23px;
+  top: 23.5px;
   left: 24px; 
   height: 12px; 
 }
@@ -2352,22 +2360,24 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
 }
 
-
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -2400,7 +2410,7 @@ display: none;
 
 #Projects h2::before {
   width: 158px;
-  top: 23px;
+  top: 23.5px;
   left: 25px; 
   height: 12px; 
 }
@@ -2455,39 +2465,6 @@ border-radius: 5px;
   grid-template-columns: repeat(auto-fit,minmax(211px, 0.25fr));
 }
 
-/* .project-item {
-  width: 210px;
-  height: 210px;
-  position: relative;
-}
-
-.hover-description {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-}
-
-.hover-description h3 {
-  font-size: 1.25rem;
-}
-
-.hover-description p {
-  font-size: 1.01rem;
-}
-
-.hover-description h4 {
-  font-size: 1.06rem;
-}
-
-.hover-description button {
-  padding: 5.5px 11px;
-  font-size: 0.75rem;
-  margin-top: 10px; 
-} */
-
 .project-item {
   width: 230px;
   height: 230px;
@@ -2531,7 +2508,7 @@ border-radius: 5px;
 
 #Contact h2::before {
   width: 147px;
-  top: 23px;
+  top: 23.5px;
   left: 27px; 
   height: 12px; 
 }
@@ -3061,7 +3038,8 @@ display: none;
 
 .javascript, .html, 
 .css, .react, .node,
-.express, .mongodb, .git {
+.express, .mongodb, .git,
+.figma, .filezilla {
   width: auto;
   height: 195px;
   padding: 10px 30px 15px;
@@ -3069,13 +3047,15 @@ display: none;
 
 .javascript::after, .html::after, 
 .css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
+.express::after, .mongodb::after, .git::after,
+.figma::after, .filezilla::after{
   display: none;
 }
 
 .javascript:hover, .html:hover, 
 .css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
+.express:hover, .mongodb:hover, .git:hover,
+.figma:hover, .filezilla:hover {
   box-shadow: none;
 }
 
@@ -3751,25 +3731,28 @@ display: none;
     width: 85%; 
   }
 
-.javascript, .html, 
-.css, .react, .node,
-.express, .mongodb, .git {
-  width: auto;
-  height: 200px;
-  padding: 10px 30px 15px;
-}
-
-.javascript::after, .html::after, 
-.css::after, .react::after, .node::after,
-.express::after, .mongodb::after, .git::after{
-  display: none;
-}
-
-.javascript:hover, .html:hover, 
-.css:hover, .react:hover, .node:hover,
-.express:hover, .mongodb:hover, .git:hover {
-  box-shadow: none;
-}
+  .javascript, .html, 
+  .css, .react, .node,
+  .express, .mongodb, .git,
+  .figma, .filezilla {
+    width: auto;
+    height: 200px;
+    padding: 10px 30px 15px;
+  }
+  
+  .javascript::after, .html::after, 
+  .css::after, .react::after, .node::after,
+  .express::after, .mongodb::after, .git::after,
+  .figma::after, .filezilla::after{
+    display: none;
+  }
+  
+  .javascript:hover, .html:hover, 
+  .css:hover, .react:hover, .node:hover,
+  .express:hover, .mongodb:hover, .git:hover,
+  .figma:hover, .filezilla:hover {
+    box-shadow: none;
+  }
 
 .card-opacity::before {
   bottom: 0px; 
@@ -4380,13 +4363,14 @@ display: none;
     margin: 10px 0px;
   }
 
-.javascript, .html, 
-.css, .react, .node,
-.express, .mongodb, .git {
-  width: auto;
-  height: 225px;
-  padding: 10px 30px 15px;
-}
+  .javascript, .html, 
+  .css, .react, .node,
+  .express, .mongodb, .git,
+  .figma, .filezilla {
+    width: auto;
+    height: 225px;
+    padding: 10px 30px 15px;
+  }
 
 .card-opacity::before {
   bottom: 0px; 
